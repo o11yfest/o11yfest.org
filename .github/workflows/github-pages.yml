@@ -1,0 +1,28 @@
+name: Build and deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  # schedule:
+  #   - cron: "0 0 * * *"
+
+jobs:
+
+  jekyll-bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: addnab/docker-run-action@v1
+        with:
+          image: jekyll/jekyll:3.8
+          run: jekyll build
+          options: -v /github/workspace:/srv/jekyll -e JEKYLL_ENV=production
+
+  github-pages:
+    needs: jekyll-bundle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: helaili/jekyll-action@2.0.5
+        env:
+          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
