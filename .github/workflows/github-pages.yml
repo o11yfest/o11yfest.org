@@ -10,7 +10,6 @@ on:
 jobs:
 
   github-pages:
-    needs: jekyll-bundle
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
