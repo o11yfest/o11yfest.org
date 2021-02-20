@@ -42,6 +42,8 @@ header_pages:
     url: /about
   - title: "-virtual"
     url: /location
+  - title: "-cfp"
+    url: https://www.papercall.io/observe-2021
   - title: "-agenda"
     url: /agenda
   - title: "-code-of-conduct"
