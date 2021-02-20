@@ -9,15 +9,6 @@ on:
 
 jobs:
 
-  jekyll-bundle:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: addnab/docker-run-action@v1
-        with:
-          image: jekyll/jekyll:3.8
-          run: jekyll build
-          options: -v /github/workspace:/srv/jekyll -e JEKYLL_ENV=production
-
   github-pages:
     needs: jekyll-bundle
     runs-on: ubuntu-latest
