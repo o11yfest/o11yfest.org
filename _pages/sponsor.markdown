@@ -6,7 +6,7 @@ permalink: /sponsor
 
 # Why Sponsor o11yfest?
 
-As an emerging industry of critical players in the distributed systems observability space, your financial support and direct engagement with the OpenTelemetry community exposes both you and them to your brand. For sponsors who already actively contribute to open source projects, an active presence at this event demonstrates your leadership in this industry to key practitioners and investors. For more information, email [organizers @ o11yfest.org](/contact)
+As an emerging industry of critical players in the distributed systems observability space, your financial support and direct engagement with the OpenTelemetry community exposes both you and them to your brand. For sponsors who already actively contribute to open source projects, an active presence at this event demonstrates your leadership in this industry to key practitioners and investors. For more information, email [{{ site.email }}](/contact)
 
 This year, we are targeting between 500-1000 attendees. Your help to socialize the event will increase this further.
 
@@ -53,4 +53,4 @@ Suggested Donation Beneficiaries:
 If you have alternative non-profit charities or causes you would like to suggest, please ask the organizers to review and approve it for inclusion into this list BEFORE donating. Donations that occur before engaging the event organizers cannot be retroactively counted towards a sponsorship since the event is encouraging net-new donation revenue.
 Questions?
 
-All questions can be emailed to [organizers @ o11yfest.org](/contact) and depending on the nature of the question, organizers can be scheduled for a brief face-to-face virtual chat upon request.
+All questions can be emailed to [{{ site.email }}](/contact) and depending on the nature of the question, organizers can be scheduled for a brief face-to-face virtual chat upon request.
