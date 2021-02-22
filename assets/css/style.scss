@@ -8,3 +8,37 @@
 @import "css/dark.scss";
 
 @import "css/menu.scss";
+
+$textColor: #b5e853;
+
+h1 {
+  margin-top: 2em;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexbox-button {
+  width: auto;
+  margin: 1em;
+  padding: 1em;
+  border: solid 2px $textColor;
+}
+a, .flexbox-button, .flexbox-button a {
+  color: $textColor;
+}
+
+.sponsor-logo-premiere {
+  min-width: 200px;
+  max-width: 400px;
+  margin: 1em;
+}
+.sponsor-logo-contributor {
+  min-width: 100px;
+  max-width: 200px;
+  margin: 1em;
+}
