@@ -1,5 +1,5 @@
 title: o11yfest
-email: organizers@observe2020.io
+email: organizers@o11yfest.org
 description: >- # this means to ignore newlines until "baseurl:"
   A virtual event to celebrate observability in our systems and software
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -28,6 +28,8 @@ header_pages:
     url: /agenda
   - title: "-code-of-conduct"
     url: /code-of-conduct
+  - title: "-sponsor"
+    url: "/sponsor"
   - title: "-contact"
     url: "/contact"
 
