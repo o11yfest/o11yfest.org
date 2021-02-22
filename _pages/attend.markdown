@@ -4,6 +4,8 @@ title:  "Attend o11yfest"
 permalink: /attend
 ---
 
-# Opening soon!
+# Register on Vito Community!
 
-o11yfest registration will open on Wed, Feb 24th. Check back here soon!
+This year, our event will be held on Vito! To get your ticket, please visit:
+
+[ti.to/o11yfest/2021]({{ site.registration_link }})

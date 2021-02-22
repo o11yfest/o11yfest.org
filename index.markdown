@@ -6,26 +6,19 @@ layout: home
 
 **o11yfest** is a two-day virtual technology conference focused on empowering DevOps practitioners with solutions that improve observability over systems and processes. It will be held online using a online platform on May 17th & 18th 2021.
 
-o11yfest, previously held as Observe 20/20, is in its second year of operation as a grass-roots event whose aim is to encourage sharing of knowledge and development of the discipline of observability engineering. 100% of net ticket sales and 'contributor' sponsorships will go to the following good causes:
+o11yfest, previously held as Observe 20/20, is in its second year of operation as a grass-roots event whose aim is to encourage sharing of knowledge and development of the discipline of observability engineering.
 
-- Trans Lifeline
-- Black Girls Code
-- YearUp
-- Resilient Coders
-- Feeding America: US Hunger Relief Organization
-- Get Us PPE – Personal Protective Equipment to those who need it most
-- KodeConnect
-
+100% of net ticket sales and contributor sponsorships will go to good causes [(read more here)](/efforts).
 
 <div class="flexbox">
   <a class="flexbox-button" href="/cfp">Submit a Talk</a>
-  <a class="flexbox-button" href="#" onclick="alert('Not available yet')">Attend this Event</a>
+  <a class="flexbox-button" href="{{ site.registration_link }}">Attend this Event</a>
   <a class="flexbox-button" href="/sponsor">Sponsor this Event</a>
 </div>
 
 # Speakers & Agenda
 
-[The CFP is still open!](/cfp) We are waiting to publish the speakers until after that time.
+[The CFP is still open!](/cfp) We are waiting to publish the speakers until it closes.
 
 For an example of what we did last year, see the [Observe 20/20 agenda](https://observe2020.io/agenda/).
 
