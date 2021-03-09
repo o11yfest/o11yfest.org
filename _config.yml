@@ -7,7 +7,7 @@ url: "https://o11yfest.org" # the base hostname & protocol for your site, e.g. h
 twitter_username: o11yfest
 github_username:  o11yfest
 show_github: false
-google_analytics: G-SQ4YJP5LND
+google_analytics_tag: G-SQ4YJP5LND
 
 registration_link: "https://ti.to/o11yfest/2021"
 
