@@ -11,7 +11,6 @@ o11yfest, previously held as Observe 20/20, is in its second year of operation a
 100% of net ticket sales and contributor sponsorships will go to good causes [(read more here)](/efforts).
 
 <div class="flexbox">
-  <a class="flexbox-button" href="/cfp">Submit a Talk</a>
   <a class="flexbox-button" href="{{ site.registration_link }}">Attend this Event</a>
   <a class="flexbox-button" href="/sponsor">Sponsor this Event</a>
 </div>
