@@ -23,7 +23,14 @@ This year, we are targeting between 500-1000 attendees. Your help to socialize t
 
 # Call for Proposals
 
-The CFP is currently open to anyone actively involved in technology solutions for the observability space. We are currently accepting 20min lecture and 1hr workshop session format proposals. Please use the following link to submit your proposal: [bit.ly/o11yfest-2021-cfp](https://bit.ly/o11yfest-2021-cfp)
+Our CFP for o11yfest 2021 closed March 15th, and our organizers are finalizing acceptances by Monday, March 22nd.
+
+However, due to the overwhelming response for CFPs this year, the organizers are
+ considering a more continuous program of smaller events (e.g. meetups, etc.)
+ where these and future submissions would make sense to schedule.
+
+The best thing to do for now is to sponsor o11yfest 2021 on May 17-18 and join our
+ community for some great conversations and connections!
 
 # Premiere Sponsorship Details
 
