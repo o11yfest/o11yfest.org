@@ -18,7 +18,8 @@ o11yfest, previously held as Observe 20/20, is in its second year of operation a
 
 # Speakers & Agenda
 
-[The CFP is still open!](/cfp) We are waiting to publish the speakers until it closes.
+Our CFP for o11yfest 2021 closed March 15th, and our organizers are finalizing
+ acceptances by Monday, March 22nd. Until then, we do not have a finalized schedule.
 
 For an example of what we did last year, see the [Observe 20/20 agenda](https://observe2020.io/agenda/).
 
