@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% if page.permalink and page.permalink contains "/speakers/" %}
     {% assign speaker = site.data.speakers.items | where_exp:"item", "item.id == page.id" | first %}
-    <script>alert('')</script>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@o11yfest">
     <meta name="twitter:creator" content="@o11yfest">
