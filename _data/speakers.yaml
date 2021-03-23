@@ -28,14 +28,14 @@ items:
 - id: alex-hidalgo
   name: Alex Hidalgo
   bio: |
-    Alex Hidalgo is the Director of Site Reliability Engineer at Nobl9 and author of Implementing Service Level Objectives. During his career he has developed a deep love for sustainable operations, proper observability, and using SLO data to drive discussions and make decisions. Alex’s previous jobs have included IT support, network security, restaurant work, t-shirt design, and hosting game shows at bars.
+    Alex Hidalgo is the Director of Site Reliability Engineering at Nobl9 and author of Implementing Service Level Objectives. During his career he has developed a deep love for sustainable operations, proper observability, and using SLO data to drive discussions and make decisions. Alex’s previous jobs have included IT support, network security, restaurant work, t-shirt design, and hosting game shows at bars.
     When not sharing his passion for technology with others, you can find him scuba diving or watching college basketball. He lives in Brooklyn with his partner Jen and a rescue dog named Taco. Alex has a BA in philosophy from Virginia Commonwealth University.
   role: session
   title: "Service Level Observability: Measuring Internal States with SLOs"
   abstract: |
     Observability and SLOs have aligned goals: to better understand your systems. While the former uses externalized data to understand internal states and the later focuses on the user experience, it turns out these are almost the same thing. Observe better with SLOs and SLO better with observability.
 
-    In 2021 there are few terms that see as much excitement in the tech world as “observability” and “service level objectives.” Unfortunately most of this is the work of marketing departments who don’t really understand either. In this talk I’ll outline what observability actually means starting with the term’s roots in control theory, talk about the origins of reliability engineering going back to the 1940s, and then describe modern and practical approaches for how observability and reliability engineer can be used for complex computer systems via better telemetry and service level objectives.
+    In 2021 there are few terms that see as much excitement in the tech world as “observability” and “service level objectives.” Unfortunately most of this is the work of marketing departments who don’t really understand either. In this talk I’ll outline what observability actually means starting with the term’s roots in control theory, talk about the origins of reliability engineering going back to the 1940s, and then describe modern and practical approaches for how observability and reliability engineering can be used for complex computer systems via better telemetry and service level objectives.
   handles:
     twitter: ahidalgosre
     linkedin: alex-i-am-not-looking-for-a-job-please-stop-hidalgo-6823971b7
@@ -86,3 +86,61 @@ items:
   handles:
     twitter: mike_angstadt
     linkedin: mikeangstadt
+
+- id: dave-lucia
+  name: Dave Lucia
+  bio: |
+    Dave is an engineer and technology leader at Simplebet. He's been an active member in the Elixir community since 2016, and a founding engineer at the publication The Outline.
+
+    When not glued to Vim in Emacs, Dave spends his time in New York with his family and two Pomeranians.
+  role: session
+  title: Betting on Observability at Simplebet
+  abstract: |
+    Adopting Observability can be an organizational challenge. At Simplebet, we introduced Open Telemetry and o11y successfully, then published a Case-Study on our experience with Lightstep. We will share our experience gaining traction so that you can learn how to introduce o11y at your company.
+
+    Simplebet introduced its first products into the market in 2020, which required a shift in organizational thinking around software deployments, operations, scale, etc. As we geared up for our first public launch, we needed to overcome the challenges of scaling a backend to support thousands of concurrent users at the onset. With the experience of team members who work on the Erlang Observability Working Group, we made a case for introducing distributed tracing with Lightstep as a tool to help us scale. After the first team adopted Otel and made use of distributed tracing, we mechanically implemented the same strategy to other teams in our organization. Through this instrumentation, we were able to isolate performance-critical operations, build evidence for long-standing issues, and change the way the team thought about our production system.
+
+    This talk will spend time talking about this experience but spend the majority of the time offering practical guidance for how a developer can gain traction with o11y and Otel at their organization.
+  handles:
+    twitter: davydog187
+    linkedin: david-lucia-a395441b
+
+- id: eric-mustin
+  name: Eric Mustin
+  bio: |
+    Eric Mustin is a Software Engineer at Datadog on the APM Integrations Team, and an Approver on the OpenTelemetry-Ruby project. Previously he's worked in E-commerce and Financial Services.
+  role: session
+  title: Supercharge Legacy Application Logs by Injecting OpenTelemetry Span Context
+  abstract: |
+    A good cook uses ingredients they have in the kitchen, and observability is no different. A good practitioner should leverage legacy telemetry, even when adopting OpenTelemetry. Learn how to leverage and correlate existing application logs with OTEL Traces by injecting Span Context into your logs.
+
+    Unlike neatly packaged demos and “Getting Started” guides, the average user of OpenTelemetry isn’t coming to the project with a complete greenfield. Instead, many of these projects are so-called “brownfields”, with existing metrics, tracing, and logs from a variety of different standards already being emitted by their Applications and used to monitor, debug, and introspect applications. OpenTelemetry, with Tracing Specification(and many SDKs) at 1.0, has done an admirable job ensuring compatibility with older tracing standards, and OpenTelemetry Metrics seem well on their way to ensuring the same broad level of support and inclusivity for existing standards. But existing Logs have been left out in the cold, to some extent, with no standard out of the box way to connect them to your traces across languages.
+
+    But, fear not! With a bit of application code, the OpenTelemetry Language SDKs, and some willingness to monkeypatch a library or two, the ability to connect your existing Application Logs with the context of the Span and Trace Telemetry data is easier than ever. In this talk, I’ll take a survey of a few languages (Ruby, Python, and JS), and demonstrate from start to finish how to modify popular Logging Libraries to ensure that every Log line also contains the right span and trace identifiers to correlate them in your vendor or open source backend of choice. I’ll also walk through a scenario or two where connecting Logs and Traces helps improve an end users ability to debug, troubleshoot, and gain insight into their application behavior.
+  handles:
+    twitter: Ericmustin
+    linkedin: ericmustin
+
+- id: rob-skillington
+  name: Rob Skillington
+  bio: |
+    Rob Skillington is the co-founder and CTO of Chronosphere. He was previously at Uber, where he was the technical lead of the Observability team and creator of M3DB, the time series database at the core of M3. He has worked in both large engineering organizations such as Microsoft and Groupon and a handful of startups. He and his family are based in NYC where he mainly spends weekends exploring all of New York‚Äôs playgrounds and also following his wife‚Äôs jazz adventures.
+  role: session
+  title: Building and running a world-class observability function
+  abstract: |
+    "Observability teams as a centralized function within SRE or IT Operations are a relatively recent phenomenon. These teams are responsible for managing the monitoring and observability toolset and empowering developer and engineering teams to push the right data into the systems to get back the information they need. Central observability teams must walk a fine line between controlling cardinality and cost associated with data growth while also providing a complete dataset for quick troubleshooting and diagnostics.
+
+    This session will explore the people and process side of observability with lessons learned from the community, including:
+
+    * **Internal KPIs and metrics:** how do you measure the success of your observability practice?
+
+    * **Tagging best practices:** how to get tags and labels under control and working to your advantage?
+
+    * **Taming cardinality:** What processes can help keep cardinality under control?
+
+    * **Roles and responsibilities:** Who is responsible for running centralized observability functions? How do you know you need a dedicated team and how many people should be on it?
+
+    * **Centralized vs distributed teams:** How to manage the balance between individual service teams unique requirements and the need for a centralized and consistent view for SREs."
+  handles:
+    twitter: roskilli
+    linkedin: robskillington
