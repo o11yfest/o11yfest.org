@@ -1,6 +1,6 @@
 ---
 layout: speaker
-id: daniel-gomez-blanco
-title:  "Daniel Gomez Blanco"
-permalink: /speakers/daniel-gomez-blanco
+id: juraci-paixao-krohling
+title:  "Juraci Paixão Kröhling"
+permalink: /speakers/juraci-paixao-krohling
 ---
