@@ -14,12 +14,4 @@ Our event organizing team is dedicated to increasing equity and inclusion in tec
 
 So far, our organizers have decided to scope "good causes" to the following non-profit organizations.:
 
-- [Trans Lifeline](https://translifeline.org/)
-- [Black Girls Code](https://www.blackgirlscode.com/)
-- [YearUp](https://www.yearup.org/)
-- [Resilient Coders](http://www.resilientcoders.org/)
-- [Feeding America: US Hunger Relief Organization](https://www.feedingamerica.org/)
-- [Get Us PPE – Personal Protective Equipment](https://getusppe.org/) to those who need it most
-- [KodeConnect](http://www.kodeconnect.org/)
-
-If you feel there are other good causes that should be on this list, please contact the organizers.
+{% include good-cause-list.html %}
