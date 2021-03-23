@@ -42,3 +42,16 @@ a, .flexbox-button, .flexbox-button a {
   max-width: 200px;
   margin: 1em;
 }
+
+.grey {
+  color: #828282;
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: currentColor;
+  padding: 5px 3px 2px 5px;
+  vertical-align: text-bottom;
+}
