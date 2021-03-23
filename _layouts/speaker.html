@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+{% assign speaker = site.data.speakers.items | where_exp:"item", "item.id == page.id" | first %}
+
+<div class="flexbox">
+  <div style="min-width:200px;width:25%;margin:2em;float:left;text-align:center;visibility:hidden;">
+    <img id="speaker-thumb" src="/assets/images/speakers/socials/{{ speaker.id }}.png"
+          style="width:100%;border-radius:2em;"
+          title="{{ speaker.name }}: {{ speaker.title }}" /><br />
+    <p style="font-size:1.5em;">{{ speaker.name }}</p>
+  </div>
+  <div style="flex:1;">
+    <h2>{{ speaker.title }}</h2>
+    <p>
+      {{ speaker.abstract | markdownify }}
+    </p>
+  </div>
+</div>
+
+
+<div style="float:none;clear:both;">
+  <h3>More about This Presenter</h3>
+<p>{{ speaker.bio }}</p>
+</div>
+
+<script type="text/javascript">
+  window.onloadqueue=(window.onloadqueue||[]).concat([function () {
+    $('#speaker-thumb').attr('src','/assets/images/speakers/thumbs/{{ speaker.id }}.png')
+      .css({'border-radius':'50%'})
+    [0].onload=function() {
+      $(this).css({'visibility':'visible'})
+    }
+  }]);
+</script>
+
+<div class="flexbox">
+
+  <div style="max-width:48%;width:100%;">
+
+  </div>
+</div>
+
+
+{{ content }}

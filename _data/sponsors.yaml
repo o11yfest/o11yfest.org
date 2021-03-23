@@ -1,0 +1,13 @@
+items:
+- name: Lightstep
+  level: premiere
+  logo: lightstep.png
+  link: https://lightstep.com
+- name: Honeycomb
+  level: premiere
+  logo: honeycomb.png
+  link: https://honeycomb.io
+- name: StackPulse
+  level: contributor
+  logo: stackpulse.png
+  link: https://stackpulse.io

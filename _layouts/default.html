@@ -71,6 +71,10 @@
     <script type="text/javascript">
       $(function () {   //  <- jquery is not yet initialized
         updateOffsiteLinksToOpenInBlank()
+
+        if(window.onloadqueue && window.onloadqueue != undefined && window.onloadqueue.length > 0) {
+          $.each(window.onloadqueue,function(i,v) { v() });
+        }
       });
       function updateOffsiteLinksToOpenInBlank() {
         var host = document.location.hostname

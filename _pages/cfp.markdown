@@ -6,8 +6,8 @@ permalink: /cfp
 
 # CFP Closed March 15th, but ...
 
-Our CFP for o11yfest 2021 closed March 15th, and our organizers are finalizing
- acceptances by Monday, March 22nd.
+Our CFP for o11yfest 2021 closed March 15th, and our organizers have finalized
+ talk acceptances, with a few waitlist and panel decisions still pending.
 
 However, due to the overwhelming response for CFPs this year, the organizers are
  considering a more continuous program of smaller events (e.g. meetups, etc.)

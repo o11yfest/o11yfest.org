@@ -1,0 +1,11 @@
+<div style="text-align:center">
+<div class="flexbox">
+  {% assign speakers = site.data.speakers.items %}
+  {% for speaker in speakers %}
+    <div style="max-width:150px;min-height:230px;text-align:center;margin:1em;">
+      <a href="/speakers/{{ speaker.id }}"><img src="/assets/images/speakers/thumbs/{{ speaker.id }}.png" title="{{ speaker.name }}" style="width:100%;border-radius:50%;"><br />{{ speaker.name }}</a>
+    </div>
+  {% endfor %}
+</div>
+(more coming soon once photos are received...)
+</div>
