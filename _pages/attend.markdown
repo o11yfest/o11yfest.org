@@ -24,8 +24,35 @@ permalink: /attend
 
 <tito-widget event="o11yfest/2021"></tito-widget>
 
-# What platform are we using?
+<div class="flexbox">
 
-This year, our event will be held on Vito! To get your ticket, use the above form or please visit:
+<div style="flex:1;align-self:flex-start;min-width:400px;padding-right:2em;" markdown=1>
 
-[ti.to/o11yfest/2021]({{ site.registration_link }})
+# Why Donate for Charity?
+
+As a single contributor, you can make a difference, and we all should. As a group,
+ we can make a significant collective difference for some really good causes:
+
+<div style="font-size:0.8em;" markdown=1>
+
+{% include good-cause-list.html %}
+
+</div>
+
+</div>
+<div style="flex:1;align-self:flex-start;min-width:400px;" markdown=1>
+
+# Who will be there?
+
+Hundreds of other community members and engineering folks will be online listening to,
+ discussing with, and learning from each other about observability practices.
+
+Oh, and did we mention an ***amazing*** lineup of speakers, OpenTelemetry contributors,
+ and practitioners already implementing advanced observability practices in their
+ organizations?
+
+Check out some of them below:
+
+</div>
+
+{% include speaker-thumbs.html %}

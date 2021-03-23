@@ -5,11 +5,14 @@ layout: default
 {% assign speaker = site.data.speakers.items | where_exp:"item", "item.id == page.id" | first %}
 
 <div class="flexbox">
-  <div style="min-width:200px;width:25%;margin:2em;float:left;text-align:center;visibility:hidden;">
+  <div style="min-width:200px;width:25%;margin:2em;float:left;text-align:center;">
     <img id="speaker-thumb" src="/assets/images/speakers/socials/{{ speaker.id }}.png"
-          style="width:100%;border-radius:2em;"
-          title="{{ speaker.name }}: {{ speaker.title }}" /><br />
+          style="width:100%;border-radius:2em;visibility:hidden;"
+          title="{{ speaker.name }}: {{ speaker.title }}" />
     <p style="font-size:1.5em;">{{ speaker.name }}</p>
+    <div class="flexbox">
+      <a class="flexbox-button" href="{{ site.registration_link }}">Attend this Talk</a>
+    </div>
   </div>
   <div style="flex:1;">
     <h2>{{ speaker.title }}</h2>
