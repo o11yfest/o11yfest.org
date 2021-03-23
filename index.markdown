@@ -17,18 +17,20 @@ o11yfest, previously held as Observe 20/20, is in its second year of operation a
 
 # Speakers & Agenda
 
-Our CFP for o11yfest 2021 closed March 15th, and our organizers are finalizing
- acceptances by Monday, March 22nd. Until then, we do not have a finalized schedule.
+Our CFP for o11yfest 2021 closed March 15th, and we have confirmed the following
+ speakers will be part of our event:
 
-For an example of what we did last year, see the [Observe 20/20 agenda](https://observe2020.io/agenda/).
+{% include speaker-thumbs.html %}
 
 # Premiere Sponsors
 
 These sponsors have materially contributed both in effort and financial underwriting to make this conference possible! A special thanks goes to them for the opportunity to come together and learn!
 
 <div class="flexbox">
-<a href="https://lightstep.com"><img class="sponsor-logo-premiere" src="/assets/images/sponsors/lightstep.png"></a>
-<a href="https://honeycomb.io"><img class="sponsor-logo-premiere" src="/assets/images/sponsors/honeycomb.png"></a>
+  {% assign items = site.data.sponsors.items | where_exp:"item", "item.level == 'premiere'" %}
+  {% for item in items %}
+    <a href="{{ item.link }}"><img class="sponsor-logo-{{ item.level }}" src="/assets/images/sponsors/{{ item.logo }}" title="{{ item.name }}"></a>
+  {% endfor %}
 </div>
 
 # Contributor Sponsors
@@ -39,5 +41,8 @@ We can't thank them enough for their support of these worthwhile organizations a
 If you would also like to sponsor in this way, please [contact the organizers](/contact).
 
 <div class="flexbox">
-<a href="https://stackpulse.io"><img class="sponsor-logo-contributor" src="/assets/images/sponsors/stackpulse.png"></a>
+  {% assign items = site.data.sponsors.items | where_exp:"item", "item.level == 'contributor'" %}
+  {% for item in items %}
+    <a href="{{ item.link }}"><img class="sponsor-logo-{{ item.level }}" src="/assets/images/sponsors/{{ item.logo }}" title="{{ item.name }}"></a>
+  {% endfor %}
 </div>
