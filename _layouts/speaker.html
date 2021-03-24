@@ -16,12 +16,12 @@ layout: default
   {% if social.linkedin %}<svg class="svg-icon grey" title="{{ speaker.name }} on LinkedIn" onclick="window.open('https://www.linkedin.com/in/{{ social.linkedin }}')" style="cursor:pointer;"><use xlink:href="{{ '/assets/images/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg>{% endif %}
 {% endif %}
       </div>
-    <p style="font-size:1.5em;">{{ speaker.name }}</p>
+    <p style="font-size:1.5em;">{{ speaker.name }}<br /><span style="text-transform: uppercase;">{{ speaker.role }}</span></p>
     <div class="flexbox">
       <a class="flexbox-button" href="{{ site.registration_link }}">Attend this Talk</a>
     </div>
   </div>
-  <div style="flex:1;align-self:flex-end;">
+  <div style="min-width:300px;flex:1;align-self:flex-end;">
     <h2>{{ speaker.title }}</h2>
     <p>
       {{ speaker.abstract | markdownify }}

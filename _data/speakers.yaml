@@ -1,7 +1,7 @@
 items:
 
 # - name:
-#   role: session
+#   role: presenter
 #   title:
 #   abstract:
 #   images:
@@ -30,7 +30,7 @@ items:
   bio: |
     Alex Hidalgo is the Director of Site Reliability Engineering at Nobl9 and author of Implementing Service Level Objectives. During his career he has developed a deep love for sustainable operations, proper observability, and using SLO data to drive discussions and make decisions. Alex’s previous jobs have included IT support, network security, restaurant work, t-shirt design, and hosting game shows at bars.
     When not sharing his passion for technology with others, you can find him scuba diving or watching college basketball. He lives in Brooklyn with his partner Jen and a rescue dog named Taco. Alex has a BA in philosophy from Virginia Commonwealth University.
-  role: session
+  role: presenter
   title: "Service Level Observability: Measuring Internal States with SLOs"
   abstract: |
     Observability and SLOs have aligned goals: to better understand your systems. While the former uses externalized data to understand internal states and the later focuses on the user experience, it turns out these are almost the same thing. Observe better with SLOs and SLO better with observability.
@@ -46,7 +46,7 @@ items:
     I’m a Principal Engineer at Skyscanner currently working on improving our observability to make sure travellers get a reliable and performant experience, and passionate about OpenTelemetry as way to rethink how we instrument our applications based on open standards. Previously, my focus was on performance and resource optimisation, from the browser to our Kubernetes clusters and through our CDN and AWS infrastructure. I joined Skyscanner in 2018, following the acquisition of SKIPJAQ, an automatic ML-based optimisation startup I became a part of when I moved to London. Before moving to London I worked at CERN, in Geneva, building a DB on demand system to automatically provision and manage open-source DB systems.
 
     I’m passionate about travelling and experiencing new cultures, reason I went travelling around the world for months before moving London, and a possibly a factor of why I like working at Skyscanner. When I want to relax, I don’t think there’s a better way than going into the studio and playing drums for hours.
-  role: session
+  role: presenter
   title: How to transparently migrate 300+ services to OpenTelemetry
   abstract: |
     In this talk, I want to share some details of how tracing is implemented and auto-configured at Skyscanner via common config libraries, and how this allowed us to easily migrate from X-Ray to OpenTracing and Lightstep years ago, and now allowed us to transparently migrate to OpenTelemetry with zero impact on tracing or context propagation, and with minimal developer effort.
@@ -62,12 +62,38 @@ items:
   name: Juraci Paixão Kröhling
   bio: |
     Juraci Paixão Kröhling is a software engineer at Red Hat working in the Distributed Tracing team. He’s a maintainer on the Jaeger project and contributor to the OpenTelemetry project. He has talked about distributed tracing at conferences like KubeCon, OpenSource Summit, FOSDEM, Devoxx, JavaLand, GIDS, among others.
-  role: session
+  role: presenter
   title: Sampling in Distributed Tracing
   abstract: |
     Sampling is still one of the biggest challenges in distributed tracing. While the basic concept is easy to grasp, the number of choices and their trade-offs requires learning about the techniques and your own workload. In this session, we are giving you all the knowledge required to master the sampling techniques: we’ll talk about head and tail-based sampling, as well as adaptive sampling, and we’ll wrap it up with a bonus discussion on trace aggregation. You’ll leave this session ready to implement scenarios, from the simple “probabilistic head-sampling” up to the complex “scalable tail-based sampling” using open source tools like OpenTelemetry Collector.
   handles:
     twitter: jpkrohling
+
+- id: jaana-dogan
+  name: Jaana Dogan
+  bio: |
+    Jaana Dogan is a Principal Engineer at AWS leading parts of AWS' monitoring, observability, performance and instrumentation efforts.
+  role: keynote
+  title: "KEYNOTE: OpenTelemetry at AWS"
+  abstract: |
+    AWS decided to use OpenTelemetry to unify its telemetry collection, standardize its propagation and correlation fundamentals, and utilizing OTLP on wire. In this talk, we will talk about our long-term migration path to OpenTelemetry and discuss the overall roadmap about our integrations at AWS.
+
+    - Why OpenTelemetry at AWS?
+
+    - Alignment with other observability tools and companies
+
+    - Unifying collectors
+
+    - Ingesting service telemetry data in OTLP
+
+    - Correlations and exemplars for CW, X-Ray, Elastic, Prometheus, RDS Performance Insights and more
+
+    - Missing gaps (W3C TraceContext support, CW metrics data model differences, Prometheus support)
+
+    - Future telemetry types such as profiles and eBPF
+  handles:
+    twitter: rakyll
+    linkedin: rakyll
 
 - id: mike-angstadt
   name: Mike Angstadt
@@ -75,7 +101,7 @@ items:
     Mike Angstadt is the Director of Platform Engineering at H-E-B Digital, the largest grocery retailer in the Southwest, with 350 stores and 110,000 partners across Texas & Mexico.
 
     His passion is for the humans that make all that happen — finding growth opportunities, engaging with them to discover meaningful work, ensuring high-level business objectives are clearly communicated, driving to the predictable delivery of results, and making it fun to discover customer-inspired innovation at H-E-B.
-  role: session
+  role: presenter
   title: Pragmatic Observability While Your Business Grows 300%
   abstract: |
     Wouldn’t it be great if the world stopped for us to implement observability the right way with ubiquitous adoption of the perfect instrumentation? Hate to break it to you, but the reality is that will never happen.
@@ -93,7 +119,7 @@ items:
     Dave is an engineer and technology leader at Simplebet. He's been an active member in the Elixir community since 2016, and a founding engineer at the publication The Outline.
 
     When not glued to Vim in Emacs, Dave spends his time in New York with his family and two Pomeranians.
-  role: session
+  role: presenter
   title: Betting on Observability at Simplebet
   abstract: |
     Adopting Observability can be an organizational challenge. At Simplebet, we introduced Open Telemetry and o11y successfully, then published a Case-Study on our experience with Lightstep. We will share our experience gaining traction so that you can learn how to introduce o11y at your company.
@@ -109,7 +135,7 @@ items:
   name: Eric Mustin
   bio: |
     Eric Mustin is a Software Engineer at Datadog on the APM Integrations Team, and an Approver on the OpenTelemetry-Ruby project. Previously he's worked in E-commerce and Financial Services.
-  role: session
+  role: presenter
   title: Supercharge Legacy Application Logs by Injecting OpenTelemetry Span Context
   abstract: |
     A good cook uses ingredients they have in the kitchen, and observability is no different. A good practitioner should leverage legacy telemetry, even when adopting OpenTelemetry. Learn how to leverage and correlate existing application logs with OTEL Traces by injecting Span Context into your logs.
@@ -121,14 +147,32 @@ items:
     twitter: Ericmustin
     linkedin: ericmustin
 
+- id: ricardo-ferreira
+  name: Ricardo Ferreira
+  bio: |
+    Ricardo is Principal Developer Advocate at Elastic‚ the company behind the Elastic Stack (Elasticsearch, Kibana, Beats, and Logstash), where he does community advocacy for North America. With +20 years of experience, he may have learned a thing or two about Distributed Systems, Databases, Streaming Data, and Big Data. Before Elastic, he worked for other vendors such as Confluent, Oracle, Red Hat, and different consulting firms. These days Ricardo spends most of his time making developers fall in love with technology.
+
+    While not working, he loves barbecuing in his backyard with his family and friends, where he gets the chance to talk about anything that is not IT-related. He lives in North Carolina, USA, with his wife and son."
+  role: presenter
+  title: Hidden Secrets about Instrumenting JVMs for OpenTelemetry
+  abstract: |
+    OpenTelemetry is the new-kid-on-the-block in API to instrument distributed applications to send telemetry data (logs, metrics, and traces) to backends for visualization and monitoring. It was created to be a de-facto replacement to standards such as OpenTracing and OpenCensus.
+
+    The support for Java in OpenTelemetry is generous. It supports both automatic and manual instrumentation. With automatic instrumentation, developers can have known libraries and frameworks instrumented without writing a single code line. Manual support also allows them to decide which parts of the code need instrumentation, and there is a rich set of APIs available to use.
+
+    This talk will open the pandora box for both options. It will reveal which knobs are available to use that make a tremendous difference in how the applications report telemetry data ‚Äî both in terms of performance and details. Knowing these hidden secrets will grant developers fine control over their applications and how observability stacks show them to the world.
+  handles:
+    twitter: riferrei
+    linkedin: riferrei
+
 - id: rob-skillington
   name: Rob Skillington
   bio: |
     Rob Skillington is the co-founder and CTO of Chronosphere. He was previously at Uber, where he was the technical lead of the Observability team and creator of M3DB, the time series database at the core of M3. He has worked in both large engineering organizations such as Microsoft and Groupon and a handful of startups. He and his family are based in NYC where he mainly spends weekends exploring all of New York‚Äôs playgrounds and also following his wife‚Äôs jazz adventures.
-  role: session
+  role: presenter
   title: Building and running a world-class observability function
   abstract: |
-    "Observability teams as a centralized function within SRE or IT Operations are a relatively recent phenomenon. These teams are responsible for managing the monitoring and observability toolset and empowering developer and engineering teams to push the right data into the systems to get back the information they need. Central observability teams must walk a fine line between controlling cardinality and cost associated with data growth while also providing a complete dataset for quick troubleshooting and diagnostics.
+    Observability teams as a centralized function within SRE or IT Operations are a relatively recent phenomenon. These teams are responsible for managing the monitoring and observability toolset and empowering developer and engineering teams to push the right data into the systems to get back the information they need. Central observability teams must walk a fine line between controlling cardinality and cost associated with data growth while also providing a complete dataset for quick troubleshooting and diagnostics.
 
     This session will explore the people and process side of observability with lessons learned from the community, including:
 
@@ -140,7 +184,61 @@ items:
 
     * **Roles and responsibilities:** Who is responsible for running centralized observability functions? How do you know you need a dedicated team and how many people should be on it?
 
-    * **Centralized vs distributed teams:** How to manage the balance between individual service teams unique requirements and the need for a centralized and consistent view for SREs."
+    * **Centralized vs distributed teams:** How to manage the balance between individual service teams unique requirements and the need for a centralized and consistent view for SREs.
   handles:
     twitter: roskilli
     linkedin: robskillington
+
+- id: ted-young
+  name: Ted Young
+  bio: |
+    Ted is one of the OpenTelemetry co-founders, currently serving as a member of the OpenTelemetry Governance Committee. For the past twenty years, he has worked on visual effects, climate justice, and distributed operating systems. Computers made him cry for all twenty of those years, which is why he now focuses on observability. He lives on a tiny farm in Portland, Oregon.
+  role: presenter
+  title: The value and design of OpenTelemetry
+  abstract: |
+    ## The architecture of OpenTelemetry is no accident.
+
+    Telemetry is a cross-cutting concern. Millions of lines of instrumentation need to be written. Popular libraries containing native instrumentation will be composed into thousands of applications. It is critical that instrumentation should never break or cause a dependency conflict. **Stability is incredibly important.**
+
+    At the same time, the world of observability is rapidly evolving. You don't want to be stuck with a floppy disk in the age of thumb drives. And even thumb drives are yesterday's news. **Flexibility and choice are incredibly important.**
+
+    We also live in an age of heightened security and rapid deployment. It is important to be able to consume patches as quickly as possible, and never be blocked on an update. **Upgrading to the current version is incredibly important.**
+
+    These three important requirements ‚Äì stability, flexibility, and upgrading ‚Äì are hard challenges to meet individually, and impossible to meet together without careful thought. Learn how the design of OpenTelemetry, focused on a clean separation of concerns, future proofs your observability system.
+
+    In this talk, we will go over the architectural design and motivations of the OpenTelemetry project. By the end, you'll see why these design choices are so important, and may even wish that more libraries took this clean approach to building software.
+  handles:
+    twitter: tedsuo
+    linkedin: ted-young
+
+- id: tim-tischler
+  name: Tim Tischler
+  bio: |
+    Tim Tischler is Principal Engineer at Wayfair, and previously was a Site Reliability Champion at New Relic, Infrastructure at Nike, and engineering at HomeAway/VRBO. Observability is one of his driving concerns and he believes that "socio-technical" needs to be one of the big buzzwords of the next decade. He is also enrolled in the Human Factors and System Safety program at Lund University, though on hiatus during COVID.
+  role: presenter
+  title: Socio-technical Graphs (or Who Owns Kafka cluster C13 or Does It Even Exist?)
+  abstract: |
+    As we improve our observability of our technical systems, what about our socio-technical systems? Building and maintaining a graph of components and service s along with the teams and the people who run them needs to be the next wave of organizational observability.
+
+    As more tools start to include the humans along the technology, what happens when you have a queryable graph database that includes relationships between technology and humans? What could you do if you could query what teams commit into the mono-repo the most (not just which people)? Or if you could see what teams own services downstream of a particular service? What if you could catch when a service becomes an orphan at the moment when it re-org happens instead of catching it years later?
+
+    El Dorado, an internal tool created by Ward Cunningham at New Relic, Backstage, an open source project from Spotify, data.world, an interconnected data catalog as a service and Jeli.io, an incident analysis tool from the resilience engineering world are all examples of projects that are trying to give us observability not just into the technical system, but into the socio-technical system.
+
+    We are just at the beginning of these tools and we'll be discussing them and what superpowers they will be able to unlock in the years to come.
+  handles:
+    twitter: timotheo
+    linkedin: timtischler
+
+- id: steve-flanders
+  name: Steve Flanders
+  bio: |
+    Steve Flanders is a Director of Engineering at Splunk responsible for Observability‚ Getting Data In, which includes contributions to the CNCF OpenTelemetry open-source project. Previously, he was the Head of Product and Experience at Omnition, which was acquired by Splunk. Prior to Omnition, he was the Global Engineering Manager for log analytics and data collection at VMware. Steve has an extensive background in software development, user experience, product design, and operational management. He has a strong focus on product usability, data-driven decision-making, and agile development processes. He is also the author of SFlanders.net, a technology-centric weblog.
+  role: presenter
+  title: Exporting Data with OpenTelemetry
+  abstract: |
+    OpenTelemetry provides an open-source and vendor-agnostic way to generate, process, and emit telemetry data. The project provides an implementation that includes language-specific instrumentation libraries as well as a collector which can be deployed as an agent or gateway service. End-users may wonder how they should export data generated from OpenTelemetry. For example, should applications export data directly to a back-end or go through either an agent or gateway service? Does the answer change for serverless architectures or real-user monitoring?
+
+    This session will cover the available exporting mechanisms and architecture considerations. Topics including batching, compression, encryption, queuing, retry, security, and metadata enrichment will be covered. In addition, overhead, delays, and user experience will be discussed. By the end of this session, users should be aware of the available options and trade-offs depending on the configuration decisions.
+  handles:
+    twitter: smflanders
+    linkedin: steveflanders
