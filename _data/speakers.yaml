@@ -15,7 +15,8 @@ items:
   name: Christina Yakomin
   bio: |
     Christina is the Senior Technical Lead for Site Reliability Engineering in Vanguard’s Chief Technology Office. She has worked at the company’s Malvern, PA headquarters since graduating from Villanova University with an undergraduate degree in Computer Science. Throughout her career, she has developed an expansive skill set in front- and back-end web development, as well as cloud infrastructure and automation, with a specialization in Site Reliability Engineering. She has earned several Amazon Web Services certifications, including the Solutions Architect - Professional. Christina has also worked closely with the Women’s Initiative for Leadership Success at Vanguard, both internally at the company and externally in the local community, to further the career advancement of women and girls - in particular within the tech industry. In her spare time (and when it is safe to do so!), Christina is passionate about traveling; she has visited over 20 different countries and 25 U.S. states so far!
-  role: keynote
+  role: presenter
+  keynote: Day 1
   title: "KEYNOTE: Iterative Enterprise SRE Transformation"
   abstract: |
     It’s easy to get discouraged reading books about industry best practices that say things like “always test in prod!” and “10 deploys a day!!” At times, they can make the goal of being a high-functioning DevOps organization feel out-of-reach for large enterprises, where changes to the way we operate take time to roll out. A few years ago, Vanguard started its journey to adopt Site Reliability Engineering across the IT division, and that transformation effort is still underway today. In this talk, we will share where we started, how far we’ve come since then, and all of the steps we’ve taken along the way, as we’ve worked to evangelize changes to the way we measure availability, enable experimentation, leverage highly-available architecture patterns, and learn from failure.
@@ -47,6 +48,7 @@ items:
 
     I’m passionate about travelling and experiencing new cultures, reason I went travelling around the world for months before moving London, and a possibly a factor of why I like working at Skyscanner. When I want to relax, I don’t think there’s a better way than going into the studio and playing drums for hours.
   role: presenter
+  panel: day1
   title: How to transparently migrate 300+ services to OpenTelemetry
   abstract: |
     In this talk, I want to share some details of how tracing is implemented and auto-configured at Skyscanner via common config libraries, and how this allowed us to easily migrate from X-Ray to OpenTracing and Lightstep years ago, and now allowed us to transparently migrate to OpenTelemetry with zero impact on tracing or context propagation, and with minimal developer effort.
@@ -58,22 +60,12 @@ items:
     twitter: DBlancoGomez
     linkedin: danielgblanco86
 
-- id: juraci-paixao-krohling
-  name: Juraci Paixão Kröhling
-  bio: |
-    Juraci Paixão Kröhling is a software engineer at Red Hat working in the Distributed Tracing team. He’s a maintainer on the Jaeger project and contributor to the OpenTelemetry project. He has talked about distributed tracing at conferences like KubeCon, OpenSource Summit, FOSDEM, Devoxx, JavaLand, GIDS, among others.
-  role: presenter
-  title: Sampling in Distributed Tracing
-  abstract: |
-    Sampling is still one of the biggest challenges in distributed tracing. While the basic concept is easy to grasp, the number of choices and their trade-offs requires learning about the techniques and your own workload. In this session, we are giving you all the knowledge required to master the sampling techniques: we’ll talk about head and tail-based sampling, as well as adaptive sampling, and we’ll wrap it up with a bonus discussion on trace aggregation. You’ll leave this session ready to implement scenarios, from the simple “probabilistic head-sampling” up to the complex “scalable tail-based sampling” using open source tools like OpenTelemetry Collector.
-  handles:
-    twitter: jpkrohling
-
 - id: jaana-dogan
   name: Jaana Dogan
   bio: |
     Jaana Dogan is a Principal Engineer at AWS leading parts of AWS' monitoring, observability, performance and instrumentation efforts.
-  role: keynote
+  role: presenter
+  keynote: Day 1
   title: "KEYNOTE: OpenTelemetry at AWS"
   abstract: |
     AWS decided to use OpenTelemetry to unify its telemetry collection, standardize its propagation and correlation fundamentals, and utilizing OTLP on wire. In this talk, we will talk about our long-term migration path to OpenTelemetry and discuss the overall roadmap about our integrations at AWS.
@@ -95,6 +87,17 @@ items:
     twitter: rakyll
     linkedin: rakyll
 
+- id: juraci-paixao-krohling
+  name: Juraci Paixão Kröhling
+  bio: |
+    Juraci Paixão Kröhling is a software engineer at Red Hat working in the Distributed Tracing team. He’s a maintainer on the Jaeger project and contributor to the OpenTelemetry project. He has talked about distributed tracing at conferences like KubeCon, OpenSource Summit, FOSDEM, Devoxx, JavaLand, GIDS, among others.
+  role: presenter
+  title: Sampling in Distributed Tracing
+  abstract: |
+    Sampling is still one of the biggest challenges in distributed tracing. While the basic concept is easy to grasp, the number of choices and their trade-offs requires learning about the techniques and your own workload. In this session, we are giving you all the knowledge required to master the sampling techniques: we’ll talk about head and tail-based sampling, as well as adaptive sampling, and we’ll wrap it up with a bonus discussion on trace aggregation. You’ll leave this session ready to implement scenarios, from the simple “probabilistic head-sampling” up to the complex “scalable tail-based sampling” using open source tools like OpenTelemetry Collector.
+  handles:
+    twitter: jpkrohling
+
 - id: mike-angstadt
   name: Mike Angstadt
   bio: |
@@ -102,6 +105,7 @@ items:
 
     His passion is for the humans that make all that happen — finding growth opportunities, engaging with them to discover meaningful work, ensuring high-level business objectives are clearly communicated, driving to the predictable delivery of results, and making it fun to discover customer-inspired innovation at H-E-B.
   role: presenter
+  panel: day1
   title: Pragmatic Observability While Your Business Grows 300%
   abstract: |
     Wouldn’t it be great if the world stopped for us to implement observability the right way with ubiquitous adoption of the perfect instrumentation? Hate to break it to you, but the reality is that will never happen.
@@ -112,6 +116,15 @@ items:
   handles:
     twitter: mike_angstadt
     linkedin: mikeangstadt
+
+- id: alolita-sharma
+  name: Alolita Sharma
+  bio: |
+    Alolita Sharma is a Principal Technologist at Amazon Web Services. She leads open source strategy and engineering for observability and search projects such as OpenTelemetry, Prometheus, Cortex, Grafana, Apache Lucene and Open Distro for Elasticsearch. Two decades of doing open source continue to inspire her. Alolita has built and led engineering teams at Wikipedia, Twitter, PayPal and IBM. She serves on the board of Unicode Consortium and the OpenTelemetry Governance Committee. She has served on the boards of the Open Source Initiative (OSI) and SFLC.in. You can find her on Twitter @alolita.
+  role: panelist
+  panel: day1
+  handles:
+    twitter: alolita
 
 - id: dave-lucia
   name: Dave Lucia
@@ -189,6 +202,18 @@ items:
     twitter: roskilli
     linkedin: robskillington
 
+- id: shelby-spees
+  name: Shelby Spees
+  bio: |
+    Shelby is a Developer Advocate at Honeycomb, where she helps developers better understand their services in production in order to deliver more business value. Before joining Honeycomb, Shelby worked on applications, build pipelines, infrastructure, and other reliability efforts. She‚Äôs dedicated to improving access and equity in tech as well as to helping people feel good about their work.
+
+    Shelby lives in Los Angeles, CA, where she enjoys doing karaoke with her pitbull, Nova.
+  role: panelist
+  panel: day1
+  handles:
+    twitter: shelbyspees
+    linkedin: shelbyspees
+
 - id: ted-young
   name: Ted Young
   bio: |
@@ -242,3 +267,13 @@ items:
   handles:
     twitter: smflanders
     linkedin: steveflanders
+
+- id: michael-hausenblas
+  name: Michael Hausenblas
+  bio: |
+    Michael is an Open Source Product Developer Advocate at Amazon Web Services (AWS) and serves as a Cloud Native Ambassador at CNCF, focusing on observability as well as service meshes. Before AWS, Michael worked at Red Hat, Mesosphere, MapR, and in two research institutions in Ireland and Austria.
+  role: panelist
+  panel: day1
+  handles:
+    twitter: mhausenblas
+    linkedin: mhausenblas

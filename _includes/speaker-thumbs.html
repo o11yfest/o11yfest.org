@@ -1,11 +1,8 @@
-<div style="text-align:center">
 <div class="flexbox">
-  {% assign speakers = site.data.speakers.items %}
-  {% for speaker in speakers %}
-    <div style="max-width:150px;min-height:230px;text-align:center;margin:1em;">
-      <a href="/speakers/{{ speaker.id }}"><img src="/assets/images/speakers/thumbs/{{ speaker.id }}.png" title="{{ speaker.name }}" style="width:100%;border-radius:50%;"><br />{{ speaker.name }}</a>
-    </div>
+  {% assign persons = site.data.speakers.items %}
+  {% for person in persons %}
+    {% assign roledir = "speakers" %}
+    {% if person.role == "panelist" %}{% assign roledir = "panelists" %}{% endif %}
+    {% include speaker-thumb.html person=person %}
   {% endfor %}
-</div>
-(more coming soon as additional panelists confirm)
 </div>

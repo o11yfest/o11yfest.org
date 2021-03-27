@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+{% assign panelist = site.data.speakers.items | where_exp:"item", "item.id == page.id" | first %}
+
+<div class="flexbox">
+  {% include person-left.html person=panelist %}
+  <div style="min-width:300px;flex:1;align-self:flex-start;">
+    <div class="flexbox" style="flex-direction: column;">
+      <div style="align-self:flex-start;">
+        <h1>{{ site.data.day1panel.title }}</h1>
+        <p>
+          {{ site.data.day1panel.description }}
+        </p>
+      </div>
+      <div style="flex:1;align-self:flex-start;">
+        <h3>Other Panelists</h3>
+        <div class="flexbox" style="">
+          {% assign others = site.data.speakers.items | where_exp:"item", "item.panel == 'day1'" %}
+          {% for other in others %}
+            {% if other.id != panelist.id %}
+              {% include speaker-thumb.html person=other %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include person-bio.html person=panelist %}
