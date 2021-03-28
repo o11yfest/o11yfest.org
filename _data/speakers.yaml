@@ -44,20 +44,16 @@ items:
 - id: daniel-gomez-blanco
   name: Daniel Gomez Blanco
   bio: |
-    I’m a Principal Engineer at Skyscanner currently working on improving our observability to make sure travellers get a reliable and performant experience, and passionate about OpenTelemetry as way to rethink how we instrument our applications based on open standards. Previously, my focus was on performance and resource optimisation, from the browser to our Kubernetes clusters and through our CDN and AWS infrastructure. I joined Skyscanner in 2018, following the acquisition of SKIPJAQ, an automatic ML-based optimisation startup I became a part of when I moved to London. Before moving to London I worked at CERN, in Geneva, building a DB on demand system to automatically provision and manage open-source DB systems.
-
-    I’m passionate about travelling and experiencing new cultures, reason I went travelling around the world for months before moving London, and a possibly a factor of why I like working at Skyscanner. When I want to relax, I don’t think there’s a better way than going into the studio and playing drums for hours.
+    Dan is a Principal Engineer at Skyscanner, leading their observability transformation to ensure travellers get a reliable and performant experience when booking their next holiday. He's a big advocate of open standards and CNCF projects like OpenTelemetry to back the instrumentation and collection of telemetry data. He has worked both in big and small companies and institutions, from CERN to SKIPJAQ, always building software and infrastructure to reduce the cognitive load associated with supporting production services. 
   role: presenter
   panel: day1
   title: How to transparently migrate 300+ services to OpenTelemetry
   abstract: |
-    In this talk, I want to share some details of how tracing is implemented and auto-configured at Skyscanner via common config libraries, and how this allowed us to easily migrate from X-Ray to OpenTracing and Lightstep years ago, and now allowed us to transparently migrate to OpenTelemetry with zero impact on tracing or context propagation, and with minimal developer effort.
+    In this talk, Dan will share some details of how tracing is implemented and auto-configured at Skyscanner via common config libraries, how this helped them to easily migrate from X-Ray to OpenTracing and Lightstep years ago, and how it now allowed them to transparently migrate to OpenTelemetry with zero impact on tracing or context propagation, and with minimal developer effort.
 
-    At Skyscanner, we have over 300 services written in Java, Node and Python which were previously exporting spans to Lightstep Satellites and propagating trace context with OT HTTP headers. Migrating to OpenTelemetry presented a few challenges, like minimising our asks from service owners, or making sure that context could still be propagated between services that had migrated and services that hadn’t. Combining the use of OpenTracing shims, multiple trace context propagators, and OpenTelemetry Collectors, we managed to execute this migration giving engineers a minimal friction migration path.
-
-    Migrating to OpenTelemetry paved the way to multiple improvements in our instrumentation libraries, which can now benefit from well-supported auto-instrumentation and future-proof APIs while remaining vendor agnostic.
+    Migrating over 300 Java, Python and Node services, owned by multiple teams, from OpenTracing to OpenTelemetry presented a few challenges. These included minimising the asks from service owners, or making sure that context could still be propagated between services that had migrated and services that hadn’t. Combining the use of OpenTracing shims, multiple trace context propagators, and OpenTelemetry Collectors, they managed to provide engineers a minimal friction migration path. Dan will also share how OpenTelemetry paved the way to multiple improvements in their instrumentation libraries, which can now benefit from well-supported auto-instrumentation and future-proof APIs while they remaining vendor agnostic.
   handles:
-    twitter: DBlancoGomez
+    twitter: dan_gomezblanco
     linkedin: danielgblanco86
 
 - id: jaana-dogan
