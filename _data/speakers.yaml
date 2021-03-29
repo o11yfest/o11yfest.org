@@ -44,7 +44,7 @@ items:
 - id: daniel-gomez-blanco
   name: Daniel Gomez Blanco
   bio: |
-    Dan is a Principal Engineer at Skyscanner, leading their observability transformation to ensure travellers get a reliable and performant experience when booking their next holiday. He's a big advocate of open standards and CNCF projects like OpenTelemetry to back the instrumentation and collection of telemetry data. He has worked both in big and small companies and institutions, from CERN to SKIPJAQ, always building software and infrastructure to reduce the cognitive load associated with supporting production services. 
+    Dan is a Principal Engineer at Skyscanner, leading their observability transformation to ensure travellers get a reliable and performant experience when booking their next holiday. He's a big advocate of open standards and CNCF projects like OpenTelemetry to back the instrumentation and collection of telemetry data. He has worked both in big and small companies and institutions, from CERN to SKIPJAQ, always building software and infrastructure to reduce the cognitive load associated with supporting production services.
   role: presenter
   panel: day1
   title: How to transparently migrate 300+ services to OpenTelemetry
@@ -264,12 +264,12 @@ items:
     twitter: smflanders
     linkedin: steveflanders
 
-- id: michael-hausenblas
-  name: Michael Hausenblas
-  bio: |
-    Michael is an Open Source Product Developer Advocate at Amazon Web Services (AWS) and serves as a Cloud Native Ambassador at CNCF, focusing on observability as well as service meshes. Before AWS, Michael worked at Red Hat, Mesosphere, MapR, and in two research institutions in Ireland and Austria.
-  role: panelist
-  panel: day1
-  handles:
-    twitter: mhausenblas
-    linkedin: mhausenblas
+# - id: michael-hausenblas
+#   name: Michael Hausenblas
+#   bio: |
+#     Michael is an Open Source Product Developer Advocate at Amazon Web Services (AWS) and serves as a Cloud Native Ambassador at CNCF, focusing on observability as well as service meshes. Before AWS, Michael worked at Red Hat, Mesosphere, MapR, and in two research institutions in Ireland and Austria.
+#   role: panelist
+#   panel: day1
+#   handles:
+#     twitter: mhausenblas
+#     linkedin: mhausenblas
