@@ -1,0 +1,28 @@
+name: Development workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build Site
+      - uses: actions/checkout@v2
+      - uses: helaili/jekyll-action@2.0.5
+        env:
+          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+
+      - run: bundle exec jekyll build
+
+      - name: Deploy to netlify
+        uses: netlify/actions/cli@master
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.DEV_NETLIFY_SITE_ID }}
+        with:
+          args: deploy --dir=build --prod
+          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
