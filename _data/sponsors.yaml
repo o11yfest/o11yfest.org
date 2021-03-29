@@ -7,6 +7,10 @@ items:
   level: premiere
   logo: honeycomb.png
   link: https://honeycomb.io
+- name: Cribl
+  level: premiere
+  logo: cribl.png
+  link: https://cribl.io
 - name: StackPulse
   level: contributor
   logo: stackpulse.png
