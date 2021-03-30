@@ -13,7 +13,7 @@ This year, we are targeting between 500-1000 attendees. Your help to socialize t
 Attendees of this event are typically DevOps practitioners in a wide variety of industries
  and geographic locations. They often value meaningful interactions and active
  involvement by engineers from sponsors rather over sales pitches and junk email spam.
- 
+
 # Sponsorship Options
 
 |                                         | [**Premiere**](#premiere-sponsorship-details)<br />(SOLD OUT) | [**Contributor**](#contributor-sponsorship-details)<br />(STILL OPEN!) |
@@ -64,13 +64,7 @@ In keeping with the spirit and values of the conference, sponsors who donate a m
 
 Suggested Donation Beneficiaries:
 
-- Trans Lifeline
-- Black Girls Code
-- YearUp
-- Resilient Coders
-- Feeding America: US Hunger Relief Organization
-- Get Us PPE – Personal Protective Equipment to those who need it most
-- KodeConnect
+{% include good-cause-list.html %}
 
 If you have alternative non-profit charities or causes you would like to suggest, please ask the organizers to review and approve it for inclusion into this list BEFORE donating. Donations that occur before engaging the event organizers cannot be retroactively counted towards a sponsorship since the event is encouraging net-new donation revenue.
 Questions?

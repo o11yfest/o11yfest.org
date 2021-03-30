@@ -15,3 +15,7 @@ items:
   level: contributor
   logo: stackpulse.png
   link: https://stackpulse.io
+- name: Harness
+  level: contributor
+  logo: harness.png
+  link: https://harness.io
