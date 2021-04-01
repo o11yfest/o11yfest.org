@@ -1,3 +1,4 @@
+{% assign is_bannerable_page=true %}
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
@@ -5,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% if page.permalink and page.permalink contains "/speakers/" %}
+    {% assign is_bannerable_page=false %}
     {% assign speaker = site.data.speakers.items | where_exp:"item", "item.id == page.id" | first %}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@o11yfest">
@@ -12,6 +14,14 @@
     <meta name="twitter:title" content="{{ speaker.name }} at o11yfest May 17-18">
     <meta name="twitter:description" content="{{ page.title }}: {{ speaker.bio }}">
     <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/{{ speaker.id }}.png">
+    {% endif %}
+    {% if is_bannerable_page==true %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@o11yfest">
+    <meta name="twitter:creator" content="@o11yfest">
+    <meta name="twitter:title" content="Join us at o11yfest May 17-18">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:image" content="/assets/images/banner_platforms.png">
     {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
@@ -71,6 +81,11 @@
 
     <div class="container">
       <section id="main_content">
+        {% if is_bannerable_page %}
+        <img id="banner-social" src="/assets/images/banner_platforms.png"
+              style="width:100%;border-radius:2em;visibility:hidden;display:none;"
+              title="o11yfest Online, May 17-18" />
+        {% endif %}
         {{ content }}
       </section>
     </div>
