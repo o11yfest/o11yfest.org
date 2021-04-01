@@ -1,0 +1,18 @@
+{% assign sponsor = include.sponsor %}
+<div style="min-width:200px;width:25%;margin:2em;float:left;text-align:center;align-self:flex-start;">
+  <a href="{{ sponsor.external_link }}"><img id="sponsor-thumb"
+      class="sponsor-logo-{{ sponsor.level }}" src="/assets/images/sponsors/socials/{{ sponsor.logo }}" title="{{ sponsor.name }}"
+      style="width:100%;border-radius:2em;visibility:hidden;"><br />{{ sponsor.external_link }}</a>
+  <div class="flexbox">
+    <a class="flexbox-button" href="{{ site.registration_link }}" style="font-size:0.9em;">Attend this Event</a>
+    <a class="flexbox-button" href="/sponsor" style="font-size:0.9em;">Sponsor by<br />Donating Too!</a>
+  </div>
+</div>
+<script type="text/javascript">
+  window.onloadqueue=(window.onloadqueue||[]).concat([function () {
+    $('#sponsor-thumb').attr('src','/assets/images/sponsors/{{ sponsor.logo }}')
+    [0].onload=function() {
+      $(this).css({'visibility':'visible'})
+    }
+  }]);
+</script>

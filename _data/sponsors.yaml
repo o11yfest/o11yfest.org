@@ -1,21 +1,31 @@
 items:
-- name: Lightstep
+- id: lightstep
+  name: Lightstep
   level: premiere
   logo: lightstep.png
-  link: https://lightstep.com
-- name: Honeycomb
-  level: premiere
-  logo: honeycomb.png
-  link: https://honeycomb.io
-- name: Cribl
+  link: /sponsors/lightstep
+  external_link: https://lightstep.com
+# - id: honeycomb
+#   name: Honeycomb
+#   level: premiere
+#   logo: honeycomb.png
+#   external_link: https://honeycomb.io
+#   link: /sponsors/honeycomb
+- id: cribl
+  name: Cribl
   level: premiere
   logo: cribl.png
-  link: https://cribl.io
-- name: StackPulse
+  external_link: https://cribl.io
+  link: /sponsors/cribl
+- id: stackpulse
+  name: StackPulse
   level: contributor
   logo: stackpulse.png
-  link: https://stackpulse.io
-- name: Harness
+  external_link: https://stackpulse.io
+  link: /sponsors/stackpulse
+- id: harness
+  name: Harness
   level: contributor
   logo: harness.png
-  link: https://harness.io
+  external_link: https://harness.io
+  link: /sponsors/harness
