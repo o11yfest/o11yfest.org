@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+{% assign sponsor = site.data.sponsors.items | where_exp:"item", "item.id == page.id" | first %}
+
+<div class="flexbox">
+  {% include sponsor-left.html sponsor=sponsor %}
+  <div style="min-width:300px;flex:1;align-self:flex-begin;">
+
+    <h3>{{ sponsor.name }} is a {{ sponsor.level }} sponsor of o11yfest!</h3>
+
+{% if sponsor.level == "premiere" %}
+    <p>
+Their financial support:
+<ul>
+<li>Has been pivotal to bootstrapping the logistics of this conference</li>
+<li>Supports important conference details like paying for live captioning</li>
+<li>Ensures a future for the next time this conference happens</li>
+</ul>
+They also have provided additional support for:
+<ul>
+<li>Email and social promotion of this event</li>
+<li>Breakout logistics</li>
+</ul>
+    </p>
+{% endif %}
+
+{% if sponsor.level == "contributor" %}
+    <p>
+Their donation to one of our approved good causes demonstrates their commitment
+ to ethical technology, our human community, and the spirit of this event! They
+ donated a minimum of $2,000 to one or more of the following causes:
+
+ {% capture good_cause_list_md %}{% include good-cause-list.html %}{% endcapture %}
+ {{ good_cause_list_md | markdownify }}
+
+    </p>
+{% endif %}
+
+The organizers can't thank {{ sponsor.name }} enough!
+
+    {{ content }}
+
+  </div>
+</div>
