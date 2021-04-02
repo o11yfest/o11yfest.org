@@ -29,3 +29,9 @@ items:
   logo: harness.png
   external_link: https://harness.io
   link: /sponsors/harness
+- id: chronosphere
+  name: Chronosphere
+  level: contributor
+  logo: chronosphere.png
+  external_link: https://chronosphere.io
+  link: /sponsors/chronosphere
