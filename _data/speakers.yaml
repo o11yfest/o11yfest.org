@@ -14,14 +14,14 @@ items:
 - id: christina-yakomin
   name: Christina Yakomin
   bio: |
-    Christina is the Senior Technical Lead for Site Reliability Engineering in Vanguard’s Chief Technology Office. She has worked at the company’s Malvern, PA headquarters since graduating from Villanova University with an undergraduate degree in Computer Science. Throughout her career, she has developed an expansive skill set in front- and back-end web development, as well as cloud infrastructure and automation, with a specialization in Site Reliability Engineering. She has earned several Amazon Web Services certifications, including the Solutions Architect - Professional. Christina has also worked closely with the Women’s Initiative for Leadership Success at Vanguard, both internally at the company and externally in the local community, to further the career advancement of women and girls - in particular within the tech industry. In her spare time (and when it is safe to do so!), Christina is passionate about traveling; she has visited over 20 different countries and 25 U.S. states so far!
+    Christina is the Senior Technical Lead for Site Reliability Engineering in Vanguard's Chief Technology Office. She has worked at the company's Malvern, PA headquarters since graduating from Villanova University with an undergraduate degree in Computer Science. Throughout her career, she has developed an expansive skill set in front- and back-end web development, as well as cloud infrastructure and automation, with a specialization in Site Reliability Engineering. She has earned several Amazon Web Services certifications, including the Solutions Architect - Professional. Christina has also worked closely with the Women's Initiative for Leadership Success at Vanguard, both internally at the company and externally in the local community, to further the career advancement of women and girls - in particular within the tech industry. In her spare time (and when it is safe to do so!), Christina is passionate about traveling; she has visited over 20 different countries and 25 U.S. states so far!
   role: presenter
   keynote: Day 1
   title: "KEYNOTE: Iterative Enterprise SRE Transformation"
   abstract: |
-    It’s easy to get discouraged reading books about industry best practices that say things like “always test in prod!” and “10 deploys a day!!” At times, they can make the goal of being a high-functioning DevOps organization feel out-of-reach for large enterprises, where changes to the way we operate take time to roll out. A few years ago, Vanguard started its journey to adopt Site Reliability Engineering across the IT division, and that transformation effort is still underway today. In this talk, we will share where we started, how far we’ve come since then, and all of the steps we’ve taken along the way, as we’ve worked to evangelize changes to the way we measure availability, enable experimentation, leverage highly-available architecture patterns, and learn from failure.
+    It's easy to get discouraged reading books about industry best practices that say things like "always test in prod!" and "10 deploys a day!!" At times, they can make the goal of being a high-functioning DevOps organization feel out-of-reach for large enterprises, where changes to the way we operate take time to roll out. A few years ago, Vanguard started its journey to adopt Site Reliability Engineering across the IT division, and that transformation effort is still underway today. In this talk, we will share where we started, how far we've come since then, and all of the steps we've taken along the way, as we've worked to evangelize changes to the way we measure availability, enable experimentation, leverage highly-available architecture patterns, and learn from failure.
 
-    In this presentation, we’ll focus primarily on the topic of how we monitor and measure availability - developing SLIs and SLOs, managing an error budget, leveraging Honeycomb for observability. We’ll also touch on other aspects of our SRE transformation at a higher level, including home-grown tools for self-service chaos engineering, self-service load testing, emerging cloud platforms (including serverless), proactive failure modes and effects analysis, and blameless post-incident reviews.
+    In this presentation, we'll focus primarily on the topic of how we monitor and measure availability - developing SLIs and SLOs, managing an error budget, leveraging Honeycomb for observability. We'll also touch on other aspects of our SRE transformation at a higher level, including home-grown tools for self-service chaos engineering, self-service load testing, emerging cloud platforms (including serverless), proactive failure modes and effects analysis, and blameless post-incident reviews.
   handles:
     twitter: srechristina
     linkedin: christina-yakomin
@@ -29,14 +29,14 @@ items:
 - id: alex-hidalgo
   name: Alex Hidalgo
   bio: |
-    Alex Hidalgo is the Director of Site Reliability Engineering at Nobl9 and author of Implementing Service Level Objectives. During his career he has developed a deep love for sustainable operations, proper observability, and using SLO data to drive discussions and make decisions. Alex’s previous jobs have included IT support, network security, restaurant work, t-shirt design, and hosting game shows at bars.
+    Alex Hidalgo is the Director of Site Reliability Engineering at Nobl9 and author of Implementing Service Level Objectives. During his career he has developed a deep love for sustainable operations, proper observability, and using SLO data to drive discussions and make decisions. Alex's previous jobs have included IT support, network security, restaurant work, t-shirt design, and hosting game shows at bars.
     When not sharing his passion for technology with others, you can find him scuba diving or watching college basketball. He lives in Brooklyn with his partner Jen and a rescue dog named Taco. Alex has a BA in philosophy from Virginia Commonwealth University.
   role: presenter
   title: "Service Level Observability: Measuring Internal States with SLOs"
   abstract: |
     Observability and SLOs have aligned goals: to better understand your systems. While the former uses externalized data to understand internal states and the later focuses on the user experience, it turns out these are almost the same thing. Observe better with SLOs and SLO better with observability.
 
-    In 2021 there are few terms that see as much excitement in the tech world as “observability” and “service level objectives.” Unfortunately most of this is the work of marketing departments who don’t really understand either. In this talk I’ll outline what observability actually means starting with the term’s roots in control theory, talk about the origins of reliability engineering going back to the 1940s, and then describe modern and practical approaches for how observability and reliability engineering can be used for complex computer systems via better telemetry and service level objectives.
+    In 2021 there are few terms that see as much excitement in the tech world as "observability" and "service level objectives." Unfortunately most of this is the work of marketing departments who don't really understand either. In this talk I'll outline what observability actually means starting with the term's roots in control theory, talk about the origins of reliability engineering going back to the 1940s, and then describe modern and practical approaches for how observability and reliability engineering can be used for complex computer systems via better telemetry and service level objectives.
   handles:
     twitter: ahidalgosre
     linkedin: alex-i-am-not-looking-for-a-job-please-stop-hidalgo-6823971b7
@@ -51,7 +51,7 @@ items:
   abstract: |
     In this talk, Dan will share some details of how tracing is implemented and auto-configured at Skyscanner via common config libraries, how this helped them to easily migrate from X-Ray to OpenTracing and Lightstep years ago, and how it now allowed them to transparently migrate to OpenTelemetry with zero impact on tracing or context propagation, and with minimal developer effort.
 
-    Migrating over 300 Java, Python and Node services, owned by multiple teams, from OpenTracing to OpenTelemetry presented a few challenges. These included minimising the asks from service owners, or making sure that context could still be propagated between services that had migrated and services that hadn’t. Combining the use of OpenTracing shims, multiple trace context propagators, and OpenTelemetry Collectors, they managed to provide engineers a minimal friction migration path. Dan will also share how OpenTelemetry paved the way to multiple improvements in their instrumentation libraries, which can now benefit from well-supported auto-instrumentation and future-proof APIs while they remaining vendor agnostic.
+    Migrating over 300 Java, Python and Node services, owned by multiple teams, from OpenTracing to OpenTelemetry presented a few challenges. These included minimising the asks from service owners, or making sure that context could still be propagated between services that had migrated and services that hadn't. Combining the use of OpenTracing shims, multiple trace context propagators, and OpenTelemetry Collectors, they managed to provide engineers a minimal friction migration path. Dan will also share how OpenTelemetry paved the way to multiple improvements in their instrumentation libraries, which can now benefit from well-supported auto-instrumentation and future-proof APIs while they remaining vendor agnostic.
   handles:
     twitter: dan_gomezblanco
     linkedin: danielgblanco86
@@ -86,11 +86,11 @@ items:
 - id: juraci-paixao-krohling
   name: Juraci Paixão Kröhling
   bio: |
-    Juraci Paixão Kröhling is a software engineer at Red Hat working in the Distributed Tracing team. He’s a maintainer on the Jaeger project and contributor to the OpenTelemetry project. He has talked about distributed tracing at conferences like KubeCon, OpenSource Summit, FOSDEM, Devoxx, JavaLand, GIDS, among others.
+    Juraci Paixão Kröhling is a software engineer at Red Hat working in the Distributed Tracing team. He's a maintainer on the Jaeger project and contributor to the OpenTelemetry project. He has talked about distributed tracing at conferences like KubeCon, OpenSource Summit, FOSDEM, Devoxx, JavaLand, GIDS, among others.
   role: presenter
   title: Sampling in Distributed Tracing
   abstract: |
-    Sampling is still one of the biggest challenges in distributed tracing. While the basic concept is easy to grasp, the number of choices and their trade-offs requires learning about the techniques and your own workload. In this session, we are giving you all the knowledge required to master the sampling techniques: we’ll talk about head and tail-based sampling, as well as adaptive sampling, and we’ll wrap it up with a bonus discussion on trace aggregation. You’ll leave this session ready to implement scenarios, from the simple “probabilistic head-sampling” up to the complex “scalable tail-based sampling” using open source tools like OpenTelemetry Collector.
+    Sampling is still one of the biggest challenges in distributed tracing. While the basic concept is easy to grasp, the number of choices and their trade-offs requires learning about the techniques and your own workload. In this session, we are giving you all the knowledge required to master the sampling techniques: we'll talk about head and tail-based sampling, as well as adaptive sampling, and we'll wrap it up with a bonus discussion on trace aggregation. You'll leave this session ready to implement scenarios, from the simple "probabilistic head-sampling" up to the complex "scalable tail-based sampling" using open source tools like OpenTelemetry Collector.
   handles:
     twitter: jpkrohling
 
@@ -104,11 +104,11 @@ items:
   panel: day1
   title: Pragmatic Observability While Your Business Grows 300%
   abstract: |
-    Wouldn’t it be great if the world stopped for us to implement observability the right way with ubiquitous adoption of the perfect instrumentation? Hate to break it to you, but the reality is that will never happen.
+    Wouldn't it be great if the world stopped for us to implement observability the right way with ubiquitous adoption of the perfect instrumentation? Hate to break it to you, but the reality is that will never happen.
 
-    Engineers ship code, customers use software in unintended ways, teams don’t always buy into everything, and the world will rapidly shift under your well planned roadmaps. So how do you build what you need while remaining agile to pivots that will inevitably come down the pipe? What does evangelism of new processes or tooling look like when teams are plagued with emergent demands on a daily basis? How do you get internal support for the ideas you know will change the game with an endless expectation backlog for feature delivery?
+    Engineers ship code, customers use software in unintended ways, teams don't always buy into everything, and the world will rapidly shift under your well planned roadmaps. So how do you build what you need while remaining agile to pivots that will inevitably come down the pipe? What does evangelism of new processes or tooling look like when teams are plagued with emergent demands on a daily basis? How do you get internal support for the ideas you know will change the game with an endless expectation backlog for feature delivery?
 
-    I’ll be reviewing our strategy for pragmatic observability at H-E-B Digital, what has worked, what didn’t, and what we’re trying right now while we explosively grow our curbside and home delivery grocery business by billions during this incredibly tumultuous time in our industry and world. You’ll take away tips & tricks for building influence and internal confidence for new approaches to solving reliability problems, hopefully relate to some entertaining stories, but most importantly you might just save yourself from making some of the same mistakes I did when implementing and driving adoption of modern observability patterns in your own organization’s journey.
+    I'll be reviewing our strategy for pragmatic observability at H-E-B Digital, what has worked, what didn't, and what we're trying right now while we explosively grow our curbside and home delivery grocery business by billions during this incredibly tumultuous time in our industry and world. You'll take away tips & tricks for building influence and internal confidence for new approaches to solving reliability problems, hopefully relate to some entertaining stories, but most importantly you might just save yourself from making some of the same mistakes I did when implementing and driving adoption of modern observability patterns in your own organization's journey.
   handles:
     twitter: mike_angstadt
     linkedin: mikeangstadt
@@ -131,7 +131,7 @@ items:
   role: presenter
   title: Betting on Observability at Simplebet
   abstract: |
-    Adopting Observability can be an organizational challenge. At Simplebet, we introduced Open Telemetry and o11y successfully, then published a Case-Study on our experience with Lightstep. We will share our experience gaining traction so that you can learn how to introduce o11y at your company.
+    Adopting Observability can be an organizational challenge. At Simplebet, we introduced OpenTelemetry and o11y successfully, then published a case study on our experience with Lightstep. We will share our experience gaining traction so that you can learn how to introduce o11y at your company.
 
     Simplebet introduced its first products into the market in 2020, which required a shift in organizational thinking around software deployments, operations, scale, etc. As we geared up for our first public launch, we needed to overcome the challenges of scaling a backend to support thousands of concurrent users at the onset. With the experience of team members who work on the Erlang Observability Working Group, we made a case for introducing distributed tracing with Lightstep as a tool to help us scale. After the first team adopted Otel and made use of distributed tracing, we mechanically implemented the same strategy to other teams in our organization. Through this instrumentation, we were able to isolate performance-critical operations, build evidence for long-standing issues, and change the way the team thought about our production system.
 
@@ -149,9 +149,9 @@ items:
   abstract: |
     A good cook uses ingredients they have in the kitchen, and observability is no different. A good practitioner should leverage legacy telemetry, even when adopting OpenTelemetry. Learn how to leverage and correlate existing application logs with OTEL Traces by injecting Span Context into your logs.
 
-    Unlike neatly packaged demos and “Getting Started” guides, the average user of OpenTelemetry isn’t coming to the project with a complete greenfield. Instead, many of these projects are so-called “brownfields”, with existing metrics, tracing, and logs from a variety of different standards already being emitted by their Applications and used to monitor, debug, and introspect applications. OpenTelemetry, with Tracing Specification(and many SDKs) at 1.0, has done an admirable job ensuring compatibility with older tracing standards, and OpenTelemetry Metrics seem well on their way to ensuring the same broad level of support and inclusivity for existing standards. But existing Logs have been left out in the cold, to some extent, with no standard out of the box way to connect them to your traces across languages.
+    Unlike neatly packaged demos and "Getting Started" guides, the average user of OpenTelemetry isn't coming to the project with a complete greenfield. Instead, many of these projects are so-called "brownfields", with existing metrics, tracing, and logs from a variety of different standards already being emitted by their Applications and used to monitor, debug, and introspect applications. OpenTelemetry, with Tracing Specification(and many SDKs) at 1.0, has done an admirable job ensuring compatibility with older tracing standards, and OpenTelemetry Metrics seem well on their way to ensuring the same broad level of support and inclusivity for existing standards. But existing Logs have been left out in the cold, to some extent, with no standard out of the box way to connect them to your traces across languages.
 
-    But, fear not! With a bit of application code, the OpenTelemetry Language SDKs, and some willingness to monkeypatch a library or two, the ability to connect your existing Application Logs with the context of the Span and Trace Telemetry data is easier than ever. In this talk, I’ll take a survey of a few languages (Ruby, Python, and JS), and demonstrate from start to finish how to modify popular Logging Libraries to ensure that every Log line also contains the right span and trace identifiers to correlate them in your vendor or open source backend of choice. I’ll also walk through a scenario or two where connecting Logs and Traces helps improve an end users ability to debug, troubleshoot, and gain insight into their application behavior.
+    But, fear not! With a bit of application code, the OpenTelemetry Language SDKs, and some willingness to monkeypatch a library or two, the ability to connect your existing Application Logs with the context of the Span and Trace Telemetry data is easier than ever. In this talk, I'll take a survey of a few languages (Ruby, Python, and JS), and demonstrate from start to finish how to modify popular Logging Libraries to ensure that every Log line also contains the right span and trace identifiers to correlate them in your vendor or open source backend of choice. I'll also walk through a scenario or two where connecting Logs and Traces helps improve an end users ability to debug, troubleshoot, and gain insight into their application behavior.
   handles:
     twitter: Ericmustin
     linkedin: ericmustin
@@ -159,7 +159,7 @@ items:
 - id: ricardo-ferreira
   name: Ricardo Ferreira
   bio: |
-    Ricardo is Principal Developer Advocate at Elastic‚ the company behind the Elastic Stack (Elasticsearch, Kibana, Beats, and Logstash), where he does community advocacy for North America. With +20 years of experience, he may have learned a thing or two about Distributed Systems, Databases, Streaming Data, and Big Data. Before Elastic, he worked for other vendors such as Confluent, Oracle, Red Hat, and different consulting firms. These days Ricardo spends most of his time making developers fall in love with technology.
+    Ricardo is Principal Developer Advocate at Elastic' the company behind the Elastic Stack (Elasticsearch, Kibana, Beats, and Logstash), where he does community advocacy for North America. With +20 years of experience, he may have learned a thing or two about Distributed Systems, Databases, Streaming Data, and Big Data. Before Elastic, he worked for other vendors such as Confluent, Oracle, Red Hat, and different consulting firms. These days Ricardo spends most of his time making developers fall in love with technology.
 
     While not working, he loves barbecuing in his backyard with his family and friends, where he gets the chance to talk about anything that is not IT-related. He lives in North Carolina, USA, with his wife and son."
   role: presenter
@@ -169,7 +169,7 @@ items:
 
     The support for Java in OpenTelemetry is generous. It supports both automatic and manual instrumentation. With automatic instrumentation, developers can have known libraries and frameworks instrumented without writing a single code line. Manual support also allows them to decide which parts of the code need instrumentation, and there is a rich set of APIs available to use.
 
-    This talk will open the pandora box for both options. It will reveal which knobs are available to use that make a tremendous difference in how the applications report telemetry data ‚Äî both in terms of performance and details. Knowing these hidden secrets will grant developers fine control over their applications and how observability stacks show them to the world.
+    This talk will open the pandora box for both options. It will reveal which knobs are available to use that make a tremendous difference in how the applications report telemetry data 'Äî both in terms of performance and details. Knowing these hidden secrets will grant developers fine control over their applications and how observability stacks show them to the world.
   handles:
     twitter: riferrei
     linkedin: riferrei
@@ -177,7 +177,7 @@ items:
 - id: rob-skillington
   name: Rob Skillington
   bio: |
-    Rob Skillington is the co-founder and CTO of Chronosphere. He was previously at Uber, where he was the technical lead of the Observability team and creator of M3DB, the time series database at the core of M3. He has worked in both large engineering organizations such as Microsoft and Groupon and a handful of startups. He and his family are based in NYC where he mainly spends weekends exploring all of New York‚Äôs playgrounds and also following his wife‚Äôs jazz adventures.
+    Rob Skillington is the co-founder and CTO of Chronosphere. He was previously at Uber, where he was the technical lead of the Observability team and creator of M3DB, the time series database at the core of M3. He has worked in both large engineering organizations such as Microsoft and Groupon and a handful of startups. He and his family are based in NYC where he mainly spends weekends exploring all of New York'Äôs playgrounds and also following his wife'Äôs jazz adventures.
   role: presenter
   title: Building and running a world-class observability function
   abstract: |
@@ -201,7 +201,7 @@ items:
 - id: shelby-spees
   name: Shelby Spees
   bio: |
-    Shelby is a Developer Advocate at Honeycomb, where she helps developers better understand their services in production in order to deliver more business value. Before joining Honeycomb, Shelby worked on applications, build pipelines, infrastructure, and other reliability efforts. She‚Äôs dedicated to improving access and equity in tech as well as to helping people feel good about their work.
+    Shelby is a Developer Advocate at Honeycomb, where she helps developers better understand their services in production in order to deliver more business value. Before joining Honeycomb, Shelby worked on applications, build pipelines, infrastructure, and other reliability efforts. She'Äôs dedicated to improving access and equity in tech as well as to helping people feel good about their work.
 
     Shelby lives in Los Angeles, CA, where she enjoys doing karaoke with her pitbull, Nova.
   role: panelist
@@ -225,7 +225,7 @@ items:
 
     We also live in an age of heightened security and rapid deployment. It is important to be able to consume patches as quickly as possible, and never be blocked on an update. **Upgrading to the current version is incredibly important.**
 
-    These three important requirements ‚Äì stability, flexibility, and upgrading ‚Äì are hard challenges to meet individually, and impossible to meet together without careful thought. Learn how the design of OpenTelemetry, focused on a clean separation of concerns, future proofs your observability system.
+    These three important requirements&mdash;stability, flexibility, and upgrading&mdash;are hard challenges to meet individually, and impossible to meet together without careful thought. Learn how the design of OpenTelemetry, focused on a clean separation of concerns, future proofs your observability system.
 
     In this talk, we will go over the architectural design and motivations of the OpenTelemetry project. By the end, you'll see why these design choices are so important, and may even wish that more libraries took this clean approach to building software.
   handles:
@@ -253,7 +253,7 @@ items:
 - id: steve-flanders
   name: Steve Flanders
   bio: |
-    Steve Flanders is a Director of Engineering at Splunk responsible for Observability‚ Getting Data In, which includes contributions to the CNCF OpenTelemetry open-source project. Previously, he was the Head of Product and Experience at Omnition, which was acquired by Splunk. Prior to Omnition, he was the Global Engineering Manager for log analytics and data collection at VMware. Steve has an extensive background in software development, user experience, product design, and operational management. He has a strong focus on product usability, data-driven decision-making, and agile development processes. He is also the author of SFlanders.net, a technology-centric weblog.
+    Steve Flanders is a Director of Engineering at Splunk responsible for Observability' Getting Data In, which includes contributions to the CNCF OpenTelemetry open-source project. Previously, he was the Head of Product and Experience at Omnition, which was acquired by Splunk. Prior to Omnition, he was the Global Engineering Manager for log analytics and data collection at VMware. Steve has an extensive background in software development, user experience, product design, and operational management. He has a strong focus on product usability, data-driven decision-making, and agile development processes. He is also the author of SFlanders.net, a technology-centric weblog.
   role: presenter
   title: Exporting Data with OpenTelemetry
   abstract: |
