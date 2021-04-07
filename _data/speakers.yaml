@@ -113,14 +113,14 @@ items:
     twitter: mike_angstadt
     linkedin: mikeangstadt
 
-- id: alolita-sharma
-  name: Alolita Sharma
-  bio: |
-    Alolita Sharma is a Principal Technologist at Amazon Web Services. She leads open source strategy and engineering for observability and search projects such as OpenTelemetry, Prometheus, Cortex, Grafana, Apache Lucene and Open Distro for Elasticsearch. Two decades of doing open source continue to inspire her. Alolita has built and led engineering teams at Wikipedia, Twitter, PayPal and IBM. She serves on the board of Unicode Consortium and the OpenTelemetry Governance Committee. She has served on the boards of the Open Source Initiative (OSI) and SFLC.in. You can find her on Twitter @alolita.
-  role: panelist
-  panel: day1
-  handles:
-    twitter: alolita
+# - id: alolita-sharma
+#   name: Alolita Sharma
+#   bio: |
+#     Alolita Sharma is a Principal Technologist at Amazon Web Services. She leads open source strategy and engineering for observability and search projects such as OpenTelemetry, Prometheus, Cortex, Grafana, Apache Lucene and Open Distro for Elasticsearch. Two decades of doing open source continue to inspire her. Alolita has built and led engineering teams at Wikipedia, Twitter, PayPal and IBM. She serves on the board of Unicode Consortium and the OpenTelemetry Governance Committee. She has served on the boards of the Open Source Initiative (OSI) and SFLC.in. You can find her on Twitter @alolita.
+#   role: panelist
+#   panel: day1
+#   handles:
+#     twitter: alolita
 
 - id: dave-lucia
   name: Dave Lucia
@@ -264,12 +264,12 @@ items:
     twitter: smflanders
     linkedin: steveflanders
 
-# - id: michael-hausenblas
-#   name: Michael Hausenblas
-#   bio: |
-#     Michael is an Open Source Product Developer Advocate at Amazon Web Services (AWS) and serves as a Cloud Native Ambassador at CNCF, focusing on observability as well as service meshes. Before AWS, Michael worked at Red Hat, Mesosphere, MapR, and in two research institutions in Ireland and Austria.
-#   role: panelist
-#   panel: day1
-#   handles:
-#     twitter: mhausenblas
-#     linkedin: mhausenblas
+- id: michael-hausenblas
+  name: Michael Hausenblas
+  bio: |
+    Michael is an Open Source Product Developer Advocate at Amazon Web Services (AWS) and serves as a Cloud Native Ambassador at CNCF, focusing on observability as well as service meshes. Before AWS, Michael worked at Red Hat, Mesosphere, MapR, and in two research institutions in Ireland and Austria.
+  role: panelist
+  panel: day1
+  handles:
+    twitter: mhausenblas
+    linkedin: mhausenblas

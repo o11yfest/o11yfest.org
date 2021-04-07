@@ -5,7 +5,7 @@ layout: default
 {% assign panelist = site.data.speakers.items | where_exp:"item", "item.id == page.id" | first %}
 
 <div class="flexbox">
-  {% include person-left.html person=panelist %}
+  {% include person-left.html person=panelist socialcard="panel-day1" %}
   <div style="min-width:300px;flex:1;align-self:flex-start;">
     <div class="flexbox" style="flex-direction: column;">
       <div style="align-self:flex-start;">
