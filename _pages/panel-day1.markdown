@@ -9,7 +9,10 @@ permalink: /panel-day1
   {{ site.data.day1panel.description }}
 </p>
 <div style="flex:1;align-self:flex-start;text-align:center;">
-  <h3>Distinguished Panelists</h3>
+<div class="flexbox">
+  <a class="flexbox-button" href="{{ site.registration_link }}" style="font-size:0.9em;">Attend this Session</a>
+</div>
+  <h3>Panelists</h3>
   <div class="flexbox" style="">
     {% assign panelists = site.data.speakers.items | where_exp:"item", "item.panel == 'day1'" %}
     {% for panelist in panelists %}
