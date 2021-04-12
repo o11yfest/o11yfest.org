@@ -1,3 +1,4 @@
+{% assign is_bannerable_page=true %}
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
@@ -5,19 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% if page.permalink and (page.permalink contains "/speakers/" or page.permalink contains "/panelists/") %}
-    {% assign speaker = site.data.speakers.items | where_exp:"item", "item.id == page.id" | first %}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@o11yfest">
-    <meta name="twitter:creator" content="@o11yfest">
-    {% if speaker.role == "panelist" %}
-    <meta name="twitter:title" content="{{ site.data.day1panel.title }}">
-    <meta name="twitter:description" content="{{ site.data.day1panel.description }}">
-    <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/panel-day1.png">
+      {% assign is_bannerable_page=false %}
+      {% assign speaker = site.data.speakers.items | where_exp:"item", "item.id == page.id" | first %}
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@o11yfest">
+      <meta name="twitter:creator" content="@o11yfest">
+      {% if speaker.role == "panelist" %}
+        <meta name="twitter:title" content="{{ site.data.day1panel.title }}">
+        <meta name="twitter:description" content="{{ site.data.day1panel.description }}">
+        <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/panel-day1.png">
+      {% else %}
+        <meta name="twitter:title" content="{{ speaker.name }} at o11yfest May 17-18">
+        <meta name="twitter:description" content="{{ page.title }}: {{ speaker.bio }}">
+        <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/{{ speaker.id }}.png">
+      {% endif %}
     {% else %}
-    <meta name="twitter:title" content="{{ speaker.name }} at o11yfest May 17-18">
-    <meta name="twitter:description" content="{{ page.title }}: {{ speaker.bio }}">
-    <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/{{ speaker.id }}.png">
-    {% endif %}
+      <meta name="twitter:title" content="o11yfest May 17-18">
+      <meta name="twitter:description" content="{{ site.description }}">
+      <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/everyone.png">
     {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
@@ -73,6 +79,12 @@
         {%- endif -%}
 
       </div>
+      {% if is_bannerable_page == true %}
+      <div style="visibility:hidden;display:none;">
+        <img id="everyone-thumb" src="/assets/images/speakers/socials/everyone.png"
+              style="width:1200px;border-radius:2em;" />
+      </div>
+      {% endif %}
     </header>
 
     <div class="container">
