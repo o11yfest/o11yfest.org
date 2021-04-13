@@ -5,12 +5,12 @@ items:
   logo: lightstep.png
   link: /sponsors/lightstep
   external_link: https://lightstep.com
-# - id: honeycomb
-#   name: Honeycomb
-#   level: premiere
-#   logo: honeycomb.png
-#   external_link: https://honeycomb.io
-#   link: /sponsors/honeycomb
+- id: honeycomb
+  name: Honeycomb
+  level: premiere
+  logo: honeycomb.png
+  external_link: https://honeycomb.io
+  link: /sponsors/honeycomb
 - id: cribl
   name: Cribl
   level: premiere
