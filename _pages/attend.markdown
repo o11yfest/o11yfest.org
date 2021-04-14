@@ -42,17 +42,25 @@ As a single contributor, you can make a difference, and we all should. As a grou
 </div>
 <div style="flex:1;align-self:flex-start;min-width:400px;" markdown=1>
 
-# Who will be there?
+# Logistics
 
-Hundreds of other community members and engineering folks will be online listening to,
- discussing with, and learning from each other about observability practices.
-
-Oh, and did we mention an ***amazing*** lineup of speakers, OpenTelemetry contributors,
- and practitioners already implementing advanced observability practices in their
- organizations?
-
-Check out some of them below:
+This event will be held online on May 17-18 and will be live captioned to respect accessibility for all attendees. It
+ will also be accessible via mobile device and standard desktop browsers (the after-party platform
+ is only for full browsers). Further logistics about day-of access will be provided
+ by May 13th via email (so don't use a fake email for registration).
 
 </div>
+
+
+<h2>Who will be there?</h2>
+<p>
+Hundreds of other community members and engineering folks will be online listening to,
+ discussing with, and learning from each other about observability practices.
+</p>
+<p>
+Oh, and did we mention an ***amazing*** lineup of speakers, OpenTelemetry contributors,
+ and practitioners already implementing advanced observability practices in their
+ organizations? Check out some of them below:
+</p>
 
 {% include speaker-thumbs.html %}
