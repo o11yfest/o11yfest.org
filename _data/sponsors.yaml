@@ -35,3 +35,9 @@ items:
   logo: chronosphere.png
   external_link: https://chronosphere.io
   link: /sponsors/chronosphere
+- id: sloconf
+  name: SLOconf
+  level: contributor
+  logo: sloconf.png
+  external_link: https://www.sloconf.com/
+  link: /sponsors/sloconf

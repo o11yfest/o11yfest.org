@@ -5,7 +5,13 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% if page.permalink and (page.permalink contains "/speakers/" or page.permalink contains "/panelists/") %}
+    {% assign is_a_speakers_or_panelists_page=false %}
+    {% if page.permalink %}
+      {% if page.permalink contains "/speakers/" or page.permalink contains "/panelists/" %}
+        {% assign is_a_speakers_or_panelists_page=true %}
+      {% endif %}
+    {% endif %}
+    {% if is_a_speakers_or_panelists_page == true %}
       {% assign is_bannerable_page=false %}
       {% assign speaker = site.data.speakers.items | where_exp:"item", "item.id == page.id" | first %}
       <meta name="twitter:card" content="summary_large_image">
