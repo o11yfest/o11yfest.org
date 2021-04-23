@@ -17,6 +17,6 @@ The best thing to do for now is to attend o11yfest 2021 on May 17-18 and join ou
  community for some great conversations and connections!
 
 <div class="flexbox">
-  <a class="flexbox-button" href="{{ site.registration_link }}">Attend this Event</a>
+  <a class="flexbox-button" href="{{ site.registration_link }}">Attend {{ site.event_short_title }}</a>
   <a class="flexbox-button" href="/sponsor">Sponsor this Event</a>
 </div>
