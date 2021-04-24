@@ -4,8 +4,12 @@ title:  "Virtual Swag Bag"
 permalink: /swag-bag
 ---
 
-# Limited run o11yfest 2021 virtual swag bag
+<div id="already-purchased" style="display:none;visibility:hidden;color:red;font-size:2em;">
+It appears that you have already purchased a swag bag. Though you may buy more,
+ we just wanted to reminder you if you forgot you already did this.
+</div>
 
+# Limited run o11yfest 2021 virtual swag bag
 We have 300 swag bags, including:
 
 -  a 6"x6" observability magnet sheet
@@ -27,12 +31,12 @@ All we need from you is a shipping address and payment enough to cover shipping.
         <div id="paypal-button-container"></div>
       </div>
     </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=Adr9M_sh5uiIYikCAzbRknzt9oInVif1VbnbY3YGJ4jBrcg79vnzQ_Z9HDUbH0Reh2ECpAi9NkVb4vef&currency=USD" data-sdk-integration-source="button-factory"></script>
   <script>
     function initPayPalButton() {
       paypal.Buttons({
         style: {
-          shape: 'rect',
+          shape: 'pill',
           color: 'gold',
           layout: 'horizontal',
           label: 'buynow',
@@ -41,13 +45,19 @@ All we need from you is a shipping address and payment enough to cover shipping.
 
         createOrder: function(data, actions) {
           return actions.order.create({
-            purchase_units: [{"description":"o11yfest 2021 swag bag","amount":{"currency_code":"USD","value":10,"breakdown":{"item_total":{"currency_code":"USD","value":5},"shipping":{"currency_code":"USD","value":5},"tax_total":{"currency_code":"USD","value":0}}}}]
+            purchase_units: [{"description":"o11yfest 2021 Virtual Swag Bag","amount":{"currency_code":"USD","value":10,"breakdown":{"item_total":{"currency_code":"USD","value":5},"shipping":{"currency_code":"USD","value":5},"tax_total":{"currency_code":"USD","value":0}}}}]
           });
         },
 
         onApprove: function(data, actions) {
           return actions.order.capture().then(function(details) {
-            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+            alert('Thank you, ' + details.payer.name.given_name + '!');
+            try {
+              $.cookie("swag", (new Date()).getTime());
+            } catch(e) {
+              console.error(e);
+            }
+            window.location.href = '/paypal-thanks';
           });
         },
 
@@ -66,3 +76,12 @@ If you haven't already registered for the event, <a href="{{ site.registration_l
      style="width:100%;border-radius:2em;"
      title="o11yfest 2021 limited run virtual swag bag" />
 </p>
+
+<script type="text/javascript">
+window.onloadqueue=(window.onloadqueue||[]).concat([function () {
+  var already = $.cookie("swag");
+  if(already != undefined && (already+"").trim().length > 0) {
+    $('#already-purchased').css('visibility','visible').show();
+  }
+}]);
+</script>
