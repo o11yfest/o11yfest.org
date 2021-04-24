@@ -4,8 +4,11 @@ title:  "Attend o11yfest"
 permalink: /attend
 ---
 
+<div style="text-align:center;" markdown="1">
+
 # Get a ticket
 
+</div>
 <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1.1' />
 <style type="text/css">
 .tito-badge-link {
@@ -49,10 +52,15 @@ This event will be held online on May 17-18 and will be live captioned to respec
  is only for full browsers). Further logistics about day-of access will be provided
  by May 13th via email (so don't use a fake email for registration).
 
+# Swag Bag
+
+Separate from your attendee registration, if you would also like to purchase a swag
+ bag, please see our <a href="/swag-bag" use-same-tab="false">Swag Bag page</a>.
+
 </div>
 
-
-<h2>Who will be there?</h2>
+<div style="text-align:left;">
+<h1>Who will be there?</h1>
 <p>
 Hundreds of other community members and engineering folks will be online listening to,
  discussing with, and learning from each other about observability practices.
@@ -62,5 +70,10 @@ Oh, and did we mention an ***amazing*** lineup of speakers, OpenTelemetry contri
  and practitioners already implementing advanced observability practices in their
  organizations? Check out some of them below:
 </p>
+</div>
 
 {% include speaker-thumbs.html %}
+
+<div style="text-align:center;" markdown="1">
+# [Claim your spot now!](#get-a-ticket)
+</div>

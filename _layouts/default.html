@@ -6,17 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% assign is_a_speakers_or_panelists_page=false %}
+    {% assign is_swag=false %}
     {% if page.permalink %}
       {% if page.permalink contains "/speakers/" or page.permalink contains "/panelists/" %}
         {% assign is_a_speakers_or_panelists_page=true %}
       {% endif %}
+      {% if page.permalink contains "/swag-bag" %}
+        {% assign is_swag=true %}
+      {% endif %}
     {% endif %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@o11yfest">
+    <meta name="twitter:creator" content="@o11yfest">
     {% if is_a_speakers_or_panelists_page == true %}
       {% assign is_bannerable_page=false %}
       {% assign speaker = site.data.speakers.items | where_exp:"item", "item.id == page.id" | first %}
-      <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:site" content="@o11yfest">
-      <meta name="twitter:creator" content="@o11yfest">
       {% if speaker.role == "panelist" %}
         <meta name="twitter:title" content="{{ site.data.day1panel.title }}">
         <meta name="twitter:description" content="{{ site.data.day1panel.description }}">
@@ -27,9 +31,15 @@
         <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/{{ speaker.id }}.png">
       {% endif %}
     {% else %}
-      <meta name="twitter:title" content="o11yfest May 17-18">
-      <meta name="twitter:description" content="{{ site.description }}">
-      <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/everyone.png">
+      {% if is_swag == true %}
+        <meta name="twitter:title" content="o11yfest May 17-18">
+        <meta name="twitter:description" content="Limited run o11yfest virtual swag bag">
+        <meta name="twitter:image" content="{{ site.produrl }}/assets/images/swag-promo.png">
+      {% else %}
+        <meta name="twitter:title" content="o11yfest May 17-18">
+        <meta name="twitter:description" content="{{ site.description }}">
+        <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/everyone.png">
+      {% endif %}
     {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
@@ -111,7 +121,7 @@
       function updateOffsiteLinksToOpenInBlank() {
         var host = document.location.hostname
         var els = $("a:not(:target)").each(function(i,o) {
-          if(((o.href+"").trim().length > 0 && (o.href.indexOf('://'+host)<1 && $(o).attr('use-same-tab') != "true"))) {
+          if(((o.href+"").trim().length > 0 && (o.href.indexOf('://'+host)<1 || $(o).attr('use-same-tab') == "false"))) {
             if($(o).attr('is-external-link') != "true") {
               $(o).attr('is-external-link','true')
               $(o).attr('target','_blank')
