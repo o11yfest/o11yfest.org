@@ -59,7 +59,7 @@ All we need from you is a shipping address and payment enough to cover shipping.
     initPayPalButton();
   </script>
 
-If you haven't already registered for the event, <a href="/attend" use-same-tab="false">please do so separately</a>.
+If you haven't already registered for the event, <a href="{{ site.registration_link }}" use-same-tab="false">please do so separately</a>.
 
 <p>
 <img src="/assets/images/swag-promo.png"
