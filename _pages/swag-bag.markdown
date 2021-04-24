@@ -4,8 +4,12 @@ title:  "Virtual Swag Bag"
 permalink: /swag-bag
 ---
 
-# Limited run o11yfest 2021 virtual swag bag
+<div id="already-purchased" style="display:none;visibility:hidden;color:red;font-size:2em;">
+It appears that you have already purchased a swag bag. Though you may buy more,
+ we just wanted to reminder you if you forgot you already did this.
+</div>
 
+# Limited run o11yfest 2021 virtual swag bag
 We have 300 swag bags, including:
 
 -  a 6"x6" observability magnet sheet
@@ -47,7 +51,12 @@ All we need from you is a shipping address and payment enough to cover shipping.
 
         onApprove: function(data, actions) {
           return actions.order.capture().then(function(details) {
-            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+            alert('Thank you, ' + details.payer.name.given_name + '!');
+            try {
+              $.cookie("swag", (new Date()).getTime());
+            } catch(e) {
+            }
+            window.location.href = '/paypal-thanks';
           });
         },
 
@@ -66,3 +75,12 @@ If you haven't already registered for the event, <a href="{{ site.registration_l
      style="width:100%;border-radius:2em;"
      title="o11yfest 2021 limited run virtual swag bag" />
 </p>
+
+<script type="text/javascript">
+window.onloadqueue=(window.onloadqueue||[]).concat([function () {
+  var already = $.cookie("swag");
+  if(already != undefined && (already+"").trim().length > 0) {
+    $('#already-purchased').css('visibility','visible').show();
+  }
+}]);
+</script>
