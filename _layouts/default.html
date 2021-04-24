@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% assign is_a_speakers_or_panelists_page=false %}
+    {% assign is_swag=false %}
     {% if page.permalink %}
       {% if page.permalink contains "/speakers/" or page.permalink contains "/panelists/" %}
         {% assign is_a_speakers_or_panelists_page=true %}
+      {% endif %}
+      {% if page.permalink contains "/swag-bag" %}
+        {% assign is_swag=true %}
       {% endif %}
     {% endif %}
     {% if is_a_speakers_or_panelists_page == true %}
@@ -27,9 +31,15 @@
         <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/{{ speaker.id }}.png">
       {% endif %}
     {% else %}
-      <meta name="twitter:title" content="o11yfest May 17-18">
-      <meta name="twitter:description" content="{{ site.description }}">
-      <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/everyone.png">
+      {% if is_swag == true %}
+        <meta name="twitter:title" content="o11yfest May 17-18">
+        <meta name="twitter:description" content="Limited run o11yfest virtual swag bag">
+        <meta name="twitter:image" content="{{ site.produrl }}/assets/images/swag-promo.png">
+      {% else %}
+        <meta name="twitter:title" content="o11yfest May 17-18">
+        <meta name="twitter:description" content="{{ site.description }}">
+        <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/everyone.png">
+      {% endif %}
     {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
