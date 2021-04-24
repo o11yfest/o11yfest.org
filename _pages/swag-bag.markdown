@@ -27,12 +27,12 @@ All we need from you is a shipping address and payment enough to cover shipping.
         <div id="paypal-button-container"></div>
       </div>
     </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=Adr9M_sh5uiIYikCAzbRknzt9oInVif1VbnbY3YGJ4jBrcg79vnzQ_Z9HDUbH0Reh2ECpAi9NkVb4vef&currency=USD" data-sdk-integration-source="button-factory"></script>
   <script>
     function initPayPalButton() {
       paypal.Buttons({
         style: {
-          shape: 'rect',
+          shape: 'pill',
           color: 'gold',
           layout: 'horizontal',
           label: 'buynow',
@@ -41,7 +41,7 @@ All we need from you is a shipping address and payment enough to cover shipping.
 
         createOrder: function(data, actions) {
           return actions.order.create({
-            purchase_units: [{"description":"o11yfest 2021 swag bag","amount":{"currency_code":"USD","value":10,"breakdown":{"item_total":{"currency_code":"USD","value":5},"shipping":{"currency_code":"USD","value":5},"tax_total":{"currency_code":"USD","value":0}}}}]
+            purchase_units: [{"description":"o11yfest 2021 Virtual Swag Bag","amount":{"currency_code":"USD","value":10,"breakdown":{"item_total":{"currency_code":"USD","value":5},"shipping":{"currency_code":"USD","value":5},"tax_total":{"currency_code":"USD","value":0}}}}]
           });
         },
 
