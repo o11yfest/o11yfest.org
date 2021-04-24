@@ -27,8 +27,8 @@ header_pages:
     url: /about
   - title: "-attend"
     url: /attend
-  - title: "-cfp"
-    url: /cfp
+  - title: "-swag"
+    url: /swag-bag
   - title: "-agenda"
     url: /agenda
   - title: "-code-of-conduct"

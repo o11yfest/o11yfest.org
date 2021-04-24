@@ -1,0 +1,68 @@
+---
+layout: default
+title:  "Virtual Swag Bag"
+permalink: /swag-bag
+---
+
+# Limited run o11yfest 2021 virtual swag bag
+
+We have 300 swag bags, including:
+
+-  a 6"x6" observability magnet sheet
+- a tiny o11y Tech Deck fingerboard
+- matching 3"x3" tiny stickers pack
+- some OpenTelemetry stickers (thank you Lightstep!)
+- a few other cool things from our sponsors
+
+All we need from you is a shipping address and payment enough to cover shipping.
+
+<div style="margin:2em;text-align:center;" markdown="1">
+
+***ORDER BEFORE MAY 8 TO GET IT IN TIME FOR THE EVENT ON MAY 17-18!!!***
+
+</div>
+
+<div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'horizontal',
+          label: 'buynow',
+
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"description":"o11yfest 2021 swag bag","amount":{"currency_code":"USD","value":10,"breakdown":{"item_total":{"currency_code":"USD","value":5},"shipping":{"currency_code":"USD","value":5},"tax_total":{"currency_code":"USD","value":0}}}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script>
+
+If you haven't already registered for the event, <a href="/attend" use-same-tab="false">please do so separately</a>.
+
+<p>
+<img src="/assets/images/swag-promo.png"
+     style="width:100%;border-radius:2em;"
+     title="o11yfest 2021 limited run virtual swag bag" />
+</p>
