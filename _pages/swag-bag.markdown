@@ -55,6 +55,7 @@ All we need from you is a shipping address and payment enough to cover shipping.
             try {
               $.cookie("swag", (new Date()).getTime());
             } catch(e) {
+              console.error(e);
             }
             window.location.href = '/paypal-thanks';
           });
