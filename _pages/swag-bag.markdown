@@ -43,6 +43,23 @@ All we need from you is a shipping address and payment enough to cover shipping.
 
         },
 
+        onShippingChange: function(data, actions) {
+          // Reject non-US addresses
+          var countryCodes = ['US','CA'];
+          var found = false;
+          for(var i=0; i<countryCodes.length; i++) { found = (data.shipping_address.country_code === countryCodes[i]); if(found) { break; } }
+          if (!found) {
+              try {
+                setTimeout(function() {
+                  alert("Apologies, but we currently cannot ship to those outside the US and Canada.");
+                },100);
+              } catch(e) {
+                console.error(e)
+              }
+              return actions.reject();
+          }
+        },
+
         createOrder: function(data, actions) {
           return actions.order.create({
             purchase_units: [{"description":"o11yfest 2021 Virtual Swag Bag","amount":{"currency_code":"USD","value":10,"breakdown":{"item_total":{"currency_code":"USD","value":5},"shipping":{"currency_code":"USD","value":5},"tax_total":{"currency_code":"USD","value":0}}}}]
