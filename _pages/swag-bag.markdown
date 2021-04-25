@@ -62,7 +62,7 @@ All we need from you is a shipping address and payment enough to cover shipping.
 
         createOrder: function(data, actions) {
           return actions.order.create({
-            purchase_units: [{"description":"o11yfest 2021 Virtual Swag Bag","amount":{"currency_code":"USD","value":10,"breakdown":{"item_total":{"currency_code":"USD","value":5},"shipping":{"currency_code":"USD","value":5},"tax_total":{"currency_code":"USD","value":0}}}}]
+            purchase_units: [{"description":"o11yfest 2021 Virtual Swag Bag","amount":{"currency_code":"USD","value":15,"breakdown":{"item_total":{"currency_code":"USD","value":5},"shipping":{"currency_code":"USD","value":10},"tax_total":{"currency_code":"USD","value":0}}}}]
           });
         },
 
