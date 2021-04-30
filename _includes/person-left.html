@@ -1,5 +1,7 @@
 {% assign person = include.person %}
+{% assign content = include.extracontent %}
 {% assign socialcard = person.id %}
+{% assign content = content | markdownify | strip %}
 {% if include.socialcard %}{% assign socialcard = include.socialcard %}{% endif %}
 <div style="min-width:200px;width:25%;margin:2em;float:left;text-align:center;align-self:flex-start;">
   <img id="speaker-thumb" src="/assets/images/speakers/socials/{{ socialcard }}.png"
@@ -16,6 +18,9 @@
   <div class="flexbox">
     <a class="flexbox-button" href="{{ site.registration_link }}" style="font-size:0.9em;">Attend this Session</a>
   </div>
+  {% if content.size > 0 %}
+    {{ content }}
+  {% endif %}
 </div>
 <script type="text/javascript">
   window.onloadqueue=(window.onloadqueue||[]).concat([function () {
