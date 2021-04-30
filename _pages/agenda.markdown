@@ -23,7 +23,7 @@ tr td:first-of-type { white-space: nowrap; }
 
 |   Time   |   Session                         |
 | 11:00 AM | Welcome and Intros                |
-| 11:15 AM | [**Keynote** - Christina Yakomin:<br />Iterative Enterprise SRE Transformation](/speakers/christina-yakomin) |
+| 11:15 AM | [**Keynote** - Christina Yakomin & Steve Prazenica:<br />Iterative Enterprise SRE Transformation](/speakers/christina-yakomin) |
 | 12:00 PM | [Sponsored Breakouts - Lightstep](/sponsors/lightstep) |
 | 12:20 PM | [Daniel Gomez Blanco:<br />How to transparently migrate 300+ services to OpenTelemetry](/speakers/daniel-gomez-blanco) |
 | 1:00 PM  | [Mike Angstadt:<br />Pragmatic Observability While Your Business Grows 300%](/speakers/mike-angstadt)     |

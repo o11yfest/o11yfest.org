@@ -29,7 +29,7 @@ items:
 - id: steve-prazenica
   name: Steve Prazenica
   bio: |
-    Steve is an Infrastructure Operations Manager at Vanguard and works closely with Christina Yakomin. He will be co-presenting and handling the Q&A on the Day 1 keynote.
+    Steve Prazenica manages the Operational Intelligence team at Vanguard, supporting the full spectrum of monitoring and observability tooling from custom scripts to popular vendor products to OpenTelemetry.  What began as a semi-random placement on a Systems Management tools team as a new hire coming out of Drexel University has turned into a career specialization and passion around effective monitoring, observability and sustainable production support practices.  He lives in southeastern Pennsylvania with his wife and two young boys.  Steve is an avid reader, gamer and vinyl record collector. 
   role: presenter
   keynote: Day 1
   title: "KEYNOTE: Iterative Enterprise SRE Transformation"
