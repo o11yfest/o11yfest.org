@@ -26,6 +26,20 @@ items:
     twitter: srechristina
     linkedin: christina-yakomin
 
+- id: steve-prazenica
+  name: Steve Prazenica
+  bio: |
+    Steve is an Infrastructure Operations Manager at Vanguard and works closely with Christina Yakomin. He will be co-presenting and handling the Q&A on the Day 1 keynote.
+  role: presenter
+  keynote: Day 1
+  title: "KEYNOTE: Iterative Enterprise SRE Transformation"
+  abstract: |
+    It's easy to get discouraged reading books about industry best practices that say things like "always test in prod!" and "10 deploys a day!!" At times, they can make the goal of being a high-functioning DevOps organization feel out-of-reach for large enterprises, where changes to the way we operate take time to roll out. A few years ago, Vanguard started its journey to adopt Site Reliability Engineering across the IT division, and that transformation effort is still underway today. In this talk, we will share where we started, how far we've come since then, and all of the steps we've taken along the way, as we've worked to evangelize changes to the way we measure availability, enable experimentation, leverage highly-available architecture patterns, and learn from failure.
+
+    In this presentation, we'll focus primarily on the topic of how we monitor and measure availability - developing SLIs and SLOs, managing an error budget, leveraging Honeycomb for observability. We'll also touch on other aspects of our SRE transformation at a higher level, including home-grown tools for self-service chaos engineering, self-service load testing, emerging cloud platforms (including serverless), proactive failure modes and effects analysis, and blameless post-incident reviews.
+  handles:
+    linkedin: stephen-prazenica-52b6831a7
+
 - id: alex-hidalgo
   name: Alex Hidalgo
   bio: |
@@ -61,7 +75,7 @@ items:
   bio: |
     Jaana Dogan is a Principal Engineer at AWS leading parts of AWS' monitoring, observability, performance and instrumentation efforts.
   role: presenter
-  keynote: Day 1
+  keynote: Day 2
   title: "KEYNOTE: OpenTelemetry at AWS"
   abstract: |
     AWS decided to use OpenTelemetry to unify its telemetry collection, standardize its propagation and correlation fundamentals, and utilizing OTLP on wire. In this talk, we will talk about our long-term migration path to OpenTelemetry and discuss the overall roadmap about our integrations at AWS.
