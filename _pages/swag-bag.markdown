@@ -3,13 +3,32 @@ layout: default
 title:  "Virtual Swag Bag"
 permalink: /swag-bag
 ---
+{% assign video_background_url="https://raw.githubusercontent.com/o11yfest/o11yfest.org/main/assets/images/o11yfest2021-video-background.jpg" %}
+
+<div class="flexbox" style="align-items:center;">
+
+  <div style="flex:1;min-width:450px;">
+
+<h1 style="margin-top:0px;">Virtual Video Background</h1>
+
+Feel free to use <a href="{{ video_background_url }}" target="_blank">this background</a> in your video conferencing platform to express
+ your excitement for this event and help us promote awareness in observability!
+
+  </div>
+  <div style="flex:1;min-width:250px;max-width:250px;margin-top:1em;">
+    <div style="margin: auto auto;">
+    <a href="{{ video_background_url }}" target="_blank"><img src="assets/images/o11yfest2021-video-background.jpg" style="width:100%;border-radius:1em;" /></a>
+    </div>
+  </div>
+
+</div>
 
 <div id="already-purchased" style="display:none;visibility:hidden;color:red;font-size:2em;">
 It appears that you have already purchased a swag bag. Though you may buy more,
  we just wanted to reminder you if you forgot you already did this.
 </div>
 
-# Limited run o11yfest 2021 virtual swag bag
+# Limited run o11yfest 2021 swag bag
 We have 300 swag bags, including:
 
 -  a 6"x6" observability magnet sheet
