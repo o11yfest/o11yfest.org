@@ -29,7 +29,7 @@ tr td:first-of-type { white-space: nowrap; }
 | 1:00 PM  | [Mike Angstadt:<br />Pragmatic Observability While Your Business Grows 300%](/speakers/mike-angstadt)     |
 | 1:35 PM  | [Sponsored Breakouts - Cribl](/sponsors/cribl) |
 | 1:55 PM	 | Discussions check-in              |
-| 2:00 PM  | [Alex Hidalgo:<br />Service Level Observability: Measuring Internal States with SLOs](/speakers/alex-hidalgo) |
+| 2:00 PM  | Speaker: TBD |
 | 2:35 PM  | Reminders, shout-outs, events     |
 | 2:45 PM  | General sponsor jam |
 | 2:50 PM  | Contributions Shout-outs          |

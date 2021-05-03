@@ -29,7 +29,7 @@ items:
 - id: steve-prazenica
   name: Steve Prazenica
   bio: |
-    Steve Prazenica manages the Operational Intelligence team at Vanguard, supporting the full spectrum of monitoring and observability tooling from custom scripts to popular vendor products to OpenTelemetry.  What began as a semi-random placement on a Systems Management tools team as a new hire coming out of Drexel University has turned into a career specialization and passion around effective monitoring, observability and sustainable production support practices.  He lives in southeastern Pennsylvania with his wife and two young boys.  Steve is an avid reader, gamer and vinyl record collector. 
+    Steve Prazenica manages the Operational Intelligence team at Vanguard, supporting the full spectrum of monitoring and observability tooling from custom scripts to popular vendor products to OpenTelemetry.  What began as a semi-random placement on a Systems Management tools team as a new hire coming out of Drexel University has turned into a career specialization and passion around effective monitoring, observability and sustainable production support practices.  He lives in southeastern Pennsylvania with his wife and two young boys.  Steve is an avid reader, gamer and vinyl record collector.
   role: presenter
   keynote: Day 1
   title: "KEYNOTE: Iterative Enterprise SRE Transformation"
@@ -40,20 +40,20 @@ items:
   handles:
     linkedin: stephen-prazenica-52b6831a7
 
-- id: alex-hidalgo
-  name: Alex Hidalgo
-  bio: |
-    Alex Hidalgo is the Director of Site Reliability Engineering at Nobl9 and author of Implementing Service Level Objectives. During his career he has developed a deep love for sustainable operations, proper observability, and using SLO data to drive discussions and make decisions. Alex's previous jobs have included IT support, network security, restaurant work, t-shirt design, and hosting game shows at bars.
-    When not sharing his passion for technology with others, you can find him scuba diving or watching college basketball. He lives in Brooklyn with his partner Jen and a rescue dog named Taco. Alex has a BA in philosophy from Virginia Commonwealth University.
-  role: presenter
-  title: "Service Level Observability: Measuring Internal States with SLOs"
-  abstract: |
-    Observability and SLOs have aligned goals: to better understand your systems. While the former uses externalized data to understand internal states and the later focuses on the user experience, it turns out these are almost the same thing. Observe better with SLOs and SLO better with observability.
-
-    In 2021 there are few terms that see as much excitement in the tech world as "observability" and "service level objectives." Unfortunately most of this is the work of marketing departments who don't really understand either. In this talk I'll outline what observability actually means starting with the term's roots in control theory, talk about the origins of reliability engineering going back to the 1940s, and then describe modern and practical approaches for how observability and reliability engineering can be used for complex computer systems via better telemetry and service level objectives.
-  handles:
-    twitter: ahidalgosre
-    linkedin: alex-i-am-not-looking-for-a-job-please-stop-hidalgo-6823971b7
+# - id: alex-hidalgo
+#   name: Alex Hidalgo
+#   bio: |
+#     Alex Hidalgo is the Director of Site Reliability Engineering at Nobl9 and author of Implementing Service Level Objectives. During his career he has developed a deep love for sustainable operations, proper observability, and using SLO data to drive discussions and make decisions. Alex's previous jobs have included IT support, network security, restaurant work, t-shirt design, and hosting game shows at bars.
+#     When not sharing his passion for technology with others, you can find him scuba diving or watching college basketball. He lives in Brooklyn with his partner Jen and a rescue dog named Taco. Alex has a BA in philosophy from Virginia Commonwealth University.
+#   role: presenter
+#   title: "Service Level Observability: Measuring Internal States with SLOs"
+#   abstract: |
+#     Observability and SLOs have aligned goals: to better understand your systems. While the former uses externalized data to understand internal states and the later focuses on the user experience, it turns out these are almost the same thing. Observe better with SLOs and SLO better with observability.
+#
+#     In 2021 there are few terms that see as much excitement in the tech world as "observability" and "service level objectives." Unfortunately most of this is the work of marketing departments who don't really understand either. In this talk I'll outline what observability actually means starting with the term's roots in control theory, talk about the origins of reliability engineering going back to the 1940s, and then describe modern and practical approaches for how observability and reliability engineering can be used for complex computer systems via better telemetry and service level objectives.
+#   handles:
+#     twitter: ahidalgosre
+#     linkedin: alex-i-am-not-looking-for-a-job-please-stop-hidalgo-6823971b7
 
 - id: daniel-gomez-blanco
   name: Daniel Gomez Blanco
