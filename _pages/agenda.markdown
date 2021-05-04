@@ -29,14 +29,14 @@ tr td:first-of-type { white-space: nowrap; }
 | 1:00 PM  | [Mike Angstadt:<br />Pragmatic Observability While Your Business Grows 300%](/speakers/mike-angstadt)     |
 | 1:35 PM  | [Sponsored Breakouts - Cribl](/sponsors/cribl) |
 | 1:55 PM	 | Discussions check-in              |
-| 2:00 PM  | Speaker: TBD |
+| 2:00 PM  | [Rob Skillington:<br />Building and running a world-class observability function](/speakers/rob-skillington) |
 | 2:35 PM  | Reminders, shout-outs, events     |
 | 2:45 PM  | General sponsor jam |
 | 2:50 PM  | Contributions Shout-outs          |
 | 3:00 PM  | [Tim Tischler:<br />Socio-technical Graphs (or Who Owns Kafka cluster C13 or Does It Even Exist?)](/speakers/tim-tischler) |
 | 3:35 PM  | [Panel: Growing and Advocating Observability in Organizations](/panel-day1) |
 | 4:00 PM  | Day 1 Wrap and Final Reminders    |
-| 4:15 PM  | o11yfest Day 1 After-Party:<br />Breakouts and BYOD |
+| 4:15 PM  | o11yfest Day 1 After-Party:<br />Breakouts and BYOD in Gather.Town |
 
   </div>
 
@@ -51,13 +51,13 @@ tr td:first-of-type { white-space: nowrap; }
 | 12:30 PM | Bio breaks & virtual chat         |
 | 12:40 PM | [Dave Lucia:<br />Betting on Observability at Simplebet](/speakers/dave-lucia) |
 | 1:10 PM	 | [Steve Flanders:<br />Exporting Data with OpenTelemetry](/speakers/steve-flanders) |
-| 1:40 PM	 | Sponsored Breakouts |
+| 1:40 PM	 | [Sponsored Breakouts - Honeycomb.io](/sponsors/honeycomb) |
 | 2:00 PM	 | [Ricardo Ferreira:<br />Hidden Secrets about Instrumenting JVMs for OpenTelemetry](/speakers/ricardo-ferreira) |
 | 2:30 PM  | [Eric Mustin:<br />Supercharge Legacy Application Logs by Injecting OpenTelemetry Span Context](/speakers/eric-mustin) |
 | 3:00 PM  | Bio breaks & virtual chat      |
 | 3:05 PM  | [Juraci Paixão Kröhling:<br />Sampling in distributed tracing](/speakers/juraci-paixao-krohling) |
-| 3:30 PM  | [Rob Skillington:<br />Building and running a world-class observability function](/speakers/rob-skillington) |
-| 4:05 PM  | Day 2 Wrap and Final Reminders    |
+| 3:30 PM  | Day 2 Wrap and Final Reminders |
+| 4:05 PM  | Post-conference Overflow Discussions in Gather.Town |
 
   </div>
 </div>
