@@ -51,7 +51,7 @@ tr td:first-of-type { white-space: nowrap; }
 | 12:30 PM | Bio breaks & virtual chat         |
 | 12:40 PM | [Dave Lucia:<br />Betting on Observability at Simplebet](/speakers/dave-lucia) |
 | 1:10 PM	 | [Steve Flanders:<br />Exporting Data with OpenTelemetry](/speakers/steve-flanders) |
-| 1:40 PM	 | Sponsored Breakouts |
+| 1:40 PM	 | [Sponsored Breakouts - Honeycomb.io](/sponsors/honeycomb) |
 | 2:00 PM	 | [Ricardo Ferreira:<br />Hidden Secrets about Instrumenting JVMs for OpenTelemetry](/speakers/ricardo-ferreira) |
 | 2:30 PM  | [Eric Mustin:<br />Supercharge Legacy Application Logs by Injecting OpenTelemetry Span Context](/speakers/eric-mustin) |
 | 3:00 PM  | Bio breaks & virtual chat      |
