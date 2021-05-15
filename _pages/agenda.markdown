@@ -30,10 +30,9 @@ tr td:first-of-type { white-space: nowrap; }
 | 1:35 PM  | [Sponsored Breakouts - Cribl](/sponsors/cribl) |
 | 1:55 PM	 | Discussions check-in              |
 | 2:00 PM  | [Rob Skillington:<br />Building and running a world-class observability function](/speakers/rob-skillington) |
-| 2:35 PM  | Reminders, shout-outs, events     |
-| 2:45 PM  | General sponsor jam |
+| 2:35 PM  | Informal chat w/ Paul Campbell, Vi.to<br />Ethical and Equitable Tech Communities |
 | 2:50 PM  | Contributions Shout-outs          |
-| 3:00 PM  | [Tim Tischler:<br />Socio-technical Graphs (or Who Owns Kafka cluster C13 or Does It Even Exist?)](/speakers/tim-tischler) |
+| 3:00 PM  | [Jonah Kowall:<br />Managing application SLAs using Traces and Metrics](/speakers/jonah-kowall) |
 | 3:35 PM  | [Panel: Growing and Advocating Observability in Organizations](/panel-day1) |
 | 4:00 PM  | Day 1 Wrap and Final Reminders    |
 | 4:15 PM  | o11yfest Day 1 After-Party:<br />Breakouts and BYOD in Gather.Town |

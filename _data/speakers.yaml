@@ -237,23 +237,18 @@ items:
     twitter: tedsuo
     linkedin: ted-young
 
-- id: tim-tischler
-  name: Tim Tischler
+- id: jonah-kowall
+  name: Jonah Kowall
   bio: |
-    Tim Tischler is Principal Engineer at Wayfair, and previously was a Site Reliability Champion at New Relic, Infrastructure at Nike, and engineering at HomeAway/VRBO. Observability is one of his driving concerns and he believes that "socio-technical" needs to be one of the big buzzwords of the next decade. He is also enrolled in the Human Factors and System Safety program at Lund University, though on hiatus during COVID.
+    Jonah Kowall a computer scientist and open-source contributor committing code to FreeBSD and built the first wireless cracking algorithms. Today Jonah focuses on observability contributing and maintaining projects such as OpenSearch, Jaeger, and OpenTelemetry. Jonah received his CISSP and CISA along with several certifications and awards. Throughout 15 years as a practitioner and manager across startups and large enterprises specialized in operations, security, and performance. In 2011 Jonah changed careers, moving to Gartner to focus on availability and performance monitoring and IT operations management (ITOM). Speaking and writing research globally for IT leaders and CIOs. In 2015 Jonah joined AppDynamics driving corporate development, product strategy, and vision. Cisco acquired AppDynamics in 2017 for $3.8b. Jonah then joined Kentik as CTO and executed the product vision and strategy. In 2020 Jonah joined Logz.io as CTO to drive strategy and ecosystem for their open-source based SaaS observability platform.
   role: presenter
-  title: Socio-technical Graphs (or Who Owns Kafka cluster C13 or Does It Even Exist?)
+  title: Managing application SLAs using Traces and Metrics
   abstract: |
-    As we improve our observability of our technical systems, what about our socio-technical systems? Building and maintaining a graph of components and service s along with the teams and the people who run them needs to be the next wave of organizational observability.
-
-    As more tools start to include the humans along the technology, what happens when you have a queryable graph database that includes relationships between technology and humans? What could you do if you could query what teams commit into the mono-repo the most (not just which people)? Or if you could see what teams own services downstream of a particular service? What if you could catch when a service becomes an orphan at the moment when it re-org happens instead of catching it years later?
-
-    El Dorado, an internal tool created by Ward Cunningham at New Relic, Backstage, an open source project from Spotify, data.world, an interconnected data catalog as a service and Jeli.io, an incident analysis tool from the resilience engineering world are all examples of projects that are trying to give us observability not just into the technical system, but into the socio-technical system.
-
-    We are just at the beginning of these tools and we'll be discussing them and what superpowers they will be able to unlock in the years to come.
+    Service level agreements (SLAs) are critical for anyone delivering a service, and the way we manage these is also changing with our shift from traditional operations towards site reliability engineering (SRE). With newer methodologies, such as SRE, the concepts of SLAs are changing towards error budgets. Our tools are also evolving to enable us to measure SLAs is by using observability tools, increasingly we are building this on open source technologies to match our cloud-native architectures to collect logs, metrics, and traces. Most vendor tools collect lots of data across the various data sets. The challenge is that very few tools provide good guidance and capabilities around SLA management. When the tools provide this, they are often missing additional data types. In this session, a template to help users manage SLAs and SLOs with various open-source tooling and where these are going. There will be examples of how this is done with various open-source tools including Grafana, Jaeger, and Prometheus.
   handles:
-    twitter: timotheo
-    linkedin: timtischler
+    twitter: jkowall
+    linkedin: jkowall
+    #github: jkowall
 
 - id: steve-flanders
   name: Steve Flanders
