@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% assign person = site.data['2021-speakers'].items | where_exp:"item", "item.id == page.id" | first %}
+{% assign content = content | markdownify | strip %}
+<div class="flexbox">
+  {% include person-left.html person=person extracontent=content %}
+  <div style="min-width:300px;flex:1;align-self:flex-start;">
+    <h2>{{ person.title }}</h2>
+    <p>
+      {{ person.abstract | markdownify }}
+    </p>
+    {% if content.size > 0 %}
+      <p>
+      {% include person-bio.html person=person %}
+      </p>
+    {% endif %}
+  </div>
+</div>
+{% if content.size < 1 %}
+  {% include person-bio.html person=person %}
+{% endif %}
