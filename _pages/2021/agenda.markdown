@@ -1,0 +1,68 @@
+---
+layout: default
+title:  "2021 Agenda"
+permalink: /2021/agenda
+---
+
+<div class="flexbox">
+  <a class="flexbox-button" href="{{ site.registration_link }}">Attend {{ site.event_short_title }}</a>
+  <a class="flexbox-button" href="/sponsor">Sponsor this Event</a>
+</div>
+
+# Archived Content from 2021
+
+(Times are in Eastern / Atlantic EST time)
+
+<style type="text/css">
+tr td:first-of-type { white-space: nowrap; }
+</style>
+
+<div class="flexbox" style="">
+
+  <div markdown="1" style="flex:1;min-width:450px;align-self:flex-start;">
+
+### Day 1 (5/17) - Biz Value / Case Studies
+
+|   Time   |   Session                         |
+| 11:00 AM | Welcome and Intros                |
+| 11:15 AM | [**Keynote** - Christina Yakomin & Steve Prazenica:<br />Iterative Enterprise SRE Transformation](/speakers/christina-yakomin) |
+| 12:00 PM | [Sponsored Breakouts - Lightstep](/sponsors/lightstep) |
+| 12:20 PM | [Daniel Gomez Blanco:<br />How to transparently migrate 300+ services to OpenTelemetry](/speakers/daniel-gomez-blanco) |
+| 1:00 PM  | [Mike Angstadt:<br />Pragmatic Observability While Your Business Grows 300%](/speakers/mike-angstadt)     |
+| 1:35 PM  | [Sponsored Breakouts - Cribl](/sponsors/cribl) |
+| 1:55 PM	 | Discussions check-in              |
+| 2:00 PM  | [Rob Skillington:<br />Building and running a world-class observability function](/speakers/rob-skillington) |
+| 2:35 PM  | Informal chat w/ Paul Campbell, Vi.to<br />Ethical and Equitable Tech Communities |
+| 2:50 PM  | Contributions Shout-outs          |
+| 3:00 PM  | [Jonah Kowall:<br />Managing application SLAs using Traces and Metrics](/speakers/jonah-kowall) |
+| 3:35 PM  | [Panel: Growing and Advocating Observability in Organizations](/panel-day1) |
+| 4:00 PM  | Day 1 Wrap and Final Reminders    |
+| 4:15 PM  | o11yfest Day 1 After-Party:<br />Breakouts and BYOD in Gather.Town |
+
+  </div>
+
+  <div markdown="1" style="flex:1;min-width:450px;align-self:flex-start;">
+
+### Day 2 (5/18) - OTel Community
+
+|   Time   |   Session                         |
+| 11:00 AM | Welcome back & reminders          |
+| 11:15 AM | [**Keynote** - Jaana Dogan:<br />OpenTelemetry at AWS](/speakers/jaana-dogan)<br />&nbsp; |
+| 12:00 PM | [Ted Young:<br />The value and design of OpenTelemetry](/speakers/ted-young) |
+| 12:30 PM | Bio breaks & virtual chat         |
+| 12:40 PM | [Dave Lucia:<br />Betting on Observability at Simplebet](/speakers/dave-lucia) |
+| 1:10 PM	 | [Steve Flanders:<br />Exporting Data with OpenTelemetry](/speakers/steve-flanders) |
+| 1:40 PM	 | [Sponsored Breakouts - Honeycomb.io](/sponsors/honeycomb) |
+| 2:00 PM	 | [Ricardo Ferreira:<br />Hidden Secrets about Instrumenting JVMs for OpenTelemetry](/speakers/ricardo-ferreira) |
+| 2:30 PM  | [Eric Mustin:<br />Supercharge Legacy Application Logs by Injecting OpenTelemetry Span Context](/speakers/eric-mustin) |
+| 3:00 PM  | Bio breaks & virtual chat      |
+| 3:05 PM  | [Juraci Paixão Kröhling:<br />Sampling in distributed tracing](/speakers/juraci-paixao-krohling) |
+| 3:30 PM  | Day 2 Wrap and Final Reminders |
+| 4:05 PM  | Post-conference Overflow Discussions in Gather.Town |
+
+  </div>
+</div>
+
+# Speakers
+
+{% include 2021-speaker-thumbs.html %}

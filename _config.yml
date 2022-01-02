@@ -9,15 +9,17 @@ github_username:  o11yfest
 show_github: false
 google_analytics_tag: G-SQ4YJP5LND
 produrl: "https://o11yfest.org"
-event_short_title: o11yfest
+event_short_title: o11yfest 2022
+current_event_dates: May 16-19 2022
 
-direct_registration_link: "https://ti.to/o11yfest/2021"
+direct_registration_link: "https://ti.to/o11yfest/2022"
 registration_link: "/attend"
 
 # Build settings
 theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
 include:
   - _pages
@@ -27,14 +29,14 @@ header_pages:
     url: /about
   - title: "-attend"
     url: /attend
-  - title: "-swag"
-    url: /swag-bag
   - title: "-agenda"
     url: /agenda
   - title: "-code-of-conduct"
     url: /code-of-conduct
   - title: "-sponsor"
     url: "/sponsor"
+  - title: "-past"
+    url: /events
   - title: "-contact"
     url: "/contact"
 
