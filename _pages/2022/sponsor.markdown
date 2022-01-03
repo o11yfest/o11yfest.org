@@ -4,6 +4,17 @@ title:  "Sponsorships"
 permalink: /sponsor
 ---
 
+# TL;DR
+
+* o11yfest will be on {{ site.current_event_dates }}
+* It will be a virtual event again, projected 500-1000 attendees
+* Staffing requirements are light, no [unsafe] travel necessary
+* You can have a virtual booth, CTAs, and many ways to get attendees to visit you
+* We do not sell names/leads, but instead help you promote giveaways etc.
+* Sponsors are required to submit an [engineering-led] presentation
+* Please read through this page thoroughly, then let's discuss together!
+
+
 # Why Sponsor o11yfest?
 
 As an emerging industry of critical players in the distributed systems observability space, your financial support and direct engagement with the OpenTelemetry community exposes both you and them to your brand. For sponsors who already actively contribute to open source projects, an active presence at this event demonstrates your leadership in this industry to key practitioners and investors. For more information, email [{{ site.email }}](/contact)
@@ -44,7 +55,7 @@ If you are looking for leads, this is not the event for you. Organization who ha
 
 # Call for Proposals
 
-All sponsors are required to submit a presentation to [our CFP will be open on Jan 10th](/cfp). Our event is not 'pay to play' or otherwise quid pro quo like some other traditional events, as we do not sell speaking spots...rather, ***we require a [non-sales and non-product] presentation*** as contributions from all sponsors who want to participate in and with our community.
+All sponsors are required to submit a presentation to [our CFP will be open on Jan 10th](/cfp). Our event is not 'pay to play' or otherwise quid pro quo like some other traditional events, as we do not sell speaking spots...rather, ***we require a [non-sales and non-product] engineering-led presentation*** as contributions from all sponsors who want to participate in and with our community.
 
 The best thing to do for now is to sponsor o11yfest on {{ site.current_event_dates }} and join our
  community for some great conversations and connections!
