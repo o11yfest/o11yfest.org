@@ -15,30 +15,32 @@
         {% assign is_swag=true %}
       {% endif %}
     {% endif %}
-    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@o11yfest">
     <meta name="twitter:creator" content="@o11yfest">
-    {% if is_a_speakers_or_panelists_page == true %}
-      {% assign is_bannerable_page=false %}
-      {% assign speaker = site.data.speakers.items | where_exp:"item", "item.id == page.id" | first %}
-      {% if speaker.role == "panelist" %}
-        <meta name="twitter:title" content="{{ site.data.day1panel.title }}">
-        <meta name="twitter:description" content="{{ site.data.day1panel.description }}">
-        <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/panel-day1.png">
+    {% if true == false %}
+    <meta name="twitter:card" content="summary_large_image">
+      {% if is_a_speakers_or_panelists_page == true %}
+        {% assign is_bannerable_page=false %}
+        {% assign speaker = site.data.speakers.items | where_exp:"item", "item.id == page.id" | first %}
+        {% if speaker.role == "panelist" %}
+          <meta name="twitter:title" content="{{ site.data.day1panel.title }}">
+          <meta name="twitter:description" content="{{ site.data.day1panel.description }}">
+          <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/panel-day1.png">
+        {% else %}
+          <meta name="twitter:title" content="{{ speaker.name }} at o11yfest {{ site.current_event_dates }}">
+          <meta name="twitter:description" content="{{ page.title }}: {{ speaker.bio }}">
+          <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/{{ speaker.id }}.png">
+        {% endif %}
       {% else %}
-        <meta name="twitter:title" content="{{ speaker.name }} at o11yfest {{ site.current_event_dates }}">
-        <meta name="twitter:description" content="{{ page.title }}: {{ speaker.bio }}">
-        <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/{{ speaker.id }}.png">
-      {% endif %}
-    {% else %}
-      {% if is_swag == true %}
-        <meta name="twitter:title" content="o11yfest {{ site.current_event_dates }}">
-        <meta name="twitter:description" content="Limited run o11yfest virtual swag bag">
-        <meta name="twitter:image" content="{{ site.produrl }}/assets/images/swag-promo.png">
-      {% else %}
-        <meta name="twitter:title" content="o11yfest {{ site.current_event_dates }}">
-        <meta name="twitter:description" content="{{ site.description }}">
-        <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/everyone.png">
+        {% if is_swag == true %}
+          <meta name="twitter:title" content="o11yfest {{ site.current_event_dates }}">
+          <meta name="twitter:description" content="Limited run o11yfest virtual swag bag">
+          <meta name="twitter:image" content="{{ site.produrl }}/assets/images/swag-promo.png">
+        {% else %}
+          <meta name="twitter:title" content="o11yfest {{ site.current_event_dates }}">
+          <meta name="twitter:description" content="{{ site.description }}">
+          <meta name="twitter:image" content="{{ site.produrl }}/assets/images/speakers/socials/everyone.png">
+        {% endif %}
       {% endif %}
     {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
