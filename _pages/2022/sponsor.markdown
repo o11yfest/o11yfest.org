@@ -16,20 +16,20 @@ Attendees of this event are typically DevOps practitioners in a wide variety of 
 
 # Sponsorship Options
 
-|                                         | [**Premiere**](#premiere-sponsorship-details)<br />(3 total) | Accessibility / Captioning | [**Contributor**](#contributor-sponsorship-details)<br />(STILL OPEN!) |
+|                                         | [**Premiere**](#premiere-sponsorship-details)<br />(3 total) | [***Accessibility / Captioning***](#accessibility--captioning) | [**Contributor**](#contributor-sponsorship-details)<br />(STILL OPEN!) |
 | Cost                                    | $4,000                              | $3,000   | [$2,000 donation to approved cause/charity](#contributor-sponsorship-details) |
-| # Conference Passes                     |  4                                  | 4   | 2           |
-| Virtual Booth                           | Booth + 5min live event spot | Booth + video special thanks | Booth & live stream organizer shout-outs  |
-| Company Logo on Website                 | ✓                              | ✓           | ✓           |
-| Company Logo on Digital Signage         | Large                           | Small       | Small       |
-| Mentions through Social Media           | ✓                                 | ✓        | ✓           |
+| # Conference Passes                     |  free                                  | free   | free           |
+| Presence                           | Virtual Booth + 5min live event spot | Virtual Booth + special thanks on all videos | Virtual Booth + live stream organizer shout-outs  |
+| Company Logo on Website                 | Large                           | Large       | Small       |
+| Company Logo on Digital Signage         | Large                           | Large       | Small       |
+| Mentions through Social Media           | 4                                 | 2        | 2           |
 | Call-to-Action in Post-Event Newsletter | ✓                                | ✓        | -           |
 | All-attendee promoted give-away         | ✓                                | ✓        | -           |
 
 All sponsorships also qualify vendors for the following 'À la carte' options:
 
-* Branded virtual game room
-* Virtual workshop session
+* Branded virtual game room in event platform
+* Virtual workshop session during one conference day
 
 # Our Commitment to Attendee Privacy and Value
 
@@ -44,7 +44,7 @@ If you are looking for leads, this is not the event for you. Organization who ha
 
 # Call for Proposals
 
-All sponsors are required to submit a presentation to [our CFP will be open on Jan 10th](/cfp). Our event is not 'pay to play' or otherwise quid pro quo like some other traditional events, as we do not sell speaking spots...rather, we require non-sales and non-product pitches as contributions from all sponsors who want to participate in and with our community.
+All sponsors are required to submit a presentation to [our CFP will be open on Jan 10th](/cfp). Our event is not 'pay to play' or otherwise quid pro quo like some other traditional events, as we do not sell speaking spots...rather, ***we require a [non-sales and non-product] presentation*** as contributions from all sponsors who want to participate in and with our community.
 
 The best thing to do for now is to sponsor o11yfest on {{ site.current_event_dates }} and join our
  community for some great conversations and connections!
@@ -53,8 +53,14 @@ The best thing to do for now is to sponsor o11yfest on {{ site.current_event_dat
 
 Aside from the above perks, organizers also welcome discussion on the following virtual-friendly options:
 
-- Hands-on booth setup assistance with an organizer and tailoring capabilities available before the event
-- Collaboration and synchronization of social media shares related to the conference sponsorship
+- Hands-on booth setup assistance with an organizer
+- Tailoring platform capabilities before the event
+- Collaboration and synchronization of social media shares
+- Team walk-through of logistics one week before the event
+
+# Accessibility / Captioning
+
+Our conference community and organizing group care deeply about providing the most inclusive and accessible event as we possibly can. A key element of that on virtual platforms is to provide LIVE captioning during and curated captions on all video after the event. We contract this work out to a firm which specializes in human live captioning. This usually costs at least ~$3,000 which is a significant chunk of money, but can be offset by a single sponsor who also cares deeply about accessibility. Because captioning affects every presentation, each video will contain a special thanks to this sponsor as a permanent reminder of our shared commitment to this end.
 
 # Contributor Sponsorship Details
 
