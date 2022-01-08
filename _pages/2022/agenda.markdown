@@ -6,6 +6,7 @@ permalink: /agenda
 
 <div class="flexbox">
   <a class="flexbox-button" href="{{ site.registration_link }}">Attend {{ site.event_short_title }}</a>
+  <a class="flexbox-button" href="/cfp">CFP</a>
   <a class="flexbox-button" href="/sponsor">Sponsor this Event</a>
 </div>
 

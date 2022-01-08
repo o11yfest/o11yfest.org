@@ -29,6 +29,8 @@ header_pages:
     url: /about
   - title: "-attend"
     url: /attend
+  - title: "-cfp"
+    url: /cfp
   - title: "-agenda"
     url: /agenda
   - title: "-code-of-conduct"

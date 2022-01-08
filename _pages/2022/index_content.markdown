@@ -8,6 +8,7 @@ o11yfest is in its third year of operation as a grass-roots event whose aim is t
 
 <div class="flexbox">
   <a class="flexbox-button" href="{{ site.registration_link }}">Attend {{ site.event_short_title }}</a>
+  <a class="flexbox-button" href="/cfp">Our CFP</a>
   <a class="flexbox-button" href="/sponsor">Sponsor this Event</a>
 </div>
 
