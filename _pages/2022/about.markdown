@@ -4,6 +4,11 @@ title:  "About o11yfest"
 permalink: /about
 ---
 
+<div class="flexbox">
+  <a class="flexbox-button" href="{{ site.registration_link }}">Attend {{ site.event_short_title }}</a>
+  <a class="flexbox-button" href="/sponsor">Sponsor this Event</a>
+</div>
+
 # What is o11yfest?
 
 **o11yfest** is a multi-day virtual technology conference focused on empowering DevOps practitioners with solutions that improve observability over systems and processes. It will be held online using a online platform on {{ site.current_event_dates }}, hosted by community leaders and Growgistics LLC in collaboration with leading experts and companies in the continuous delivery and systems reliability ecosystem.
