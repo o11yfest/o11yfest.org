@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: helaili/jekyll-action@2.0.5
+      - uses: helaili/jekyll-action@2.2.0
+        #pre_build_commands: 'bundle update ffi'
+        pre_build_commands: 'bundle update sassc'
         env:
           JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}

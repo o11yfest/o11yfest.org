@@ -9,7 +9,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 
 # because 2.2.0 no longer ships with alpine-friendly precompiles, thus long builds
-gem 'sassc', '~> 2.1.0'
+#gem 'sassc', '~> 2.1.0'
 
 gem "jekyll", "~> 4.2.1"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
