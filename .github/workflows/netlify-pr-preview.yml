@@ -13,18 +13,19 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
-
-      - name: Build Site
-        uses: helaili/jekyll-action@2.2.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          #pre_build_commands: 'bundle update ffi'
-          #pre_build_commands: 'bundle install sassc'
-
-        # run: bundle exec jekyll build
+      # - uses: ruby/setup-ruby@v1
+      #   with:
+      #     ruby-version: 2.6.5
+      #     bundler-cache: true
+      #
+      # - name: Build Site
+      #   uses: helaili/jekyll-action@2.2.0
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     #pre_build_commands: 'bundle update ffi'
+      #     #pre_build_commands: 'bundle install sassc'
+      #
+      #   # run: bundle exec jekyll build
 
       - name: Deploy to netlify
         uses: netlify/actions/cli@master
