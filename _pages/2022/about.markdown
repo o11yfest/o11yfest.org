@@ -20,7 +20,7 @@ The conference is designed to promote awareness in OpenTelemetry and other relev
 # What's Different between 2021 and 2022
 
 In its first year, [Observe 20/20](https://observe2020.io) hosted hundreds of practitioners and
- community members and subsequently transformed into [o11yfest](/2020/). As point-in-time events, this was great, but organizers also feel that it is important to grow this into reoccurring community
+ community members and subsequently transformed into [o11yfest](/2021/). As point-in-time events, this was great, but organizers also feel that it is important to grow this into reoccurring community
  events.
 
 This year, we're doubling up on our o11yfest community to reflect this intent, and hope to hold
