@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign sponsor = site.data.sponsors.items | where_exp:"item", "item.id == page.id" | first %}
+{% assign sponsor = site.data.2022-sponsors.items | where_exp:"item", "item.id == page.id" | first %}
 
 <div class="flexbox">
   {% include sponsor-left.html sponsor=sponsor %}

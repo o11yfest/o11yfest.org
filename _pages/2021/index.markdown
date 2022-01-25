@@ -28,7 +28,7 @@ Our CFP for o11yfest 2021 closed March 15th, and we have confirmed the following
 These sponsors have materially contributed both in effort and financial underwriting to make this conference possible! A special thanks goes to them for the opportunity to come together and learn!
 
 <div class="flexbox">
-  {% assign items = site.data.sponsors.items | where_exp:"item", "item.level == 'premiere'" %}
+  {% assign items = site.data.2021-sponsors.items | where_exp:"item", "item.level == 'premiere'" %}
   {% for item in items %}
     <a href="{{ item.link }}"><img class="sponsor-logo-{{ item.level }}" src="/assets/images/sponsors/{{ item.logo }}" title="{{ item.name }}"></a>
   {% endfor %}
@@ -42,7 +42,7 @@ We can't thank them enough for their support of these worthwhile organizations a
 If you would also like to sponsor in this way, please [contact the organizers](/contact).
 
 <div class="flexbox">
-  {% assign items = site.data.sponsors.items | where_exp:"item", "item.level == 'contributor'" %}
+  {% assign items = site.data.2021-sponsors.items | where_exp:"item", "item.level == 'contributor'" %}
   {% for item in items %}
     <a href="{{ item.link }}"><img class="sponsor-logo-{{ item.level }}" src="/assets/images/sponsors/{{ item.logo }}" title="{{ item.name }}"></a>
   {% endfor %}
