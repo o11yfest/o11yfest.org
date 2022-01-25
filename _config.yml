@@ -1,7 +1,7 @@
 title: o11yfest
 email: organizers@o11yfest.org
 description: >-
-  A community-driven virtual event on May 16-19 2022 to celebrate observability in our systems and software
+  A community-driven virtual event on May 9-12 2022 to celebrate observability in our systems and software
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://o11yfest.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: o11yfest
@@ -10,7 +10,7 @@ show_github: false
 google_analytics_tag: G-SQ4YJP5LND
 produrl: "https://o11yfest.org"
 event_short_title: o11yfest 2022
-current_event_dates: May 16-19 2022
+current_event_dates: May 9-12 2022
 
 direct_registration_link: "https://ti.to/o11yfest/2022"
 registration_link: "/attend"
