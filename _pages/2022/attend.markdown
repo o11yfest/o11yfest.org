@@ -47,7 +47,7 @@ As a single contributor, you can make a difference, and we all should. As a grou
 
 # Logistics
 
-This event will be held online on {{ site.current_event_dates }} and will be live captioned to respect accessibility for all attendees. It will also be accessible via mobile device and standard desktop browsers (the after-party platform is only for full browsers). Further logistics about day-of access will be provided by May 13th via email (so don't use a fake email for registration).
+This event will be held online on {{ site.current_event_dates }} and will be live captioned to respect accessibility for all attendees. It will also be accessible via mobile device and standard desktop browsers (the after-party platform is only for full browsers). Further logistics about day-of access will be provided the Friday before the event via email (so don't use a fake email for registration).
 
 </div>
 
