@@ -2,7 +2,7 @@
 layout: 2021-sponsor
 id: chronosphere
 title:  "Chronosphere"
-permalink: /sponsors/chronosphere
+permalink: /2021/sponsors/chronosphere
 ---
 
 On top of their $2,000 contribution to Stop AAPI Hate, Chronoshpere also recently

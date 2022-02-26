@@ -1,1 +1,37 @@
-items: []
+items:
+# - id: ...
+#   name: Lightstep
+#   level: premiere
+#   logo: lightstep.png
+#   link: /2022/sponsors/lightstep
+#   external_link: https://lightstep.com
+- id: honeycomb
+  name: Honeycomb
+  level: premiere
+  logo: honeycomb.png
+  external_link: https://honeycomb.io
+  link: /2022/sponsors/honeycomb
+- id: observeinc
+  name: Observe, Inc.
+  level: contributor
+  logo: observeinc.png
+  external_link: https://observeinc.com
+  link: /2022/sponsors/observeinc
+- id: influxdata
+  name: Influx Data
+  level: contributor
+  logo: influxdata.png
+  external_link: https://www.influxdata.com
+  link: /2022/sponsors/influxdata
+- id: chronosphere
+  name: Chronosphere
+  level: contributor
+  logo: chronosphere.png
+  external_link: https://chronosphere.io
+  link: /2022/sponsors/chronosphere
+# - id: elastic
+#   name: Elastic
+#   level: premiere
+#   logo: elastic.png
+#   external_link: https://elastic.co
+#   link: /2022/sponsors/elastic

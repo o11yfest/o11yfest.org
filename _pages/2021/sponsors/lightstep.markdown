@@ -2,7 +2,7 @@
 layout: 2021-sponsor
 id: lightstep
 title:  "Lightstep"
-permalink: /sponsors/lightstep
+permalink: /2021/sponsors/lightstep
 ---
 
 

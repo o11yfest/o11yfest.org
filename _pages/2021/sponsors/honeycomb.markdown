@@ -2,7 +2,7 @@
 layout: 2021-sponsor
 id: honeycomb
 title:  "Honeycomb"
-permalink: /sponsors/honeycomb
+permalink: /2021/sponsors/honeycomb
 ---
 
 A special huge thanks goes to [Liz Fong-Jones](https://www.lizthegrey.com/), content co-chair of this event.
