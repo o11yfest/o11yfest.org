@@ -23,6 +23,31 @@ Unlike a typical monolithic tech event, this year we're taking a more continuous
 
 All content will need to be pre-recorded and unique to o11yfest (not the same exact upload as what was shared in other conferences, though it can be based on a presentation shared elsewhere). CFP and presentation uploads can happen at any time, but the later the submission, the less likely to make the days-of schedule headlines.
 
-# Sponsoring
+# Premiere Sponsors
+
+These sponsors have materially contributed both in effort and financial underwriting to make this conference possible! A special thanks goes to them for the opportunity to come together and learn!
+
+<div class="flexbox">
+  {% assign items = site.data.2022-sponsors.items | where_exp:"item", "item.level == 'premiere'" %}
+  {% for item in items %}
+    <a href="{{ item.link }}"><img class="sponsor-logo-{{ item.level }}" src="/assets/images/sponsors/{{ item.logo }}" title="{{ item.name }}"></a>
+  {% endfor %}
+</div>
+
+# Contributor Sponsors
+
+These sponsors have donated significantly to one of our community-driven 'good causes'.
+We can't thank them enough for their support of these worthwhile organizations and this conference!
+
+If you would also like to sponsor in this way, please [contact the organizers](/contact).
+
+<div class="flexbox">
+  {% assign items = site.data.2022-sponsors.items | where_exp:"item", "item.level == 'contributor'" %}
+  {% for item in items %}
+    <a href="{{ item.link }}"><img class="sponsor-logo-{{ item.level }}" src="/assets/images/sponsors/{{ item.logo }}" title="{{ item.name }}"></a>
+  {% endfor %}
+</div>
+
+# Want to Sponsor?
 
 Virtual events are not zero cost, however, o11yfest is not about turning a profit. We do not sell attendee data and in fact prefer to have as little Personally Identifiable Information (PII) as necessary to run a safe and effective conference. This year we have a few new creative ideas to allow attendees and sponsors to equitably connect which you can [learn about here](/sponsor).
