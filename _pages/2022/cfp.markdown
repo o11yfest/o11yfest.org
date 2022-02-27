@@ -27,7 +27,7 @@ If we accept your submission, you will be notified immediately and will be asked
 Once you confirm, you have until May 1st to provide a link to your recorded video. If you submit your talk on or after April 15th, assume that you should also be submitting your video ASAP.
 
 * Lightning talks (~10-15min) should be NO longer than 15mins, period.
-* Full presentations (~20-25min) should be NO longer than 15min, period.
+* Full presentations (~20-25min) should be NO longer than 30min, period.
 
 # Recordings
 
