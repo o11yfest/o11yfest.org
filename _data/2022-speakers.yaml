@@ -17,3 +17,23 @@ items:
   handles:
     twitter: riferrei
     linkedin: riferrei
+
+- id: michael-haberman
+  name: Michael Haberman
+  bio: |
+    Michael is the Co-Founder and CTO of Aspecto. After serving as a software developer in an elite unit in the Israeli Intelligence branch, Michael worked with a few startups on building and scaling their microservices infrastructure. Prior to co-founding Aspecto, he was the Chief Architect at Playbuzz. In his free time, Michael also lectures and conducts workshops on microservices at conferences.
+  role: presenter
+  title: Trace-Based Testing with OpenTelemetry
+  abstract: |
+    Distributed tracing allows devs to find and fix issues in production after they happen. There is another use case for tracing data: trace-based testing. We can improve assertion capabilities by leveraging OpenTelemetry trace data and making it accessible while setting our expectations from a test.
+
+    Companies these days use distributed tracing for critical functions such as performance monitoring and troubleshooting, allowing DevOps, developers, and SREs to find and fix issues in production after they happen. But here is the thing, they don’t use tracing to its full potential.
+
+    There is another use case for tracing data, and that is trace-based testing. This new method allows you to improve assertion capabilities by leveraging traces data and making it accessible while setting your expectations from a test.
+
+    We will introduce you to a new open-source called Malabi - a Javascript framework based on OpenTelemetry that allows you to easily use trace data to take your assertion capabilities to the next level.
+
+    By the end of this session, you will know how to use trace-based testing to increase your tests’ reliability and possibly prevent issues early in the development cycle.
+  handles:
+    twitter: hab_mic
+    linkedin: michael-haberman
