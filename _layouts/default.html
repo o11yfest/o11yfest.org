@@ -18,19 +18,23 @@
 
     {% capture social_title %}o11yfest {{ site.current_event_dates }}{% endcapture %}
     {% capture social_desc %}{{ site.description }}{% endcapture %}
-    {% capture social_image %}{{ site.produrl }}/assets/images/2022/early-banner-0125.png{% endcapture %}
-
+    {% capture social_image %}{{ site.produrl }}/assets/images/2022/vito-banner-0228.png{% endcapture %}
     {% if is_a_speakers_or_panelists_page == true %}
+      {% assign yearpath = "2022/" %}
       {% assign is_bannerable_page=false %}
-      {% assign speaker = site.data.speakers.items | where_exp:"item", "item.id == page.id" | first %}
+      {% assign speaker = site.data['2022-speakers'].items | where_exp:"item", "item.id == page.id" | first %}
+      {% if speaker %}{% else %}
+      {% assign speaker = site.data['2021-speakers'].items | where_exp:"item", "item.id == page.id" | first %}
+      {% assign yearpath = "2021/" %}
+      {% endif %}
       {% if speaker.role == "panelist" %}
         {% capture social_title %}{{ site.data.day1panel.title }}{% endcapture %}
         {% capture social_desc %}{{ site.data.day1panel.description }}{% endcapture %}
-        {% capture social_image %}{{ site.produrl }}/assets/images/speakers/socials/panel-day1.png{% endcapture %}
+        {% capture social_image %}{{ site.produrl }}/assets/images/speakers/{{ yearpath }}socials/panel-day1.png{% endcapture %}
       {% else %}
         {% capture social_title %}{{ speaker.name }} at o11yfest {{ site.current_event_dates }}{% endcapture %}
         {% capture social_desc %}{{ page.title }}: {{ speaker.bio }}{% endcapture %}
-        {% capture social_image %}{{ site.produrl }}/assets/images/speakers/socials/{{ speaker.id }}.png{% endcapture %}
+        {% capture social_image %}{{ site.produrl }}/assets/images/speakers/{{ yearpath }}socials/{{ speaker.id }}.png{% endcapture %}
       {% endif %}
     {% else %}
       {% if is_swag == true %}
@@ -107,7 +111,7 @@
       </div>
       {% if is_bannerable_page == true %}
       <div style="visibility:hidden;display:none;">
-        <img id="everyone-thumb" src="/assets/images/speakers/socials/everyone.png"
+        <img id="everyone-thumb" src="/assets/images/speakers/{{ yearpath }}socials/everyone.png"
               style="width:1200px;border-radius:2em;" />
       </div>
       {% endif %}

@@ -10,7 +10,7 @@ permalink: /speakers/steve-prazenica
   {% assign panelists = site.data.speakers.items | where_exp:"item", "item.keynote == 'Day 1'" %}
   {% for panelist in panelists %}
     {% if panelist.id != 'steve-prazenica' %}
-    {% include speaker-thumb.html person=panelist %}
+    {% include speaker-thumb.html year="2021" person=panelist %}
     {% endif %}
   {% endfor %}
 </div>

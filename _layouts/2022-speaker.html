@@ -2,10 +2,10 @@
 layout: default
 ---
 
-{% assign person = site.data.speakers.items | where_exp:"item", "item.id == page.id" | first %}
+{% assign person = site.data['2022-speakers'].items | where_exp:"item", "item.id == page.id" | first %}
 {% assign content = content | markdownify | strip %}
 <div class="flexbox">
-  {% include person-left.html person=person extracontent=content %}
+  {% include person-left.html person=person year="2022" extracontent=content %}
   <div style="min-width:300px;flex:1;align-self:flex-start;">
     <h2>{{ person.title }}</h2>
     <p>

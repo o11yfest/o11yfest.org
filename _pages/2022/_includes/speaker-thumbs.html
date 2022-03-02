@@ -1,8 +1,0 @@
-<div class="flexbox">
-  {% assign persons = site.data.speakers.items %}
-  {% for person in persons %}
-    {% assign roledir = "speakers" %}
-    {% if person.role == "panelist" %}{% assign roledir = "panelists" %}{% endif %}
-    {% include speaker-thumb.html person=person %}
-  {% endfor %}
-</div>

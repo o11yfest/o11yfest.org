@@ -1,12 +1,19 @@
-items: []
+items:
 
-# - name:
-#   role: presenter
-#   title:
-#   abstract:
-#   images:
-#     thumb:
-#     social:
-#   handles:
-#     twitter:
-#     linkedin:
+- id: ricardo-ferreira
+  name: Ricardo Ferreira
+  bio: |
+    Ricardo is Observability Lead for Elastic’s community team, where he acts as the voice of Elastic at SRE, DevOps, and DataOps communities. In this role, he is responsible for developing and driving a global community and developer advocacy strategy focused on observability. With +20 years of experience, he might have learned a thing or two about distributed systems, observability, streaming systems, and databases. Before Elastic, he worked for other vendors such as Confluent, Oracle, Red Hat, and different consulting firms.
+
+    While not working, he loves barbecuing in his backyard with his family and friends, where he gets the chance to talk about anything that is not IT-related. He lives in North Carolina, USA, with his wife and son.
+  role: presenter
+  title: Building Software Reliability with Distributed Tracing
+  abstract: |
+    Most developers believe that building reliable software involves writing good code, implementing enough testing, and using as many proven architecture patterns as possible. The assumption is that building things this way equals creating a flawless system. Sadly, in the software world, this is not true. Software reliability is not the same as software correctness. You may write good code, implement enough testing, and use as many proven architecture patterns as possible to end up with software deemed correct. But, the code may still blow up straight on the customer’s face.
+
+    Building software reliability is something else entirely. It requires developers to look at the code, not from the perspective of what it is supposed to do but what the code is effectively doing, with little room for guessing. Distributed tracing is a technique that developers can use to accomplish this.
+
+    This talk will discuss how distributed tracing can positively change how you and your team deliver customers’ software. After all, five-nines of availability don’t matter if users aren’t happy. It will highlight which techniques with distributed tracing bring value, what to focus on and what avoid, and the most common challenges. By the end, you will know everything you need to adopt distributed tracing as a practice that promotes software reliability.
+  handles:
+    twitter: riferrei
+    linkedin: riferrei

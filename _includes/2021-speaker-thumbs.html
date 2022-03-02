@@ -3,6 +3,6 @@
   {% for person in persons %}
     {% assign roledir = "speakers" %}
     {% if person.role == "panelist" %}{% assign roledir = "panelists" %}{% endif %}
-    {% include speaker-thumb.html person=person %}
+    {% include speaker-thumb.html year="2021" person=person %}
   {% endfor %}
 </div>
