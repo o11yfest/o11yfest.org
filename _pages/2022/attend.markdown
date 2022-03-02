@@ -62,16 +62,19 @@ Oh, and did we mention an ***amazing*** lineup of speakers, OpenTelemetry contri
  and practitioners already implementing advanced observability practices in their
  organizations?
 </p>
-<p>
-Check out some of them from 2021:
 
-{% include 2021-speaker-thumbs.html %}
-
-</p>
-</div>
+So far, we've received presentations from the following speakers for 2022:
 
 {% include 2022-speaker-thumbs.html %}
 
 <div style="text-align:center;" markdown="1">
-# [Claim your spot now!](#get-a-ticket)
+## [Claim your spot now!](#get-a-ticket)
+</div>
+
+<p>
+And don't forget, a ticket also gets you access to all our presentations from 2021, including:
+
+{% include 2021-speaker-thumbs.html %}
+
+</p>
 </div>

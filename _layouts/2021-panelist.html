@@ -5,7 +5,7 @@ layout: default
 {% assign panelist = site.data['2021_speakers'].items | where_exp:"item", "item.id == page.id" | first %}
 
 <div class="flexbox">
-  {% include person-left.html person=panelist socialcard="panel-day1" %}
+  {% include person-left.html person=panelist year="2021" socialcard="panel-day1" %}
   <div style="min-width:300px;flex:1;align-self:flex-start;">
     <div class="flexbox" style="flex-direction: column;">
       <div style="align-self:flex-start;">
@@ -20,7 +20,7 @@ layout: default
           {% assign others = site.data.speakers.items | where_exp:"item", "item.panel == 'day1'" %}
           {% for other in others %}
             {% if other.id != panelist.id %}
-              {% include speaker-thumb.html person=other %}
+              {% include speaker-thumb.html year="2021" person=other %}
             {% endif %}
           {% endfor %}
         </div>

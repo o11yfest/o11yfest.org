@@ -2,9 +2,12 @@
 {% assign content = include.extracontent %}
 {% assign socialcard = person.id %}
 {% assign content = content | markdownify | strip %}
+
+{% capture yearpath %}{{ include.year }}/{% endcapture %}
+
 {% if include.socialcard %}{% assign socialcard = include.socialcard %}{% endif %}
 <div style="min-width:200px;width:25%;margin:2em;float:left;text-align:center;align-self:flex-start;">
-  <img id="speaker-thumb" src="/assets/images/speakers/socials/{{ socialcard }}.png"
+  <img id="speaker-thumb" src="/assets/images/speakers/{{ yearpath }}socials/{{ socialcard }}.png"
         style="width:100%;border-radius:2em;visibility:hidden;"
         title="{{ person.name }}: {{ person.title }}" />
 {% if person.handles %}
@@ -24,7 +27,7 @@
 </div>
 <script type="text/javascript">
   window.onloadqueue=(window.onloadqueue||[]).concat([function () {
-    $('#speaker-thumb').attr('src','/assets/images/speakers/thumbs/{{ person.id }}.png').css({'border-radius':'50%'})
+    $('#speaker-thumb').attr('src','/assets/images/speakers/{{ yearpath }}thumbs/{{ person.id }}.png').css({'border-radius':'50%'})
     [0].onload=function() {
       $(this).css({'visibility':'visible'})
     }

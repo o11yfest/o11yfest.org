@@ -27,7 +27,7 @@ Attendees of this event are typically DevOps practitioners in a wide variety of 
 
 # Sponsorship Options
 
-|                                         | [**Premiere**](#premiere-sponsorship-details)<br />(3 total) | [***Accessibility / Captioning***](#accessibility--captioning) | [**Contributor**](#contributor-sponsorship-details)<br />(STILL OPEN!) |
+|                                         | [**Premiere**](#premiere-sponsorship-details)<br />(sold out!) | [***Captioning***](#accessibility--captioning)<br />(sold out!) | [**Contributor**](#contributor-sponsorship-details)<br />(STILL OPEN!) |
 | Cost                                    | $4,000                              | $3,000   | [$2,000 donation to approved cause/charity](#contributor-sponsorship-details) |
 | # Conference Passes                     |  free                                  | free   | free           |
 | Presence                           | Virtual Booth + 5min live event spot | Virtual Booth + special thanks on all videos | Virtual Booth + live stream organizer shout-outs  |
