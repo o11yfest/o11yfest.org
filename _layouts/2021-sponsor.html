@@ -5,7 +5,7 @@ layout: default
 {% assign sponsor = site.data['2021-sponsors'].items | where_exp:"item", "item.id == page.id" | first %}
 
 <div class="flexbox">
-  {% include sponsor-left.html sponsor=sponsor %}
+  {% include sponsor-left.html sponsor=sponsor year="2021" %}
   <div style="min-width:300px;flex:1;align-self:flex-begin;">
 
     <h3>{{ sponsor.name }} is a {{ sponsor.level }} sponsor of o11yfest!</h3>
