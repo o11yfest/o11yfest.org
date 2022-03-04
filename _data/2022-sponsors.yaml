@@ -29,9 +29,9 @@ items:
   logo: chronosphere.png
   external_link: https://chronosphere.io
   link: /2022/sponsors/chronosphere
-# - id: elastic
-#   name: Elastic
-#   level: premiere
-#   logo: elastic.png
-#   external_link: https://elastic.co
-#   link: /2022/sponsors/elastic
+- id: elastic
+  name: Elastic
+  level: premiere
+  logo: elastic.png
+  external_link: https://elastic.co
+  link: /2022/sponsors/elastic

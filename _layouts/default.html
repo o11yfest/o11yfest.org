@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% assign is_a_speakers_or_panelists_page=false %}
+    {% assign is_a_sponsor=false %}
     {% assign is_swag=false %}
     {% if page.permalink %}
       {% if page.permalink contains "/speakers/" or page.permalink contains "/panelists/" %}
@@ -14,13 +15,16 @@
       {% if page.permalink contains "/swag-bag" %}
         {% assign is_swag=true %}
       {% endif %}
+      {% if page.permalink contains "/sponsors/" %}
+        {% assign is_a_sponsor=true %}
+      {% endif %}
     {% endif %}
 
     {% capture social_title %}o11yfest {{ site.current_event_dates }}{% endcapture %}
     {% capture social_desc %}{{ site.description }}{% endcapture %}
     {% capture social_image %}{{ site.produrl }}/assets/images/2022/vito-banner-0228.png{% endcapture %}
+    {% assign yearpath = "2022/" %}
     {% if is_a_speakers_or_panelists_page == true %}
-      {% assign yearpath = "2022/" %}
       {% assign is_bannerable_page=false %}
       {% assign speaker = site.data['2022-speakers'].items | where_exp:"item", "item.id == page.id" | first %}
       {% if speaker %}{% else %}
@@ -40,6 +44,9 @@
       {% if is_swag == true %}
         {% capture social_desc %}Limited run o11yfest virtual swag bag{% endcapture %}
         {% capture social_image %}{{ site.produrl }}/assets/images/swag-promo.png{% endcapture %}
+      {% endif %}
+      {% if is_a_sponsor == true %}
+        {% capture social_image %}{{ site.produrl }}/assets/images/sponsors/{{ yearpath }}socials/{{ page.id }}.png{% endcapture %}
       {% endif %}
     {% endif %}
 

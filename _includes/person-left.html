@@ -19,7 +19,13 @@
     </div>
   <p style="font-size:1.5em;">{{ person.name }}<br /><span style="text-transform: uppercase;">{{ person.role }}</span></p>
   <div class="flexbox">
-    <a class="flexbox-button" href="{{ site.registration_link }}" style="font-size:0.9em;">Attend this Session</a>
+    <a class="flexbox-button" href="{%- if person.prior_session_url -%}{{ person.prior_session_url }}{%- else %}{{ site.registration_link }}{%- endif -%}" style="font-size:0.9em;">
+      {%- if include.year == "2022" -%}
+      Attend this Session
+      {%- else -%}
+      Watch this Session
+      {%- endif -%}
+    </a>
   </div>
   {% if content.size > 0 %}
     {{ content }}

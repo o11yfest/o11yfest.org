@@ -5,7 +5,7 @@ layout: default
 {% assign sponsor = site.data['2022-sponsors'].items | where_exp:"item", "item.id == page.id" | first %}
 
 <div class="flexbox">
-  {% include sponsor-left.html sponsor=sponsor %}
+  {% include sponsor-left.html sponsor=sponsor year="2022" %}
   <div style="min-width:300px;flex:1;align-self:flex-begin;">
 
     <h3>{{ sponsor.name }} is a {{ sponsor.level }} sponsor of o11yfest!</h3>
@@ -17,11 +17,6 @@ Their financial support:
 <li>Has been pivotal to bootstrapping the logistics of this conference</li>
 <li>Supports important conference details like paying for live captioning</li>
 <li>Ensures a future for the next time this conference happens</li>
-</ul>
-They also have provided additional support for:
-<ul>
-<li>Email and social promotion of this event</li>
-<li>Breakout logistics</li>
 </ul>
     </p>
 {% endif %}
