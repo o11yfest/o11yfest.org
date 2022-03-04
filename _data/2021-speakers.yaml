@@ -25,6 +25,7 @@ items:
   handles:
     twitter: srechristina
     linkedin: christina-yakomin
+  prior_session_url: https://vi.to/hubs/o11yfest/videos/3142
 
 - id: steve-prazenica
   name: Steve Prazenica
@@ -39,21 +40,7 @@ items:
     In this presentation, we'll focus primarily on the topic of how we monitor and measure availability - developing SLIs and SLOs, managing an error budget, leveraging Honeycomb for observability. We'll also touch on other aspects of our SRE transformation at a higher level, including home-grown tools for self-service chaos engineering, self-service load testing, emerging cloud platforms (including serverless), proactive failure modes and effects analysis, and blameless post-incident reviews.
   handles:
     linkedin: stephen-prazenica-52b6831a7
-
-# - id: alex-hidalgo
-#   name: Alex Hidalgo
-#   bio: |
-#     Alex Hidalgo is the Director of Site Reliability Engineering at Nobl9 and author of Implementing Service Level Objectives. During his career he has developed a deep love for sustainable operations, proper observability, and using SLO data to drive discussions and make decisions. Alex's previous jobs have included IT support, network security, restaurant work, t-shirt design, and hosting game shows at bars.
-#     When not sharing his passion for technology with others, you can find him scuba diving or watching college basketball. He lives in Brooklyn with his partner Jen and a rescue dog named Taco. Alex has a BA in philosophy from Virginia Commonwealth University.
-#   role: presenter
-#   title: "Service Level Observability: Measuring Internal States with SLOs"
-#   abstract: |
-#     Observability and SLOs have aligned goals: to better understand your systems. While the former uses externalized data to understand internal states and the later focuses on the user experience, it turns out these are almost the same thing. Observe better with SLOs and SLO better with observability.
-#
-#     In 2021 there are few terms that see as much excitement in the tech world as "observability" and "service level objectives." Unfortunately most of this is the work of marketing departments who don't really understand either. In this talk I'll outline what observability actually means starting with the term's roots in control theory, talk about the origins of reliability engineering going back to the 1940s, and then describe modern and practical approaches for how observability and reliability engineering can be used for complex computer systems via better telemetry and service level objectives.
-#   handles:
-#     twitter: ahidalgosre
-#     linkedin: alex-i-am-not-looking-for-a-job-please-stop-hidalgo-6823971b7
+  prior_session_url: https://vi.to/hubs/o11yfest/videos/3142
 
 - id: daniel-gomez-blanco
   name: Daniel Gomez Blanco
@@ -69,6 +56,7 @@ items:
   handles:
     twitter: dan_gomezblanco
     linkedin: danielgblanco86
+  prior_session_url: https://vi.to/hubs/o11yfest/videos/3143
 
 - id: jaana-dogan
   name: Jaana Dogan
@@ -96,6 +84,7 @@ items:
   handles:
     twitter: rakyll
     linkedin: rakyll
+  prior_session_url: https://vi.to/hubs/o11yfest/videos/3147
 
 - id: juraci-paixao-krohling
   name: Juraci Paixão Kröhling
@@ -107,6 +96,7 @@ items:
     Sampling is still one of the biggest challenges in distributed tracing. While the basic concept is easy to grasp, the number of choices and their trade-offs requires learning about the techniques and your own workload. In this session, we are giving you all the knowledge required to master the sampling techniques: we'll talk about head and tail-based sampling, as well as adaptive sampling, and we'll wrap it up with a bonus discussion on trace aggregation. You'll leave this session ready to implement scenarios, from the simple "probabilistic head-sampling" up to the complex "scalable tail-based sampling" using open source tools like OpenTelemetry Collector.
   handles:
     twitter: jpkrohling
+  prior_session_url: https://vi.to/hubs/o11yfest/videos/3153
 
 - id: mike-angstadt
   name: Mike Angstadt
@@ -126,6 +116,7 @@ items:
   handles:
     twitter: mike_angstadt
     linkedin: mikeangstadt
+  prior_session_url: https://vi.to/hubs/o11yfest/videos/3144
 
 - id: dave-lucia
   name: Dave Lucia
@@ -144,6 +135,7 @@ items:
   handles:
     twitter: davydog187
     linkedin: david-lucia-a395441b
+  prior_session_url: https://vi.to/hubs/o11yfest/videos/3149
 
 - id: eric-mustin
   name: Eric Mustin
@@ -160,6 +152,7 @@ items:
   handles:
     twitter: Ericmustin
     linkedin: ericmustin
+  prior_session_url: https://vi.to/hubs/o11yfest/videos/3152
 
 - id: ricardo-ferreira
   name: Ricardo Ferreira
@@ -178,6 +171,7 @@ items:
   handles:
     twitter: riferrei
     linkedin: riferrei
+  prior_session_url: https://vi.to/hubs/o11yfest/videos/3151
 
 - id: rob-skillington
   name: Rob Skillington
@@ -202,6 +196,7 @@ items:
   handles:
     twitter: roskilli
     linkedin: robskillington
+  prior_session_url: https://vi.to/hubs/o11yfest/videos/3145
 
 - id: shelby-spees
   name: Shelby Spees
@@ -214,6 +209,7 @@ items:
   handles:
     twitter: shelbyspees
     linkedin: shelbyspees
+  prior_session_url: https://vi.to/hubs/o11yfest/videos/3171
 
 - id: ted-young
   name: Ted Young
@@ -236,6 +232,7 @@ items:
   handles:
     twitter: tedsuo
     linkedin: ted-young
+  prior_session_url: https://vi.to/hubs/o11yfest/videos/3148
 
 - id: jonah-kowall
   name: Jonah Kowall
@@ -248,7 +245,7 @@ items:
   handles:
     twitter: jkowall
     linkedin: jkowall
-    #github: jkowall
+  prior_session_url: https://vi.to/hubs/o11yfest/videos/3146
 
 - id: steve-flanders
   name: Steve Flanders
@@ -263,6 +260,7 @@ items:
   handles:
     twitter: smflanders
     linkedin: steveflanders
+  prior_session_url: https://vi.to/hubs/o11yfest/videos/3150
 
 - id: michael-hausenblas
   name: Michael Hausenblas
@@ -273,3 +271,4 @@ items:
   handles:
     twitter: mhausenblas
     linkedin: mhausenblas
+  prior_session_url: https://vi.to/hubs/o11yfest/videos/3171
