@@ -35,3 +35,9 @@ items:
   logo: elastic.png
   external_link: https://elastic.co
   link: /2022/sponsors/elastic
+- id: newrelic
+  name: New Relic
+  level: premiere
+  logo: newrelic.png
+  external_link: https://newrelic.com/
+  link: /2022/sponsors/newrelic
