@@ -41,3 +41,9 @@ items:
   logo: newrelic.png
   external_link: https://newrelic.com/
   link: /2022/sponsors/newrelic
+- id: timescale
+  name: Timescale
+  level: captioning
+  logo: timescale.png
+  external_link: https://timescale.com
+  link: /2022/sponsors/timescale
