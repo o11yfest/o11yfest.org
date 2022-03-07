@@ -34,6 +34,15 @@ These sponsors have materially contributed both in effort and financial underwri
   {% endfor %}
 </div>
 
+# Captioning Sponsor
+
+<div class="flexbox">
+  {% assign items = site.data.2022-sponsors.items | where_exp:"item", "item.level == 'captioning'" %}
+  {% for item in items %}
+    <a href="{{ item.link }}"><img class="sponsor-logo-{{ item.level }}" src="/assets/images/sponsors/{{ item.logo }}" title="{{ item.name }}"></a>
+  {% endfor %}
+</div>
+
 # Contributor Sponsors
 
 These sponsors have donated significantly to one of our community-driven 'good causes'.
