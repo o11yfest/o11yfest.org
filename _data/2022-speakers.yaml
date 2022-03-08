@@ -37,3 +37,18 @@ items:
   handles:
     twitter: hab_mic
     linkedin: michael-haberman
+
+
+- id: colin-douch
+  name: Colin Douch
+  bio: |
+    Colin Douch is an SRE at Cloudflare, tech leading their Observability Platform, with over 10 years experience working across DevOps and SRE organisations. Originally from New Zealand, but currently living in Australia (and trying to blend in), he has worked with organisations both big and small to improve their Observability systems.
+  role: presenter
+  title: High Cardinality Alerting With Open Telemetry
+  abstract: |
+    A common problem with our existing alerting systems is that they are limited by the cardinality issues inherent in Time Series Databases. This allows them to provide a very quick signal of when something is wrong, but causes them to fail to provide enough context as to exactly what that is. The result is that the first steps of debugging an alert are generally blindly searching through higher cardinality data sources such structured logs and traces to further debug the issue. But what if it didn’t have to be that way? At Cloudflare, as part of our transition towards a tracing first Observability system, we have developed a system - “Cleodora” - that allows aggregating time series data, in memory, or persistently in Clickhouse from OpenTelemetry traces. Cleodora then allows us to create alerting rules over these aggregates, directly into our existing Alertmanager setup. This allows us to utilise the full context of each traces high dimensionality and high cardinality labels for alerting purposes, providing deeper context on alerts and allowing our engineering teams to more quickly identify and fix the root cause of incidents.
+
+    In this talk, Colin will explain what led to Cleodoras development, where it fits into Cloudflares monitoring stack, and the benefits that it has provided; reducing the load on our Prometheus servers and providing a stepping stone to tracing introduction, allowing us to further our distributed tracing offerings. He will further discuss where Cleodora is going from here, and how other organisations can use it to start their own transitions towards a proper Observability system.
+  handles:
+    twitter: sinkingpoint
+    linkedin: colin-douch-82940b120
