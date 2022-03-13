@@ -40,7 +40,7 @@ Attendees of this event are typically DevOps practitioners in a wide variety of 
 All sponsorships also qualify vendors for the following 'À la carte' options:
 
 * [One or more giveaways](#giveaways)
-* [Virtual workshop session during one conference day](#sponsored-breakouts)
+* [--Virtual workshop session during one conference day--](#sponsored-breakouts)
 * [Branded virtual game room in event platform](#virtual-game-rooms)
 
 # Our Commitment to Attendee Privacy and Value
@@ -101,7 +101,9 @@ You are encouraged to provide Call-to-Action (CTA) links to giveaways. This can 
 
 ## Sponsored Workshops
 
-A workshop is an additional $2,000 and includes a Zoom managed by organizers as well as pre-event advisement/good-practices session with the host(s) on your end. Half of this fee goes to platform + A/V assistance and the other half goes to donations to our good cause list.
+[WORKSHOP SPOTS ARE SOLD OUT]
+
+A workshop is an additional $2,000 and includes a hosted conference space managed by organizers as well as pre-event advisement/good-practices session with the host(s) on your end. Half of this fee goes to platform + A/V assistance and the other half goes to donations to our good cause list.
 
 ## Virtual Game Rooms
 
