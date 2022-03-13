@@ -52,6 +52,20 @@ items:
     twitter: sinkingpoint
     linkedin: colin-douch-82940b120
 
+- id: michael-hausenblas
+  name: Michael Hausenblas
+  bio: |
+    Michael is a Solution Engineering Lead in the AWS open source observability service team. He covers Prometheus, Grafana, and OpenTelemetry upstream and in managed services. Before Amazon, Michael worked at Red Hat, Mesosphere (now D2iQ), MapR (now part of HPE), and prior to that ten years in applied research.
+  role: presenter
+  title: Return on Investment driven observability
+  abstract: |
+    No one wants to fly blind when developing & operating cloud native apps. But how do you select the signals (logs, metrics, traces, profiles) to use for a task and how can you assess how much bang you get for the buck (instrumentation, agents, destinations)? In this talk we aim to provide answers.
+
+    In the context of developing and operating cloud native apps, such as Kubernetes workloads or AWS Lambda-based app, no one wants to fly blind. But how do you select the signals (logs, metrics, traces, profiles) to use for a certain task such as troubleshooting or performance optimization? Also, how can you assess how much bang you get for the buck (in terms of costs of instrumentation, for agents, and destinations including long-term storage)? In this talk we aim to provide answers to these questions, suggesting a “Return on Investment”- driven observability approach.
+  handles:
+    twitter: mhausenblas
+    linkedin: mhausenblas
+
 - id: henrik-rexed
   name: Henrik Rexed
   bio: |
