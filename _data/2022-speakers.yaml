@@ -38,6 +38,18 @@ items:
     twitter: hab_mic
     linkedin: michael-haberman
 
+- id: jessica-kerr
+  name: Jessica (Jessitron) Kerr
+  bio: |
+    Jessica Kerr is a developer advocate, software developer and symmathecist with 20+ years of experience. She has worked in enterprises and startups, in Java, Scala, Clojure, Ruby, and TypeScript. Talk to her about technical details, or about how to get software to teach us about its needs.
+  role: presenter
+  title: Observability During Development
+  abstract: |
+    How will our development flow be different once we take observability for granted? Jess demonstrates what coding is like when observability is a natural part of the flow. Get insight into what the code is doing immediately, and keep that insight in production. Is 'create span' the new 'printf'?
+  handles:
+    twitter: jessitron
+    linkedin: jessicakerr
+
 - id: colin-douch
   name: Colin Douch
   bio: |
