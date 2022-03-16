@@ -4,20 +4,24 @@ layout: default
 
 {% assign person = site.data['2022-speakers'].items | where_exp:"item", "item.id == page.id" | first %}
 {% assign content = content | markdownify | strip %}
+{% capture abstract_md %}{{ person.abstract | markdownify }}{% endcapture %}
+{% capture bio %}{% include person-bio.html person=person %}{% endcapture %}
+{% assign bio_bottom = false %}
+{% if content.size > 0 or abstract_md.size > 350 %}{% assign bio_bottom = true %}{% endif %}
 <div class="flexbox">
   {% include person-left.html person=person year="2022" extracontent=content %}
   <div style="min-width:300px;flex:1;align-self:flex-start;">
     <h2>{{ person.title }}</h2>
     <p>
-      {{ person.abstract | markdownify }}
+      {{ abstract_md }}
     </p>
-    {% if content.size > 0 %}
+    {% if bio_bottom != true %}
       <p>
-      {% include person-bio.html person=person %}
+      {{ bio }}
       </p>
     {% endif %}
   </div>
 </div>
-{% if content.size < 1 %}
-  {% include person-bio.html person=person %}
+{% if bio_bottom == true %}
+  {{ bio }}
 {% endif %}
