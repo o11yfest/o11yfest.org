@@ -21,7 +21,7 @@
     {% endif %}
 
     {% capture social_title %}o11yfest {{ site.current_event_dates }}{% endcapture %}
-    {% capture social_desc %}{{ site.description }}{% endcapture %}
+    {% capture social_desc %}{{ site.description | markdownify | strip_html }}{% endcapture %}
     {% capture social_image %}{{ site.produrl }}/assets/images/2022/vito-banner-0228.png{% endcapture %}
     {% assign yearpath = "2022/" %}
     {% if is_a_speakers_or_panelists_page == true %}
@@ -33,11 +33,11 @@
       {% endif %}
       {% if speaker.role == "panelist" %}
         {% capture social_title %}{{ site.data.day1panel.title }}{% endcapture %}
-        {% capture social_desc %}{{ site.data.day1panel.description }}{% endcapture %}
+        {% capture social_desc %}{{ site.data.day1panel.description | markdownify | strip_html }}{% endcapture %}
         {% capture social_image %}{{ site.produrl }}/assets/images/speakers/{{ yearpath }}socials/panel-day1.png{% endcapture %}
       {% else %}
         {% capture social_title %}{{ speaker.name }} at o11yfest {{ site.current_event_dates }}{% endcapture %}
-        {% capture social_desc %}{{ page.title }}: {{ speaker.bio }}{% endcapture %}
+        {% capture social_desc %}{{ page.title }}: {{ speaker.bio | markdownify | strip_html }}{% endcapture %}
         {% capture social_image %}{{ site.produrl }}/assets/images/speakers/{{ yearpath }}socials/{{ speaker.id }}.png{% endcapture %}
       {% endif %}
     {% else %}
