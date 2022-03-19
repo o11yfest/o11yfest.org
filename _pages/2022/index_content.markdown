@@ -16,7 +16,7 @@ o11yfest is in its third year of operation as a grass-roots event whose aim is t
 
 Unlike a typical monolithic tech event, this year we're taking a more continuous approach to the content of our event, such that:
 
-1. We will use a 'rolling call for presentations (CFP)' that will open on Jan 10th and close on May 1st
+1. We will use a 'rolling call for presentations (CFP)' that will open on Jan 10th and close on April 17th
 2. There will be a few select 'keystone' presentations from leaders in the OpenTelemetry community
 3. Teams will be encouraged to submit their observability stories as 15min group presentations
 4. We will be receiving lightning talks from individual contributors in the industry
