@@ -29,7 +29,7 @@ permalink: /attend
 
 <div class="flexbox">
 
-<div style="flex:1;align-self:flex-start;min-width:400px;padding-right:2em;" markdown=1>
+<div style="flex:1;align-self:flex-start;min-width:350px;padding-right:2em;" markdown=1>
 
 # Why Donate for Charity?
 
@@ -47,11 +47,18 @@ As a single contributor, you can make a difference, and we all should. As a grou
 
 # Logistics
 
-This event will be held online on {{ site.current_event_dates }} and will be live captioned to respect accessibility for all attendees. It will also be accessible via mobile device and standard desktop browsers (the after-party platform is only for full browsers). Further logistics about day-of access will be provided the Friday before the event via email (so don't use a fake email for registration).
+This event will be held online on {{ site.current_event_dates }} from 11am-3pm EST each day and will be live captioned to respect accessibility for all attendees. It will also be accessible via mobile device and standard desktop browsers (the after-party platform is only for full browsers). Further logistics about day-of access will be provided the Friday before the event via email (so don't use a fake email for registration).
 
 </div>
 
 <div style="text-align:left;">
+
+<h1>Become part of our event!</h1>
+<p>
+Beyond attending, you can also a <a href="/2022/preaction">record '(p)reaction' video. Click here to learn more!</a>
+</p>
+
+
 <h1>Who will be there?</h1>
 <p>
 Hundreds of other community members and engineering folks will be online listening to,

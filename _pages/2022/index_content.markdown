@@ -1,6 +1,6 @@
 # About the Conference
 
-**o11yfest** is a multi-day virtual technology conference focused on empowering DevOps practitioners with solutions that improve observability over systems and processes. It will be held online using a online platform on {{ site.current_event_dates }}.
+**o11yfest** is a multi-day virtual technology conference focused on empowering DevOps practitioners with solutions that improve observability over systems and processes. It will be held online using a online platform on {{ site.current_event_dates }} from 11am-3pm EST each day.
 
 o11yfest is in its third year of operation as a grass-roots event whose aim is to encourage sharing of knowledge and development of the discipline of observability engineering.
 
@@ -16,10 +16,11 @@ o11yfest is in its third year of operation as a grass-roots event whose aim is t
 
 Unlike a typical monolithic tech event, this year we're taking a more continuous approach to the content of our event, such that:
 
-1. We will use a 'rolling call for presentations (CFP)' that will open on Jan 10th and close on April 17th
+1. We will use a 'rolling call for presentations (CFP)' that opened Jan 10th and closes on April 17th
 2. There will be a few select 'keystone' presentations from leaders in the OpenTelemetry community
 3. Teams will be encouraged to submit their observability stories as 15min group presentations
 4. We will be receiving lightning talks from individual contributors in the industry
+5. We are encouraging the whole community to [submit '(p)reaction' videos, more info here](/2022/preaction)
 
 All content will need to be pre-recorded and unique to o11yfest (not the same exact upload as what was shared in other conferences, though it can be based on a presentation shared elsewhere). CFP and presentation uploads can happen at any time, but the later the submission, the less likely to make the days-of schedule headlines.
 
