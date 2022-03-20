@@ -6,13 +6,13 @@ permalink: /2022/preaction
 
 {% include 2022-cta-buttons.html exclude_preaction=true %}
 
-# What is a 'preaction' video?
+# What is a '(p)reaction' video?
 
-No one person has the 'best' ideas. Certainly everyone has their own perspective.
+A "PRE-action" video is a short (<5min) summary of what you think is ***meaningful***
+ for others to pay attention to about another video or presentation by someone else.
 
-Unlike a 'reaction' video, a PRE-action video is a short 5min summary of what you
- think is ***meaningful*** for others to pay attention to about another video or
- presentation by someone else.
+Since we are receiving pre-recorded talks by speakers all the time, we can provide
+ you a chance to "pre"-view them and share your reactions...hence "PRE-action".
 
 # Why do a (p)reaction video?
 
