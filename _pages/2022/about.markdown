@@ -4,10 +4,7 @@ title:  "About o11yfest"
 permalink: /about
 ---
 
-<div class="flexbox">
-  <a class="flexbox-button" href="{{ site.registration_link }}">Attend {{ site.event_short_title }}</a>
-  <a class="flexbox-button" href="/sponsor">Sponsor this Event</a>
-</div>
+{% include 2022-cta-buttons.html %}
 
 # What is o11yfest?
 

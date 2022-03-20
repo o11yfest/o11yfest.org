@@ -4,11 +4,77 @@ title:  "Agenda"
 permalink: /agenda
 ---
 
+{% include 2022-cta-buttons.html %}
+
 <div class="flexbox">
-  <a class="flexbox-button" href="{{ site.registration_link }}">Attend {{ site.event_short_title }}</a>
-  <a class="flexbox-button" href="/cfp">CFP</a>
-  <a class="flexbox-button" href="/sponsor">Sponsor this Event</a>
+
+<div style="font-size:0.8em;align-self:flex-start;" markdown=1>
+
+<style type="text/css">
+.session-bumper { color: gray; }
+.session-mc { color: lightblue; }
+.session-sponsor { color: #CBC3E3; }
+.session-speaker { color: lightgreen; }
+.session-you { color: green; }
+</style>
+<script type="text/javascript">
+window.onloadqueue=(window.onloadqueue||[]).concat([function () {
+  $('td:empty').parent().addClass('session-bumper');
+  $('td:contains("(1st ")').parent().addClass('session-bumper');
+  $('td:contains("(2nd ")').parent().addClass('session-bumper');
+  $('td:contains("(bonus ")').parent().addClass('session-bumper');
+  $('td:contains("Bio / ")').parent().addClass('session-bumper');
+
+  $('td:contains("Welcome / Ground Rules")').parent().addClass('session-mc');
+  $('td:contains("Organizer")').parent().addClass('session-mc');
+  $('td:contains("Updates")').parent().addClass('session-mc');
+
+  $('td:contains("Presentation")').parent().addClass('session-speaker');
+  $('td:contains("Lightning")').parent().addClass('session-speaker');
+
+  $('td:contains("Live Q&A")').parent().addClass('session-you');
+  $('td:contains("Community")').parent().addClass('session-you');
+
+  $('td:contains("Sponsor")').parent().addClass('session-sponsor');
+  $('td:contains("workshop")').parent().addClass('session-sponsor');
+}]);
+</script>
+
+
+# Daily Format
+
+|  Time (in EST) |  Live stream  | |  Parallel  |
+|  -------------:|  -----------  |
+|  (1st 90mins)  | |
+|    11:00-11:10 |  Welcome / Ground Rules  |
+|    11:10-11:40 |  **Keystone Presentation**  |
+|    11:40-11:45 |  *Live Q&A*  | -> |  breakout  |
+|    11:45-11:50 |  Sponsor Thanks  |
+|    11:50-12:00 |  *Community (p)reactions [?](/2022/preaction)*  |
+|     12:00-3:00 |  *Fork: talks or hands-on* |  -> |  workshop  |
+|    12:00-12:25 |  **Presentation**  |
+|    12:25-12:30 |  *Live Q&A*  | -> |  breakout  |
+|    12:30-12:50 |  Bio / async break  |
+|  (2nd 90mins)  | |
+|    12:50-12:55 |  Organizer Shout-outs  |
+|     12:55-1:00 |  Community (p)reactions [?](/2022/preaction)  |
+|      1:00-1:25 |  **Presentation**  |
+|      1:25-1:30 |  *Live Q&A*  | -> |  breakout  |
+|      1:30-1:35 |  Updates, Async/Parallel  |
+|      1:35-1:40 |  Sponsor Thanks  |
+|      1:40-1:45 |  *Community (p)reactions [?](/2022/preaction)*  |
+|      1:45-2:10 |  **Presentation**  |
+|      2:10-2:15 |  *Live Q&A*  | -> |  breakout  |
+|      2:15-2:30 |  Bio / async break  |
+| (bonus tracks) | |
+|      2:30-2:45 |  **Lightning Talk**  |
+|      2:45-2:55 |  *Community (p)reactions [?](/2022/preaction)*  |
+|      2:55-3:00 |  Organizer daily wrap  |
+|      3:00      |  Sponsored workshop ends  |
+
 </div>
+
+<div style="flex:1;align-self:flex-start;min-width:350px;padding-left:2em;" markdown=1>
 
 # Keystone Presentations
 
@@ -22,6 +88,21 @@ Like traditional tech events, we know it's important to bring leading perspectiv
 Unlike traditional events, we believe that ***you*** are the shining star of our conference. Instead of simply attending another online conference, your work over the past few years represents the very best of our industry. As such, you and your team should be highlighted as part of our community.
 
 If you have meaningfully improved the observability at your organization and/or if you've contributed to the OpenTelemetry project or other tangential open source communities, ***[DO NOT HESITATE TO SUBMIT YOUR STORY to our rolling CFP process](/cfp)***.
+
+</div>
+
+</div>
+
+# Community (p)reactions
+
+A "PRE-action" video is a short 5min summary of what you think is ***meaningful***
+ for others to pay attention to about another video or presentation by someone else.
+
+Not only is this a great way to spread positivity about someone else, it also
+ encodes how you process and what you value about the time and effort another
+ practitioner has shared with the community.
+
+[Click here to learn more about how to submit your own (p)reaction videos!](/2022/preaction)
 
 # Sponsored Presentations
 

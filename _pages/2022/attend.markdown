@@ -9,6 +9,8 @@ permalink: /attend
 # Get a ticket
 
 </div>
+<div style="min-height:250px;">
+
 <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1.1' />
 <style type="text/css">
 .tito-badge-link {
@@ -18,6 +20,10 @@ permalink: /attend
 .tito-wrapper {
   color: #eee;
 }
+input[type=text].tito-ticket-donation-field {
+  width:45px !important;
+ }
+/*.tito-submit-wrapper { text-align:center; }*/
 * {
   box-sizing: content-box;
 }
@@ -27,9 +33,17 @@ permalink: /attend
 
 <tito-widget event="o11yfest/2022"></tito-widget>
 
+</div>
+
+<h1>Become part of our event!</h1>
+<p>
+Beyond attending, you can also a <a href="/2022/preaction">record '(p)reaction' video.</a>
+ If you also feel you have something meaningful to present, <a href="/cfp">our CFP</a> is open until April 17th.
+</p>
+
 <div class="flexbox">
 
-<div style="flex:1;align-self:flex-start;min-width:400px;padding-right:2em;" markdown=1>
+<div style="flex:1;align-self:flex-start;min-width:350px;padding-right:2em;" markdown=1>
 
 # Why Donate for Charity?
 
@@ -47,11 +61,12 @@ As a single contributor, you can make a difference, and we all should. As a grou
 
 # Logistics
 
-This event will be held online on {{ site.current_event_dates }} and will be live captioned to respect accessibility for all attendees. It will also be accessible via mobile device and standard desktop browsers (the after-party platform is only for full browsers). Further logistics about day-of access will be provided the Friday before the event via email (so don't use a fake email for registration).
+This event will be held online on {{ site.current_event_dates }} from 11am-3pm EST each day and will be live captioned to respect accessibility for all attendees. It will also be accessible via mobile device and standard desktop browsers (the after-party platform is only for full browsers). Further logistics about day-of access will be provided the Friday before the event via email (so don't use a fake email for registration).
 
 </div>
 
 <div style="text-align:left;">
+
 <h1>Who will be there?</h1>
 <p>
 Hundreds of other community members and engineering folks will be online listening to,
