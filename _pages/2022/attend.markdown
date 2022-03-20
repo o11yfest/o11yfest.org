@@ -9,6 +9,8 @@ permalink: /attend
 # Get a ticket
 
 </div>
+<div style="min-height:250px;">
+
 <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1.1' />
 <style type="text/css">
 .tito-badge-link {
@@ -18,6 +20,10 @@ permalink: /attend
 .tito-wrapper {
   color: #eee;
 }
+input[type=text].tito-ticket-donation-field {
+  width:45px !important;
+ }
+/*.tito-submit-wrapper { text-align:center; }*/
 * {
   box-sizing: content-box;
 }
@@ -26,6 +32,14 @@ permalink: /attend
 <script src='https://js.tito.io/v1' async></script>
 
 <tito-widget event="o11yfest/2022"></tito-widget>
+
+</div>
+
+<h1>Become part of our event!</h1>
+<p>
+Beyond attending, you can also a <a href="/2022/preaction">record '(p)reaction' video.</a>
+ If you also feel you have something meaningful to present, <a href="/cfp">our CFP</a> is open until April 17th.
+</p>
 
 <div class="flexbox">
 
@@ -52,12 +66,6 @@ This event will be held online on {{ site.current_event_dates }} from 11am-3pm E
 </div>
 
 <div style="text-align:left;">
-
-<h1>Become part of our event!</h1>
-<p>
-Beyond attending, you can also a <a href="/2022/preaction">record '(p)reaction' video. Click here to learn more!</a>
-</p>
-
 
 <h1>Who will be there?</h1>
 <p>

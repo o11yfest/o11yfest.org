@@ -6,17 +6,13 @@ o11yfest is in its third year of operation as a grass-roots event whose aim is t
 
 100% of net ticket sales and contributor sponsorships will go to good causes [(read more here)](/efforts).
 
-<div class="flexbox">
-  <a class="flexbox-button" href="{{ site.registration_link }}">Attend {{ site.event_short_title }}</a>
-  <a class="flexbox-button" href="/cfp">Our CFP</a>
-  <a class="flexbox-button" href="/sponsor">Sponsor this Event</a>
-</div>
+{% include 2022-cta-buttons.html %}
 
 # Speaking and Presentations
 
 Unlike a typical monolithic tech event, this year we're taking a more continuous approach to the content of our event, such that:
 
-1. We will use a 'rolling call for presentations (CFP)' that opened Jan 10th and closes on April 17th
+1. We will use a 'rolling call for presentations ([CFP](/cfp))' that opened Jan 10th and closes on April 17th
 2. There will be a few select 'keystone' presentations from leaders in the OpenTelemetry community
 3. Teams will be encouraged to submit their observability stories as 15min group presentations
 4. We will be receiving lightning talks from individual contributors in the industry

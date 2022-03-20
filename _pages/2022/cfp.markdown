@@ -10,7 +10,7 @@ We’re looking for you to record either 10-15min or 20-25min technical presenta
 
 Sample topics include experiences using OpenTelemetry as a form of instrumentation, application of observability tooling to analyze the data, and otherwise how to improve observability in and across organizations practicing continuous delivery and DevOps. In particular, we are looking to highlight the business value of embracing observability across all kinds of end-user organizations. We're also keen to hear about making observability batteries-included by default, so that more people can experience the joys of telemetry in their favorite frameworks and tools.
 
-The typical audience includes SREs, developers, automation engineers, and cloud operations professionals. We encourage first-time speakers to submit, and the co-chairs will offer coaching to any selected speaker who would like assistance or feedback. 
+The typical audience includes SREs, developers, automation engineers, and cloud operations professionals. We encourage first-time speakers to submit, and the co-chairs will offer coaching to any selected speaker who would like assistance or feedback.
 
 # Our CFP is 'Rolling'
 
