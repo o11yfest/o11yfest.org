@@ -6,6 +6,12 @@ permalink: /2022/preaction
 
 {% include 2022-cta-buttons.html exclude_preaction=true %}
 
+<div style="text-align:center;">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/odN_JLFCmU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
 # What is a '(p)reaction' video?
 
 A "PRE-action" video is a short (<5min) summary of what you think is ***meaningful***
