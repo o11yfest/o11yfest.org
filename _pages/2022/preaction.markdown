@@ -42,3 +42,60 @@ Firstly, email [organizers@o11yfest.org](mailto:organizers@o11yfest.org) and exp
 * record yourself for about 3-5mins talking through your key takeaways
 * make sure you comply with our [Code of Conduct](/code-of-conduct), avoid strong language etc.
 * once done, store it somewhere online and reply back to organizer's email with the link
+
+<div class="flexbox">
+  {% assign persons = site.data['2022-speakers'].items %}
+  {% for person in persons %}
+    {% assign cta = "none" %}
+    {% if person.session_url %}
+      {% capture cta %}{{ person.session_url }}{% endcapture %}
+      {% if person.preactions and person.preactions.size > 0 %}
+        {% assign cta = "done" %}
+      {% endif %}
+    {% endif %}
+    {% if cta == "none" %}
+    <div class="tooltip"><span class="tooltiptext">This speaker has not submitted their video yet.</span>
+    <div class="disabled">{% include speaker-thumb.html year="2022" person=person %}</div></div>
+    {% else %}
+      {% if cta == "done" %}
+      <div class="tooltip"><span class="tooltiptext">We've already received some preactions!</span>
+      {% include speaker-thumb.html year="2022" person=person %}</div>
+      {% else %}
+        {% include speaker-thumb.html year="2022" person=person custom_cta=cta %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
+<style type="text/css">
+.disabled { pointer-events: none; opacity: 0.5; }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+<script type="text/javascript">
+  window.onloadqueue=(window.onloadqueue||[]).concat([function () {
+    $('.disabled *').prop('disabled', true).attr("title","Video not available yet");
+  }]);
+</script>

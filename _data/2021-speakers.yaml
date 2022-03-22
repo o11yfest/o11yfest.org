@@ -25,7 +25,7 @@ items:
   handles:
     twitter: srechristina
     linkedin: christina-yakomin
-  prior_session_url: https://vi.to/hubs/o11yfest/videos/3142
+  session_url: https://vi.to/hubs/o11yfest/videos/3142
 
 - id: steve-prazenica
   name: Steve Prazenica
@@ -40,7 +40,7 @@ items:
     In this presentation, we'll focus primarily on the topic of how we monitor and measure availability - developing SLIs and SLOs, managing an error budget, leveraging Honeycomb for observability. We'll also touch on other aspects of our SRE transformation at a higher level, including home-grown tools for self-service chaos engineering, self-service load testing, emerging cloud platforms (including serverless), proactive failure modes and effects analysis, and blameless post-incident reviews.
   handles:
     linkedin: stephen-prazenica-52b6831a7
-  prior_session_url: https://vi.to/hubs/o11yfest/videos/3142
+  session_url: https://vi.to/hubs/o11yfest/videos/3142
 
 - id: daniel-gomez-blanco
   name: Daniel Gomez Blanco
@@ -56,7 +56,7 @@ items:
   handles:
     twitter: dan_gomezblanco
     linkedin: danielgblanco86
-  prior_session_url: https://vi.to/hubs/o11yfest/videos/3143
+  session_url: https://vi.to/hubs/o11yfest/videos/3143
 
 - id: jaana-dogan
   name: Jaana Dogan
@@ -84,7 +84,7 @@ items:
   handles:
     twitter: rakyll
     linkedin: rakyll
-  prior_session_url: https://vi.to/hubs/o11yfest/videos/3147
+  session_url: https://vi.to/hubs/o11yfest/videos/3147
 
 - id: juraci-paixao-krohling
   name: Juraci Paixão Kröhling
@@ -96,7 +96,7 @@ items:
     Sampling is still one of the biggest challenges in distributed tracing. While the basic concept is easy to grasp, the number of choices and their trade-offs requires learning about the techniques and your own workload. In this session, we are giving you all the knowledge required to master the sampling techniques: we'll talk about head and tail-based sampling, as well as adaptive sampling, and we'll wrap it up with a bonus discussion on trace aggregation. You'll leave this session ready to implement scenarios, from the simple "probabilistic head-sampling" up to the complex "scalable tail-based sampling" using open source tools like OpenTelemetry Collector.
   handles:
     twitter: jpkrohling
-  prior_session_url: https://vi.to/hubs/o11yfest/videos/3153
+  session_url: https://vi.to/hubs/o11yfest/videos/3153
 
 - id: mike-angstadt
   name: Mike Angstadt
@@ -116,7 +116,7 @@ items:
   handles:
     twitter: mike_angstadt
     linkedin: mikeangstadt
-  prior_session_url: https://vi.to/hubs/o11yfest/videos/3144
+  session_url: https://vi.to/hubs/o11yfest/videos/3144
 
 - id: dave-lucia
   name: Dave Lucia
@@ -135,7 +135,7 @@ items:
   handles:
     twitter: davydog187
     linkedin: david-lucia-a395441b
-  prior_session_url: https://vi.to/hubs/o11yfest/videos/3149
+  session_url: https://vi.to/hubs/o11yfest/videos/3149
 
 - id: eric-mustin
   name: Eric Mustin
@@ -152,7 +152,7 @@ items:
   handles:
     twitter: Ericmustin
     linkedin: ericmustin
-  prior_session_url: https://vi.to/hubs/o11yfest/videos/3152
+  session_url: https://vi.to/hubs/o11yfest/videos/3152
 
 - id: ricardo-ferreira
   name: Ricardo Ferreira
@@ -171,7 +171,7 @@ items:
   handles:
     twitter: riferrei
     linkedin: riferrei
-  prior_session_url: https://vi.to/hubs/o11yfest/videos/3151
+  session_url: https://vi.to/hubs/o11yfest/videos/3151
 
 - id: rob-skillington
   name: Rob Skillington
@@ -196,7 +196,7 @@ items:
   handles:
     twitter: roskilli
     linkedin: robskillington
-  prior_session_url: https://vi.to/hubs/o11yfest/videos/3145
+  session_url: https://vi.to/hubs/o11yfest/videos/3145
 
 - id: shelby-spees
   name: Shelby Spees
@@ -209,7 +209,7 @@ items:
   handles:
     twitter: shelbyspees
     linkedin: shelbyspees
-  prior_session_url: https://vi.to/hubs/o11yfest/videos/3171
+  session_url: https://vi.to/hubs/o11yfest/videos/3171
 
 - id: ted-young
   name: Ted Young
@@ -232,7 +232,7 @@ items:
   handles:
     twitter: tedsuo
     linkedin: ted-young
-  prior_session_url: https://vi.to/hubs/o11yfest/videos/3148
+  session_url: https://vi.to/hubs/o11yfest/videos/3148
 
 - id: jonah-kowall
   name: Jonah Kowall
@@ -245,7 +245,7 @@ items:
   handles:
     twitter: jkowall
     linkedin: jkowall
-  prior_session_url: https://vi.to/hubs/o11yfest/videos/3146
+  session_url: https://vi.to/hubs/o11yfest/videos/3146
 
 - id: steve-flanders
   name: Steve Flanders
@@ -260,7 +260,7 @@ items:
   handles:
     twitter: smflanders
     linkedin: steveflanders
-  prior_session_url: https://vi.to/hubs/o11yfest/videos/3150
+  session_url: https://vi.to/hubs/o11yfest/videos/3150
 
 - id: michael-hausenblas
   name: Michael Hausenblas
@@ -271,4 +271,4 @@ items:
   handles:
     twitter: mhausenblas
     linkedin: mhausenblas
-  prior_session_url: https://vi.to/hubs/o11yfest/videos/3171
+  session_url: https://vi.to/hubs/o11yfest/videos/3171
