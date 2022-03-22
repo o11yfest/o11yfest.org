@@ -17,6 +17,11 @@ items:
   handles:
     twitter: riferrei
     linkedin: riferrei
+  session_url: https://vi.to/hubs/o11yfest/videos/4896
+  preactions:
+  - contributor: Paul Bruce
+    youtube_id: odN_JLFCmU0
+    video_url: https://www.youtube.com/watch?v=odN_JLFCmU0
 
 - id: michael-haberman
   name: Michael Haberman
@@ -37,6 +42,7 @@ items:
   handles:
     twitter: hab_mic
     linkedin: michael-haberman
+  session_url: https://vi.to/hubs/o11yfest/videos/4895
 
 - id: jessica-kerr
   name: Jessica (Jessitron) Kerr
