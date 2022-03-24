@@ -1,10 +1,4 @@
 items:
-# - id: ...
-#   name: Lightstep
-#   level: premiere
-#   logo: lightstep.png
-#   link: /2022/sponsors/lightstep
-#   external_link: https://lightstep.com
 - id: honeycomb
   name: Honeycomb
   level: premiere
@@ -47,3 +41,9 @@ items:
   logo: timescale.png
   external_link: https://timescale.com
   link: /2022/sponsors/timescale
+- id: lightstep
+  name: Lightstep
+  level: premiere
+  logo: lightstep.png
+  link: /2022/sponsors/lightstep
+  external_link: https://lightstep.com
