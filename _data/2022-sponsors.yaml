@@ -47,3 +47,9 @@ items:
   logo: lightstep.png
   link: /2022/sponsors/lightstep
   external_link: https://lightstep.com
+- id: cribl
+  name: Cribl
+  level: contributor
+  logo: cribl.png
+  external_link: https://cribl.io/
+  link: /2022/sponsors/cribl
