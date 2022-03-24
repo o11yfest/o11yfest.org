@@ -37,5 +37,27 @@ The organizers can't thank {{ sponsor.name }} enough!
 
     {{ content }}
 
+    {% if sponsor.workshop %}
+
+    {% assign workshop = sponsor.workshop %}
+
+    {%   assign firstDate = '2022-05-09' | date: '%s'      %}
+    {%   assign workshopDate = workshop.datetime | date: '%s'  %}
+    {%   assign secondsSince = workshopDate | minus: firstDate     %}
+    {%   assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60     %}
+    {%   assign daysSince = hoursSince | divided_by: 24  %}
+
+    <h2 style="margin-top:1em;">Day {{ daysSince | plus: 1 }} Workshop{% if workshop.title %}: {{ workshop.title }}{% endif %}</h2>
+
+    When: <span class="localizetime">{{ workshop.datetime }}</span> (your local date/time)
+
+    <p>
+    {% if workshop.description %}{{ workshop.description }}{% else %}{{ sponsor.name }}
+     will be hosting a workshop on a topic related to observability that has yet to be
+     received by organizers, so stay tuned!{% endif %}
+    </p>
+
+    {% endif %}
+
   </div>
 </div>

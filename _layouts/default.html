@@ -133,11 +133,26 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.cookie.js"></script>
     <script type="text/javascript">
+      var __initialized = false
       $(function () {   //  <- jquery is not yet initialized
-        updateOffsiteLinksToOpenInBlank()
+        if(!__initialized) {
+          __initialized = true;
 
-        if(window.onloadqueue && window.onloadqueue != undefined && window.onloadqueue.length > 0) {
-          $.each(window.onloadqueue,function(i,v) { v() });
+          updateOffsiteLinksToOpenInBlank()
+
+          $('.localizetime').each(function(i,o) {
+            var el = $(o)
+            if(el.attr('data-date-localized') == "true") return;
+            var dt = new Date(el.text());
+            var weekday = dt.toLocaleString(navigator.language, { weekday: 'long' })
+            el.html(weekday+', '+dt.toLocaleString());
+            el.attr('data-date-localized', true)
+          });
+
+
+          if(window.onloadqueue && window.onloadqueue != undefined && window.onloadqueue.length > 0) {
+            $.each(window.onloadqueue,function(i,v) { v() });
+          }
         }
       });
       function updateOffsiteLinksToOpenInBlank() {
