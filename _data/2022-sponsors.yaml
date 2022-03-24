@@ -29,12 +29,16 @@ items:
   logo: elastic.png
   external_link: https://elastic.co
   link: /2022/sponsors/elastic
+  workshop:
+    datetime: 2022-05-10T16:00:00.000Z
 - id: newrelic
   name: New Relic
   level: premiere
   logo: newrelic.png
   external_link: https://newrelic.com/
   link: /2022/sponsors/newrelic
+  workshop:
+    datetime: 2022-05-11T16:00:00.000Z
 - id: timescale
   name: Timescale
   level: captioning
@@ -47,9 +51,13 @@ items:
   logo: lightstep.png
   link: /2022/sponsors/lightstep
   external_link: https://lightstep.com
+  workshop:
+    datetime: 2022-05-12T16:00:00.000Z
 - id: cribl
   name: Cribl
   level: contributor
   logo: cribl.png
   external_link: https://cribl.io/
   link: /2022/sponsors/cribl
+  workshop:
+    datetime: 2022-05-09T16:00:00.000Z

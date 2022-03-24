@@ -51,7 +51,7 @@ window.onloadqueue=(window.onloadqueue||[]).concat([function () {
 |    11:40-11:45 |  *Live Q&A*  | -> |  breakout  |
 |    11:45-11:50 |  Sponsor Thanks  |
 |    11:50-12:00 |  *Community (p)reactions [?](/2022/preaction)*  |
-|     12:00-3:00 |  *Fork: talks or hands-on* |  -> |  workshop  |
+|     12:00-3:00 |  *Fork: talks or hands-on* |  -> |  [workshop](/workshops)  |
 |    12:00-12:25 |  **Presentation**  |
 |    12:25-12:30 |  *Live Q&A*  | -> |  breakout  |
 |    12:30-12:50 |  Bio / async break  |

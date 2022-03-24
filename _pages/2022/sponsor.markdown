@@ -40,7 +40,7 @@ Attendees of this event are typically DevOps practitioners in a wide variety of 
 All sponsorships also qualify vendors for the following 'À la carte' options:
 
 * [One or more giveaways](#giveaways)
-* [--Virtual workshop session during one conference day--](#sponsored-breakouts)
+* [Virtual workshop session during one conference day](#sponsored-breakouts)
 * [Branded virtual game room in event platform](#virtual-game-rooms)
 
 # Our Commitment to Attendee Privacy and Value
