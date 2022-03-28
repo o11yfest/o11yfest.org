@@ -61,7 +61,7 @@ Firstly, email [organizers@o11yfest.org](mailto:organizers@o11yfest.org) and exp
       <div class="tooltip"><span class="tooltiptext">We've already received some preactions!</span>
       {% include speaker-thumb.html year="2022" person=person %}</div>
       {% else %}
-        {% include speaker-thumb.html year="2022" person=person custom_cta=cta %}
+        {% include speaker-thumb.html year="2022" person=person custom_cta=cta additional_css_classes="glow" %}
       {% endif %}
     {% endif %}
   {% endfor %}
@@ -87,6 +87,12 @@ Firstly, email [organizers@o11yfest.org](mailto:organizers@o11yfest.org) and exp
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
+}
+.glow {
+  border-radius: 50%;
+  -moz-box-shadow: 0 0 50px #fff;
+  -webkit-box-shadow: 0 0 50px #fff;
+  box-shadow: 0px 0px 50px #fff;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
