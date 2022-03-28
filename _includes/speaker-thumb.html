@@ -5,5 +5,5 @@
 {% capture href %}/{{ roledir }}/{{ person.id }}{% endcapture %}
 {% if include.custom_cta %}{% capture href %}{{ include.custom_cta }}{% endcapture %}{% endif %}
 <div style="max-width:125px;min-height:230px;text-align:center;margin:1em;">
-  <a href="{{ href }}"><img src="/assets/images/speakers/{{ yearpath }}thumbs/{{ person.id }}.png" title="{{ person.name }}" style="width:100%;border-radius:50%;"><br />{{ person.name }}</a>
+  <a href="{{ href }}"><img src="/assets/images/speakers/{{ yearpath }}thumbs/{{ person.id }}.png" title="{{ person.name }}" style="width:100%;border-radius:50%;" class="{{ include.additional_css_classes }}"><br />{{ person.name }}</a>
 </div>
