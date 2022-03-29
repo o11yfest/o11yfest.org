@@ -140,3 +140,141 @@ items:
   handles:
     twitter: debugagent
     linkedin: shai-almog-81a42
+
+# - id: adrian-gonzalez
+#   name: Adrian Gonzalez
+#   bio: |
+#     [TBD]
+#   role: presenter
+#   title: "Seeing Your Product Succeed through User Telemetry"
+#   abstract: |
+#     The business value of observability for many enterprise customers comes in the form of user telemetry. Every business wants to know, 'Who are my users, when are they using, why, how, and what buttons are they touching?". This understanding can determine or define the success of your product.
+#   handles:
+#     linkedin: adrian-g-gonzalez
+
+- id: zoe-steinkamp
+  name: Zoe Steinkamp
+  bio: |
+    Zoe Steinkamp is a Developer Advocate for InfluxData. She has worked for InfluxData as a front end software engineer for over two years. Before InfluxData, she worked as a front end engineer for over 5 years in the original AngularJS. She originally went to a bootcamp for training in Python. Her favorite activities outside of work include traveling and gardening.
+  role: presenter
+  title: "Cleaning and Interpreting Time-series Metrics with InfluxDB"
+  abstract: |
+    Metric data can benefit from being standardized and condensed before being stored in your database. It can also be useful to be able to search and filter the data outside of your database. The flux data processing language is built for handling these tasks in the Flux VS code tool.
+
+    Raw time series metrics data can benefit from clean-up and normalization before exposing it for broader use and storage. When dealing with large amounts of time series metrics, it can be helpful to be able to standardize the ways in which others can search through that data for specific time frames using easy to understand tags. This talk focuses on using Flux, InfluxDB’s data processing language, for addressing these challenges. Examples of how to leverage Flux to accomplish data cleansing and analytics through the browser and via Visual Studio will be demonstrated.
+  handles:
+    linkedin: zoe-steinkamp
+
+- id: daniel-selans
+  name: Daniel Selans
+  bio: |
+    Dan is a co-founder of Batch.sh, a data stream observability company. Dan previously worked at InVisionApp, New Relic and before that, spent some time doing integration work at data centers. He has been writing Go for 6+ years, works primarily in backend, listens to a lot of black metal and prefers Stella's over IPA‚Äôs. He resides in Portland, Oregon but is originally from [Latvia](https://goo.gl/maps/9wruLSg4RBU2).
+  role: presenter
+  title: "Observability in Event Driven *"
+  abstract: |
+    Event driven systems are on the rise but there is still a significant lack of information about how to observe these complex systems.
+
+    Event driven is not new - there are several well-known articles written about it but it remains difficult to find up-to date information on the various paradigms - architecture, implementation, component breakdowns or just some guidance on how to approach observability.
+
+    In this talk, I will introduce the listener to event driven concepts and share observability patterns that have worked for our team.
+
+    This information comes from first-hand experience designing, implementing and operating an event-driven system that our company uses to process over ten billion (protobuf) events per day.
+
+    Learn how to set yourself up for success when working with async-heavy systems.
+
+    (Rough) Outline of the talk:
+
+    1. Introduction to event driven concepts
+
+    2. What is event driven? (<5 minutes)
+
+    3. Component breakdown (<5 minutes)
+
+    4. Observing Async
+
+    5. Why is it hard? (<=5 minutes)
+
+    6. Patterns that work (10 minutes)
+
+    7. What to avoid (5 minutes)
+
+  handles:
+    twitter: skey
+    linkedin: dselans
+
+- id: stephen-townshend
+  name: Stephen Townshend
+  bio: |
+    Stephen pretended to be a performance engineer for thirteen years, and very recently started pretending to be an SRE. He is actually an actor, playing the role of a site reliability engineer. At some point along the way he lost touch with reality and is no longer sure if he is acting, or this has become reality. In the words of Robert Downey, Jr. in the film Tropic Thunder: “I know who I am. I’m a dude playing a dude disguised as another dude.”
+  role: presenter
+  title: "Bad Observability"
+  abstract: |
+    What are some antipatterns can hurt the success of our observability? What does “bad” observability look like?
+
+    From my experience, most organizations have a lot of monitoring. And most of the time that monitoring isn’t able to answer basic questions about customer behaviour and experience, and isn’t being used as part of a feedback loop to pivot and make better business decisions.
+
+    In this session I will explore both technical and cultural antipatterns that hinder observability. For example: - Lots of data but no insights - Monitoring a lot of technical metrics but not tracking customer behaviour and the impact of changes - Not knowing what the desired level of service is for the customer, or tracking it, or responding to it as part of a feedback loop - Misunderstanding what aggregates (averages, percentiles, etc.) mean and do not mean, or the impact of sampling intervals - Misunderstanding what certain metrics mean (for example, available memory on CPU’s, % CPU usage on containers and VM’s) - Siloed teams who do not share their monitoring with others …and many more.
+
+    In this session my goal is to bring us back to outcomes. Rather than “do monitoring” for the sake of it, let’s be thoughtful about what we choose to measure and how we deal with the data that comes back, so that it drives better customer and business outcomes.
+
+  handles:
+    twitter: the_kiwi_sre
+    linkedin: stephentownshend
+
+- id: andreas-grabner
+  name: Andreas Grabner
+  bio: |
+    Andreas Grabner has 20+ years of experience as a software developer, tester and architect and is an advocate for high-performing cloud scale applications. He is a contributor and DevRel for the CNCF open source project keptn (www.keptn.sh). Andreas is also a regular contributor to the DevOps community, a frequent speaker at technology conferences and regularly publishes articles on blog.dynatrace.com or medium. In his spare time you can most likely find him on one of the salsa dancefloors of the world (will resume once Covid is behind us)!
+  role: presenter
+  title: "Keptn: Putting Observability in the driving seat for DevOps & SRE automation"
+  abstract: |
+    Observability is the foundation giving us insights on how our systems currently behave. Keptn - a CNCF project - uses o11y to automate decisions in your delivery and ops automation.
+
+    Its simple: You define SLOs! Keptn takes care of orchestrating your tools to deploy, test or release based on o11y!
+
+    DevOps Platform Engineers and SREs are spending a lot of time integrating observability into their delivery and operations automation to automate decisions. This is done through lots of custom scripting, e.g: pull data from Jenkins, GitLab or Argo pipelines to make automated decisions based on the data coming out of Prometheus, OpenTelemetry ...
+
+    Keptn standardizes how to pull data from your observability platform, how to analyze it by applying the concept of SLOs (Service Level Objectives) and how to integrate with your delivery, test, notification and configuration management tools.
+
+    Keptn adopters have seen up to 90% reduction in custom coding to make observability a core component of their automation.
+
+    In this session you learn how Keptn works, how the community is adopting it, how to integrate your own observability framework, how you can get started in minutes and how you can contribute to this open-source project.
+
+  handles:
+    twitter: grabnerandi
+    linkedin: grabnerandi
+
+- id: martin-mao
+  name: Martin Mao
+  bio: |
+    Martin Mao is the co-founder and CEO of Chronosphere. He was previously at Uber, where he led the development and SRE teams that created and operated M3. Prior to that, he was a technical lead on the EC2 team at AWS and has also worked for Microsoft and Google. He and his family are based in our Seattle hub and he enjoys playing soccer and eating meat pies in his spare time.
+  role: presenter
+  title: "Is MTTR still relevant in a modern, cloud native world?"
+  abstract: |
+    MTTR has long been an essential failure metric. However, in a cloud native world, P95 and P99 have become more meaningful measurements. And time to remediation -not repair- is most important. During the talk, Martin will share an alternative to MTTR and how it can become your new P99 of remediation.
+
+    Mean time to repair (MTTR) has long been an essential failure metric measuring the average time it takes to repair or restore a system to functionality. But why, in the age of microservices and containers, are we still using a metric with its origins in measuring equipment failures within factories? Mean, or average, is no longer a relevant metric for most organizations, with P95 and P99 becoming the more meaningful measurement. Repair, or sometimes restore, is also problematic. In most cases the most important time period to measure is the time to remediation, or the time to alleviate customer pain, restoring the service to acceptable levels of availability and performance. In this session, Martin will introduce an alternative to MTTR, and share real-life examples and lessons learned to explain how this new way of thinking can become your new P99 of remediation time.
+
+  handles:
+    twitter: martin_c_mao
+    linkedin: martinmao
+
+- id: piyush-verma
+  name: Piyush Verma
+  bio: |
+    Piyush Verma is co-founder and CTO at Last9.io, an SRE platform that aims to minimize the toil that SREs and decision-makers need to go through to reduce the time to make a decision. Earlier, he led SRE @ TrustingSocial.com to produce 600 million credit scores a day across 4 countries. In his past life, he built oogway.in (exit to TrustingSocial.com), datascale.io (exit to Datastax), and siminars.com.
+  role: presenter
+  title: "Building OpenMetrics Exporter"
+  abstract: |
+    openmetrics-exporter (OME) is an Observability-as-Code software that metrics what Terraform is to Cloud Operations. OME uses HCL configs written in HCL syntax to connect to cloud-native sources and collate metrics using simple pipes, absorbing all challenges of distributed systems underneath.
+
+    Openmetrics-exporter, or OME, is an Observability-as-Code framework that reduces the toil of finding-and-combining useful metrics from layers and hundreds of components involved in modern cloud-native systems. Every source, component, or metric is just a simple configuration file because the only ‚Äúcode‚Äù you should focus on is for your customers.
+
+    It leverages plugin architecture to support data sources. It relies heavily on data frame processing to combine metrics from various metrics sources before they are all converted into Openmetrics format, ready to be piped out by a Prometheus. Traditionally, such correlation and post-processing have been a responsibility of additional Data Pipelines but with OME it's as simple as writing a configuration file. At the core of it, OME uses Hashicorp Configuration Language (HCL) to build a DSL that can allow declarative input to build metric Pipelines.
+
+    The talk is largely about what can you solve using OME. But it also takes a very short journey of ""behind-the-scenes""
+
+    The need to build Openmetrics-exporter, picking a configuration language that was easily editable by humans, building a DSL around it, and more importantly leveraging Golang for Data Science needs.
+  handles:
+    twitter: realmeson10
+    linkedin: meson10
