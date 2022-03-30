@@ -168,7 +168,7 @@ items:
 - id: daniel-selans
   name: Daniel Selans
   bio: |
-    Dan is a co-founder of Batch.sh, a data stream observability company. Dan previously worked at InVisionApp, New Relic and before that, spent some time doing integration work at data centers. He has been writing Go for 6+ years, works primarily in backend, listens to a lot of black metal and prefers Stella's over IPA‚Äôs. He resides in Portland, Oregon but is originally from [Latvia](https://goo.gl/maps/9wruLSg4RBU2).
+    Dan is a co-founder of Batch.sh, a data stream observability company. Dan previously worked at InVisionApp, New Relic and before that, spent some time doing integration work at data centers. He has been writing Go for 6+ years, works primarily in backend, listens to a lot of black metal and prefers Stella's over IPA's. He resides in Portland, Oregon but is originally from [Latvia](https://goo.gl/maps/9wruLSg4RBU2).
   role: presenter
   title: "Observability in Event Driven *"
   abstract: |
@@ -266,7 +266,7 @@ items:
   role: presenter
   title: "Building OpenMetrics Exporter"
   abstract: |
-    openmetrics-exporter (OME) is an Observability-as-Code software that metrics what Terraform is to Cloud Operations. OME uses HCL configs written in HCL syntax to connect to cloud-native sources and collate metrics using simple pipes, absorbing all challenges of distributed systems underneath.
+    Openmetrics-exporter (OME) is an Observability-as-Code software that metrics what Terraform is to Cloud Operations. OME uses HCL configs written in HCL syntax to connect to cloud-native sources and collate metrics using simple pipes, absorbing all challenges of distributed systems underneath.
 
     Openmetrics-exporter, or OME, is an Observability-as-Code framework that reduces the toil of finding-and-combining useful metrics from layers and hundreds of components involved in modern cloud-native systems. Every source, component, or metric is just a simple configuration file because the only ‚Äúcode‚Äù you should focus on is for your customers.
 
@@ -278,3 +278,31 @@ items:
   handles:
     twitter: realmeson10
     linkedin: meson10
+
+- id: alex-boten
+  name: Alex Boten
+  bio: |
+    Alex Boten is a Senior Staff Software Engineer at Lightstep and has spent the last ten years helping organizations adapt to a cloud-native landscape. From building core network infrastructure to mobile client applications and everything in between, Alex has first-hand knowledge of how complex troubleshooting distributed applications is.
+
+    This led him to the domain of observability and contributing to open-source projects in the space. A contributor, approver, and maintainer in several aspects of OpenTelemetry, Alex has helped evolve the project from its early days in 2019 into the massive community effort that it is today.
+
+    More than anything, Alex loves making sense of the technology around us and sharing his learnings with others.
+  role: presenter
+  title: "How the OpenTelemetry Collector puts you in the driver seat"
+  abstract: |
+    After spending hours, days, weeks of effort ensuring applications are producing good telemetry, the last thing anyone wants is to touch that code ever again. As needs change, you want the flexibility to try new solutions. What if there was an easy way to do this? Enters the OpenTelemetry Collector.
+
+    Instrumenting code is a pain. OpenTelemetry provides the tooling necessary to instrument code once and for all. Gone are the days of vendor lock-in, everyone can now use an open standard. The OpenTelemetry Collector provides even more control over your data, allowing you to send data to any number of telemetry backends without ever touching application code.
+
+    In this talk, you‚'ll learn:
+
+    * What the OpenTelemetry Collector is
+
+    * How it provides maximum control & flexibility for your data
+
+    * The ways you can extend the Collector
+
+    It's your data! Retain control of it with the Collector.
+  handles:
+    twitter: codeboten
+    linkedin: codeboten
