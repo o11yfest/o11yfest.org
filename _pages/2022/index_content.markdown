@@ -20,6 +20,10 @@ Unlike a typical monolithic tech event, this year we're taking a more continuous
 
 All content will need to be pre-recorded and unique to o11yfest (not the same exact upload as what was shared in other conferences, though it can be based on a presentation shared elsewhere). CFP and presentation uploads can happen at any time, but the later the submission, the less likely to make the days-of schedule headlines.
 
+So far, we've accepted many speakers, and the more the merrier!
+
+{% include 2022-speaker-thumbs.html %}
+
 # Premiere Sponsors
 
 These sponsors have materially contributed both in effort and financial underwriting to make this conference possible! A special thanks goes to them for the opportunity to come together and learn!
