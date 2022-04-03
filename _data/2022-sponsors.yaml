@@ -35,7 +35,7 @@ items:
   name: New Relic
   level: premiere
   logo: newrelic.png
-  external_link: https://newrelic.com/
+  external_link: https://newrelic.com/signup?utm_source=event&utm_medium=devrel_event&utm_campaign=amer-fy22-q3-o11yfest
   link: /2022/sponsors/newrelic
   workshop:
     datetime: 2022-05-11T16:00:00.000Z
