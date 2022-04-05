@@ -8,7 +8,7 @@ layout: default
   {% include sponsor-left.html sponsor=sponsor year="2022" %}
   <div style="min-width:300px;flex:1;align-self:flex-begin;">
 
-    <h3>{{ sponsor.name }} is a {{ sponsor.level }} sponsor of o11yfest!</h3>
+    <h3><a href="{{ sponsor.external_link }}">{{ sponsor.name }}</a> is a {{ sponsor.level }} sponsor of o11yfest!</h3>
 
 {% if sponsor.level == "premiere" %}
     <p>
@@ -33,7 +33,7 @@ Their donation to one of our approved good causes demonstrates their commitment
     </p>
 {% endif %}
 
-The organizers can't thank {{ sponsor.name }} enough!
+The organizers can't thank <a href="{{ sponsor.external_link }}">{{ sponsor.name }}</a> enough!
 
     {{ content }}
 
@@ -52,7 +52,7 @@ The organizers can't thank {{ sponsor.name }} enough!
     When: <span class="localizetime">{{ workshop.datetime }}</span> (your local date/time)
 
     <p>
-    {% if workshop.description %}{{ workshop.description }}{% else %}{{ sponsor.name }}
+    {% if workshop.description %}{{ workshop.description }}{% else %}<a href="{{ sponsor.external_link }}">{{ sponsor.name }}</a>
      will be hosting a workshop on a topic related to observability that has yet to be
      received by organizers, so stay tuned!{% endif %}
     </p>
