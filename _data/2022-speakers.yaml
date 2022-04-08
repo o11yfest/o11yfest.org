@@ -43,6 +43,10 @@ items:
     twitter: hab_mic
     linkedin: michael-haberman
   session_url: https://vi.to/hubs/o11yfest/videos/4895
+  preactions:
+  - contributor: Lewis Prescott
+    youtube_id: hL9sHmBPleU
+    video_url: https://www.youtube.com/watch?v=hL9sHmBPleU
 
 - id: jessica-kerr
   name: Jessica (Jessitron) Kerr
@@ -140,6 +144,7 @@ items:
   handles:
     twitter: debugagent
     linkedin: shai-almog-81a42
+  session_url: https://vi.to/hubs/o11yfest/videos/5009
 
 # - id: adrian-gonzalez
 #   name: Adrian Gonzalez
@@ -220,6 +225,7 @@ items:
   handles:
     twitter: the_kiwi_sre
     linkedin: stephentownshend
+  session_url: https://vi.to/hubs/o11yfest/videos/5008
 
 - id: andreas-grabner
   name: Andreas Grabner
@@ -243,6 +249,7 @@ items:
   handles:
     twitter: grabnerandi
     linkedin: grabnerandi
+  session_url: https://vi.to/hubs/o11yfest/videos/5007
 
 - id: martin-mao
   name: Martin Mao
