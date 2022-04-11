@@ -67,3 +67,9 @@ items:
   logo: vmware-tanzu.png
   external_link: https://tanzu.vmware.com
   link: /2022/sponsors/vmware-tanzu
+- id: last9
+  name: Last9
+  level: contributor
+  logo: last9.png
+  external_link: https://last9.io
+  link: /2022/sponsors/last9
