@@ -73,7 +73,7 @@ items:
   handles:
     twitter: sinkingpoint
     linkedin: colin-douch-82940b120
-  session_url: https://vi.to/hubs/o11yfest/videos/5010
+  session_url: https://vi.to/hubs/o11yfest/videos/5026
 
 - id: michael-hausenblas
   name: Michael Hausenblas
@@ -88,6 +88,7 @@ items:
   handles:
     twitter: mhausenblas
     linkedin: mhausenblas
+  session_url: https://vi.to/hubs/o11yfest/videos/5027
 
 - id: henrik-rexed
   name: Henrik Rexed
