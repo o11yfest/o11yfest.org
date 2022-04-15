@@ -26,6 +26,9 @@
       Watch this Session
       {%- endif -%}
     </a>
+    {%- if include.year == "2022" and person.session_url -%}
+    <a class="flexbox-button" href="/2022/preaction" style="font-size:0.9em;">Add your (p)reaction!</a>
+    {%- endif -%}
   </div>
   {% if content.size > 0 %}
     {{ content }}

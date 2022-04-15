@@ -31,7 +31,7 @@ NOTE: More speaker videos are coming soon!
   <div style="flex:1;align-self:flex-start;text-align:center;">
   <div class="flexbox" style="text-align:left;">
     {% assign persons = site.data['2022-speakers'].items | where_exp: "person", "person.session_url" %}
-    <ul>
+    <ul id="preaction_list">
     {% for person in persons %}
       {% assign cta = "none" %}
       {% if person.session_url %}
@@ -49,7 +49,7 @@ NOTE: More speaker videos are coming soon!
           {{ person.name }} - {{ person.title }}
         </div -->
         {% else %}
-          <li>{{ person.name }} - {{ person.title }}<br /><a href="/speakers/{{ person.id }}">[session description]</a> | <a href="{{ cta }}">[video]</a><br /><br /></li>
+          <li>{{ person.name }} - {{ person.title }}<br /><a href="/speakers/{{ person.id }}">[session description]</a> | <a href="{{ cta }}">[presentation]</a><br /><br /></li>
         {% endif %}
       {% endif %}
     {% endfor %}
@@ -123,9 +123,19 @@ Firstly, email [organizers@o11yfest.org](mailto:organizers@o11yfest.org) and exp
 .tooltip:hover .tooltiptext {
   /*visibility: visible;*/
 }
+
+#preaction_list {
+  /* visibility: hidden;*/
+}
 </style>
 <script type="text/javascript">
+
   window.onloadqueue=(window.onloadqueue||[]).concat([function () {
     $('.disabled *').prop('disabled', true).attr("title","Video not available yet");
+
+    $.fn.randomize=function(a){(a?this.find(a):this).parent().each(function(){$(this).children(a).sort(function(){return Math.random()-0.5}).detach().appendTo(this)});return this};
+
+    $('#preaction_list li').randomize()
+    $('#preaction_list').css('visibility','visible');
   }]);
 </script>
