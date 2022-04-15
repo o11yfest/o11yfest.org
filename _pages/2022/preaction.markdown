@@ -20,6 +20,9 @@ permalink: /2022/preaction
 2. Take notes while watching it, and then
 3. Share your key takeaways in a 5-minute video.
 
+<br />
+
+NOTE: More speaker videos are coming soon!
 
 </div>
 </div>
