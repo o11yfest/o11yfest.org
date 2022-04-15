@@ -6,9 +6,56 @@ permalink: /2022/preaction
 
 {% include 2022-cta-buttons.html exclude_preaction=true %}
 
-<div style="text-align:center;">
+<div class="flexbox">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/odN_JLFCmU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div style="flex:1;align-self:flex-start;text-align:center;min-width:300px;margin-top:1em;">
+    <iframe width="400" height="224" src="https://www.youtube.com/embed/odN_JLFCmU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div style="text-align:left;margin-top:1em;">
+
+    <h3>Take (pre)Action!</h3>
+    <div markdown=1>
+
+1. Pick one of the following presentations that appeals to you the most,
+2. Take notes while watching it, and then
+3. Share your key takeaways in a 5-minute video.
+
+<br />
+
+NOTE: More speaker videos are coming soon!
+
+</div>
+</div>
+  </div>
+
+  <div style="flex:1;align-self:flex-start;text-align:center;">
+  <div class="flexbox" style="text-align:left;">
+    {% assign persons = site.data['2022-speakers'].items | where_exp: "person", "person.session_url" %}
+    <ul>
+    {% for person in persons %}
+      {% assign cta = "none" %}
+      {% if person.session_url %}
+        {% capture cta %}{{ person.session_url }}{% endcapture %}
+        {% if person.preactions and person.preactions.size > 0 %}
+          {% assign cta = "done" %}
+        {% endif %}
+      {% endif %}
+      {% if cta == "none" %}
+        <div class="tooltip"><span class="tooltiptext">This speaker has not submitted their video yet.</span>
+        <div class="disabled">{{ person.name }} - {{ person.title }}</div></div>
+      {% else %}
+        {% if cta == "done" %}
+        <!-- div class="tooltip"><span class="tooltiptext">We've already received some preactions!</span>
+          {{ person.name }} - {{ person.title }}
+        </div -->
+        {% else %}
+          <li>{{ person.name }} - {{ person.title }}<br /><a href="/speakers/{{ person.id }}">[session description]</a> | <a href="{{ cta }}">[video]</a><br /><br /></li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+  </div>
 
 </div>
 
@@ -43,29 +90,6 @@ Firstly, email [organizers@o11yfest.org](mailto:organizers@o11yfest.org) and exp
 * make sure you comply with our [Code of Conduct](/code-of-conduct), avoid strong language etc.
 * once done, store it somewhere online and reply back to organizer's email with the link
 
-<div class="flexbox">
-  {% assign persons = site.data['2022-speakers'].items %}
-  {% for person in persons %}
-    {% assign cta = "none" %}
-    {% if person.session_url %}
-      {% capture cta %}{{ person.session_url }}{% endcapture %}
-      {% if person.preactions and person.preactions.size > 0 %}
-        {% assign cta = "done" %}
-      {% endif %}
-    {% endif %}
-    {% if cta == "none" %}
-    <div class="tooltip"><span class="tooltiptext">This speaker has not submitted their video yet.</span>
-    <div class="disabled">{% include speaker-thumb.html year="2022" person=person %}</div></div>
-    {% else %}
-      {% if cta == "done" %}
-      <div class="tooltip"><span class="tooltiptext">We've already received some preactions!</span>
-      {% include speaker-thumb.html year="2022" person=person %}</div>
-      {% else %}
-        {% include speaker-thumb.html year="2022" person=person custom_cta=cta additional_css_classes="glow" %}
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-</div>
 <style type="text/css">
 .disabled { pointer-events: none; opacity: 0.5; }
 .tooltip {
@@ -97,7 +121,7 @@ Firstly, email [organizers@o11yfest.org](mailto:organizers@o11yfest.org) and exp
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
-  visibility: visible;
+  /*visibility: visible;*/
 }
 </style>
 <script type="text/javascript">
