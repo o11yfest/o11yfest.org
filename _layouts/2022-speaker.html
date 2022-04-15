@@ -22,12 +22,8 @@ layout: default
     {% endif %}
   </div>
 </div>
-{% if bio_bottom == true %}
-  {{ bio }}
-{% endif %}
-
 {% if person.preactions and person.preactions.size > 0 %}
-  <h1>Preaction Videos</h1>
+  <h3>(p)reactions</h3>
   <div class="flexbox">
   {% for preaction in person.preactions %}
     <div style="width:300px;flex:1;align-self:flex-start;">
@@ -41,6 +37,9 @@ layout: default
     </div>
   {% endfor %}
   </div>
+{% endif %}
+{% if bio_bottom == true %}
+  {{ bio }}
 {% endif %}
 
 <style type="text/css">
