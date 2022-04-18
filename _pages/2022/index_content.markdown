@@ -17,7 +17,7 @@ Unlike a typical monolithic tech event, this year we're taking a more continuous
 
 We're waiting on a few more acceptances, but so far many awesome folks will be presenting:
 
-<div style="max-width:800px;margin:0px auto;">
+<div style="max-width:1000px;margin:0px auto;">
 
 {% include 2022-speaker-thumbs.html %}
 

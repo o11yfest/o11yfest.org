@@ -49,7 +49,7 @@ NOTE: More speaker videos are coming soon!
           {{ person.name }} - {{ person.title }}
         </div -->
         {% else %}
-          <li>{{ person.name }} - {{ person.title }}<br /><a href="/speakers/{{ person.id }}">[session description]</a> | <a href="{{ cta }}">[presentation]</a><br /><br /></li>
+          <li data-speaker-id="{{person.id}}">{{ person.name }} - {{ person.title }}<br /><a href="/speakers/{{ person.id }}">[session info]</a> | <a href="{{ cta }}">[watch &amp; take notes]</a><br /><br /></li>
         {% endif %}
       {% endif %}
     {% endfor %}
@@ -135,7 +135,30 @@ Firstly, email [organizers@o11yfest.org](mailto:organizers@o11yfest.org) and exp
 
     $.fn.randomize=function(a){(a?this.find(a):this).parent().each(function(){$(this).children(a).sort(function(){return Math.random()-0.5}).detach().appendTo(this)});return this};
 
-    $('#preaction_list li').randomize()
+    var elements = $('#preaction_list li');
+    elements.randomize()
+
+    var totalInListTarget = 5;
+
+    let qs = new URLSearchParams(window.location.search)
+
+    var found = null;
+    if(qs.has('speaker')) {
+      var findId = qs.get('speaker').trim().toLowerCase()
+      elements.each(function(i,o) { if($(o).attr("data-speaker-id").trim().toLowerCase() == findId) { found = o; } });
+      if(found != null) {
+        $(found).css("font-weight","bold").remove();
+      }
+    }
+
+    for(var i=(elements.length-1); i>=(totalInListTarget-1); i--) {
+      var child = $('#preaction_list li')[i]
+      $(child).remove()
+    }
+
+    if(found)
+      $('#preaction_list').prepend(found)
+
     $('#preaction_list').css('visibility','visible');
   }]);
 </script>

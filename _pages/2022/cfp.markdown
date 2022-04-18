@@ -10,9 +10,12 @@ Thank you to all who have submitted a CFP! We will be publishing the official sc
 
 You can still get involved by:
 
-* [Recording your own (p)reaction video](/2022/preaction)
-* [Letting your colleagues know they should attend](/attend)
+* **[Recording your own (p)reaction video](/2022/preaction)**
+
+* [Inviting your colleagues to also attend](/attend)
+
 * [Volunteering to help organize the event](/contact)
+
 * [Letting your company know they can sponsor by contributing a donation to our good causes](/sponsor)
 
 <!--

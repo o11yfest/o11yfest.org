@@ -122,6 +122,18 @@ items:
   handles:
     twitter: hrexed
     linkedin: hrexed
+  session_url: https://vi.to/hubs/o11yfest/videos/5039
+
+- id: prathima-janakiram
+  name: Prathima Janakiram
+  bio: |
+    I am a technologist working in Silicon Valley for more than two decades. I have held a wide variety of roles from developer to application owner to operations at various datacom and telecom companies in the Bay Area. I started with monolithic application development managing networking devices more than two decades back and have seen the transformation of this landscape over the years to cloud native and SAAS offerings. Over the years, I have experimented with several programming languages and several networking technologies. I have now found my home as a developer advocate in Cisco Systems where I experiment with cloud automation technologies to ease the pain points of several personas, particularly the application developers.
+  role: presenter
+  title: "Self Service FSO deployments with Workflows"
+  abstract: |
+    Within an enterprise, some teams may be advanced in their path to cloud native app development and deployment while some may be challenged with legacy app transformations. Orchestration workflows provide the abstractions as app teams individually innovate and incorporate FSO tools of their choice.
+
+    So, what has workflows got to do with this? It's about removing I&O teams from critical paths. It's about empowering app developers to be in control of their app deployments, app security and app performance. Considering that not all application teams within an enterprise innovate at the same pace, each team is bound to have varying requirements on the infrastructure. I & O teams are best positioned to cater to these varying requirements by the adoption of tools that provide abstractions so app teams can self provision the infrastructure per their requirements. Workflows, in general, inherently provide an abstraction functionality that can hide the inner workings of a deployment. This talk is to highlight the importance of allowing app developers to self service their own deployments with I&O teams providing them with a catalog of well tested building blocks including blocks for FSO. It's like those Lego blocks - you put those small blocks together to create your own masterpiece!
 
 - id: shai-almog
   name: Shai Almog
@@ -247,11 +259,27 @@ items:
     Keptn adopters have seen up to 90% reduction in custom coding to make observability a core component of their automation.
 
     In this session you learn how Keptn works, how the community is adopting it, how to integrate your own observability framework, how you can get started in minutes and how you can contribute to this open-source project.
-
   handles:
     twitter: grabnerandi
     linkedin: grabnerandi
   session_url: https://vi.to/hubs/o11yfest/videos/5007
+
+- id: narmatha-bala
+  name: Narmatha Bala
+  bio: |
+    Narmatha Bala is a Senior Software Engineering Manager in the Commercial Software Engineering (CSE) team and runs the Observability (chapter?) of the CSE Engineering Playbook, a best practices guide put together by development teams to accelerate the sharing of how best to work together, to quickly transfer learnings across teams with customers, particularly with new technologies and projects as a way to enable customers to carry the work forward and continue the development. CSE is a global engineering organization that works directly with the largest companies and not-for-profits in the world to tackle their most significant technical challenges.
+  role: presenter
+  title: "Confidence in Chaos; Observability in Testing"
+  abstract: |
+    There is a difference between applying traditional observability practices and how they are applied for each custom project and scenario.
+
+    Everyone wants to use observability because it can reduce time between a problem and a solution, but there is a difference between applying traditional observability practices and how they are applied for each custom project and scenario. Narmatha Bala is a Senior Software Engineering Manager in the Commercial Software Engineering (CSE) team and runs the Observability chapter of the CSE Engineering Playbook, a best practices guide put together by development teams to accelerate the sharing of how best to work together, to quickly transfer learnings across teams with customers, particularly with new technologies and projects as a way to enable customers to carry the work forward and continue the development. CSE is a global engineering organization that works directly with the largest companies and not-for-profits in the world to tackle their most significant technical challenges.
+
+    In this talk, Narmatha will share her experiences in instilling Observability best practices with engineers who use best utilize observability in applications versus engineers that think they do. She will cover why actionable failures are a good thing in system design, how to best define Service Level Agreements and Objectives (SLAs, SLOs), and where monitoring fits into the process. This talk is best suited for intermediate practitioners who want to improve their testing by improving their observability practices.
+  handles:
+    twitter: narmathabala
+    linkedin: narmathabala
+  session_url: https://vi.to/hubs/o11yfest/videos/5038
 
 - id: martin-mao
   name: Martin Mao
@@ -322,7 +350,7 @@ items:
   bio: |
     I'm Reese, and I love solving puzzles! That's really what has ultimately led me here, working with OpenTelemetry users and enabling my teams on OpenTelemetry. Helping customers get their data into our backend platform, how to increase awareness of this actively evolving tooling, how to improve our user experience - these are all puzzles that are of vast interest to me.
 
-    Before moving to the OpenTelemetry Community Team at New Relic as a Developer Relations Engineer, I was a Technical Support Engineer, where I provided support to our APM users (specifically with our .NET, Python, PHP, and Go agents). Although my role now is no longer primarily focused on helping our customers troubleshoot issues (the vast majority of which was missing data of some sort), it's something I still enjoy doing greatly. There's always something new to learn, some new root cause we haven't encountered before. 
+    Before moving to the OpenTelemetry Community Team at New Relic as a Developer Relations Engineer, I was a Technical Support Engineer, where I provided support to our APM users (specifically with our .NET, Python, PHP, and Go agents). Although my role now is no longer primarily focused on helping our customers troubleshoot issues (the vast majority of which was missing data of some sort), it's something I still enjoy doing greatly. There's always something new to learn, some new root cause we haven't encountered before.
 
     I partake in other fun activities, too! Such as, but not limited to: paddleboarding, eating, and traveling.
   role: presenter
