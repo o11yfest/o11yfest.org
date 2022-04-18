@@ -20,16 +20,12 @@ permalink: /2022/preaction
 2. Take notes while watching it, and then
 3. Share your key takeaways in a 5-minute video.
 
-<br />
-
-NOTE: More speaker videos are coming soon!
-
 </div>
-</div>
+    </div>
   </div>
 
   <div style="flex:1;align-self:flex-start;text-align:center;">
-  <div class="flexbox" style="text-align:left;">
+  <div class="flexbox" style="text-align:left;min-width:400px;">
     {% assign persons = site.data['2022-speakers'].items | where_exp: "person", "person.session_url" %}
     <ul id="preaction_list">
     {% for person in persons %}
@@ -54,6 +50,8 @@ NOTE: More speaker videos are coming soon!
       {% endif %}
     {% endfor %}
     </ul>
+
+    NOTE: More speaker videos are coming soon!
   </div>
   </div>
 
