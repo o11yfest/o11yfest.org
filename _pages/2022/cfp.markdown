@@ -4,6 +4,18 @@ title:  "Call for Presentations"
 permalink: /cfp
 ---
 
+# CFP CLOSED April 17th
+
+Thank you to all who have submitted a CFP! We will be publishing the official schedule by April 22nd.
+
+You can still get involved by:
+
+* [Recording your own (p)reaction video](/2022/preaction)
+* [Letting your colleagues know they should attend](/attend)
+* [Volunteering to help organize the event](/contact)
+* [Letting your company know they can sponsor by contributing a donation to our good causes](/sponsor)
+
+<!--
 # Scope of CFP
 
 We’re looking for you to record either 10-15min or 20-25min technical presentations around observability culture and practices, especially field studies and collaborations. All speakers are encouraged to be available for 10 minutes after their assigned session play time for live questions afterwards, and organizers are happy to help assign the best time for the speaker, given the daily live stream schedule 4pm-8pm GMT / 11am-3pm EST / 8am-12pm PST.
@@ -57,3 +69,5 @@ Recording tips:
 If after you've accepted, you cannot provide a pre-recorded video before April 17th, no worries. Let us know, one way or the other, and we'll figure something out. We appreciate proactive, slightly-over-communication.
 
 If you've already provided a pre-recording but can't be available for live Q&A, this does not disqualify your presentation and we'll find the right time to schedule it. We can either reschedule the Q&A for an better time for you and attendees, or let them know that your Q&A will be async via our Discord server. In this case, we do hope that you'll still be kind enough to answer questions that come your way.
+
+-->

@@ -38,7 +38,6 @@ input[type=text].tito-ticket-donation-field {
 <h1>Become part of our event!</h1>
 <p>
 Beyond attending, you can also a <a href="/2022/preaction">record '(p)reaction' video.</a>
- If you also feel you have something meaningful to present, <a href="/cfp">our CFP</a> is open until April 17th.
 </p>
 
 <div class="flexbox">
