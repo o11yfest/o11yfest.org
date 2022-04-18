@@ -316,3 +316,22 @@ items:
     twitter: codeboten
     linkedin: codeboten
   session_url: https://vi.to/hubs/o11yfest/videos/5031
+
+- id: reese-lee
+  name: Reese Lee
+  bio: |
+    I'm Reese, and I love solving puzzles! That's really what has ultimately led me here, working with OpenTelemetry users and enabling my teams on OpenTelemetry. Helping customers get their data into our backend platform, how to increase awareness of this actively evolving tooling, how to improve our user experience - these are all puzzles that are of vast interest to me.
+
+    Before moving to the OpenTelemetry Community Team at New Relic as a Developer Relations Engineer, I was a Technical Support Engineer, where I provided support to our APM users (specifically with our .NET, Python, PHP, and Go agents). Although my role now is no longer primarily focused on helping our customers troubleshoot issues (the vast majority of which was missing data of some sort), it's something I still enjoy doing greatly. There's always something new to learn, some new root cause we haven't encountered before. 
+
+    I partake in other fun activities, too! Such as, but not limited to: paddleboarding, eating, and traveling.
+  role: presenter
+  title: "Where The Heck Are My Spans??"
+  abstract: |
+    The whole point of observability is being able to see and analyze your data. So what do you do when your traces are fragmented, or when you are not seeing any spans at all?
+
+    There are few things more frustrating in observability than missing data - isn't being able to see your data the whole point of observability? You've checked and re-checked your configuration, and everything looks correct. You look at the console for any messages, but it's empty -- nothing helpful there. So... What now? How do you go about figuring what's happening?
+
+    In this lightning session, I'll be talking specifically about trace data. I'll cover how to enable logging in your SDK, some error codes and what they might indicate, and general limits your backend vendor may be imposing that could be impacting your spans.
+  handles:
+    linkedin: reese-lee
