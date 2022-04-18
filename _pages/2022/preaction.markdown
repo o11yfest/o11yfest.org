@@ -20,16 +20,12 @@ permalink: /2022/preaction
 2. Take notes while watching it, and then
 3. Share your key takeaways in a 5-minute video.
 
-<br />
-
-NOTE: More speaker videos are coming soon!
-
 </div>
-</div>
+    </div>
   </div>
 
   <div style="flex:1;align-self:flex-start;text-align:center;">
-  <div class="flexbox" style="text-align:left;">
+  <div class="flexbox" style="text-align:left;min-width:400px;">
     {% assign persons = site.data['2022-speakers'].items | where_exp: "person", "person.session_url" %}
     <ul id="preaction_list">
     {% for person in persons %}
@@ -49,11 +45,13 @@ NOTE: More speaker videos are coming soon!
           {{ person.name }} - {{ person.title }}
         </div -->
         {% else %}
-          <li>{{ person.name }} - {{ person.title }}<br /><a href="/speakers/{{ person.id }}">[session description]</a> | <a href="{{ cta }}">[presentation]</a><br /><br /></li>
+          <li data-speaker-id="{{person.id}}">{{ person.name }} - {{ person.title }}<br /><a href="/speakers/{{ person.id }}">[session info]</a> | <a href="{{ cta }}">[watch &amp; take notes]</a><br /><br /></li>
         {% endif %}
       {% endif %}
     {% endfor %}
     </ul>
+
+    NOTE: More speaker videos are coming soon!
   </div>
   </div>
 
@@ -135,7 +133,30 @@ Firstly, email [organizers@o11yfest.org](mailto:organizers@o11yfest.org) and exp
 
     $.fn.randomize=function(a){(a?this.find(a):this).parent().each(function(){$(this).children(a).sort(function(){return Math.random()-0.5}).detach().appendTo(this)});return this};
 
-    $('#preaction_list li').randomize()
+    var elements = $('#preaction_list li');
+    elements.randomize()
+
+    var totalInListTarget = 5;
+
+    let qs = new URLSearchParams(window.location.search)
+
+    var found = null;
+    if(qs.has('speaker')) {
+      var findId = qs.get('speaker').trim().toLowerCase()
+      elements.each(function(i,o) { if($(o).attr("data-speaker-id").trim().toLowerCase() == findId) { found = o; } });
+      if(found != null) {
+        $(found).css("font-weight","bold").remove();
+      }
+    }
+
+    for(var i=(elements.length-1); i>=(totalInListTarget-1); i--) {
+      var child = $('#preaction_list li')[i]
+      $(child).remove()
+    }
+
+    if(found)
+      $('#preaction_list').prepend(found)
+
     $('#preaction_list').css('visibility','visible');
   }]);
 </script>

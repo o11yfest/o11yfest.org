@@ -12,17 +12,16 @@ o11yfest is in its third year of operation as a grass-roots event whose aim is t
 
 Unlike a typical monolithic tech event, this year we're taking a more continuous approach to the content of our event, such that:
 
-1. We will use a 'rolling call for presentations ([CFP](/cfp))' that opened Jan 10th and closes on April 17th
-2. There will be a few select 'keystone' presentations from leaders in the OpenTelemetry community
-3. Teams will be encouraged to submit their observability stories as 15min group presentations
-4. We will be receiving lightning talks from individual contributors in the industry
-5. We are encouraging the whole community to [submit '(p)reaction' videos, more info here](/2022/preaction)
+1. Now that our CFP has closed, we already have many of the pre-recorded presentations!
+2. We are encouraging the whole community to [submit '(p)reaction' videos, more info here](/2022/preaction)
 
-All content will need to be pre-recorded and unique to o11yfest (not the same exact upload as what was shared in other conferences, though it can be based on a presentation shared elsewhere). CFP and presentation uploads can happen at any time, but the later the submission, the less likely to make the days-of schedule headlines.
+We're waiting on a few more acceptances, but so far many awesome folks will be presenting:
 
-So far, we've accepted many speakers, and the more the merrier!
+<div style="max-width:1000px;margin:0px auto;">
 
 {% include 2022-speaker-thumbs.html %}
+
+</div>
 
 # Premiere Sponsors
 

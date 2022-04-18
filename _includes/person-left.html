@@ -17,22 +17,24 @@
 {% if social.linkedin %}<svg class="svg-icon grey" title="{{ person.name }} on LinkedIn" onclick="window.open('https://www.linkedin.com/in/{{ social.linkedin }}')" style="cursor:pointer;"><use xlink:href="{{ '/assets/images/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg>{% endif %}
 {% endif %}
     </div>
-  <p style="font-size:1.5em;">{{ person.name }}<br /><span style="text-transform: uppercase;">{{ person.role }}</span></p>
-  <div class="flexbox" style="white-space: nowrap;">
-    <a class="flexbox-button" href="{%- if include.year != "2022" and person.session_url -%}{{ person.session_url }}{%- else %}{{ site.registration_link }}{%- endif -%}" style="font-size:0.9em;">
-      {%- if include.year == "2022" -%}
-      Attend this Session
-      {%- else -%}
-      Watch this Session
+  <div class="flexbox" style="max-width:450px;">
+    <p style="font-size:1.5em;">{{ person.name }}<br /><span style="text-transform: uppercase;">{{ person.role }}</span></p>
+    <div class="flexbox" style="white-space: nowrap;">
+      <a class="flexbox-button" href="{%- if include.year != "2022" and person.session_url -%}{{ person.session_url }}{%- else %}{{ site.registration_link }}{%- endif -%}" style="font-size:0.9em;">
+        {%- if include.year == "2022" -%}
+        Attend this Session
+        {%- else -%}
+        Watch this Session
+        {%- endif -%}
+      </a>
+      {%- if include.year == "2022" and person.session_url -%}
+      <a class="flexbox-button" href="/2022/preaction?speaker={{person.id}}" style="font-size:0.9em;">Add your (p)reaction!</a>
       {%- endif -%}
-    </a>
-    {%- if include.year == "2022" and person.session_url -%}
-    <a class="flexbox-button" href="/2022/preaction" style="font-size:0.9em;">Add your (p)reaction!</a>
-    {%- endif -%}
+    </div>
+    {% if content.size > 0 %}
+      {{ content }}
+    {% endif %}
   </div>
-  {% if content.size > 0 %}
-    {{ content }}
-  {% endif %}
 </div>
 <script type="text/javascript">
   window.onloadqueue=(window.onloadqueue||[]).concat([function () {
