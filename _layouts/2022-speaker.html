@@ -7,7 +7,7 @@ layout: default
 {% capture abstract_md %}{{ person.abstract | markdownify }}{% endcapture %}
 {% capture bio %}{% include person-bio.html person=person %}{% endcapture %}
 {% assign bio_bottom = false %}
-{% if content.size > 0 or abstract_md.size > 500 %}{% assign bio_bottom = true %}{% endif %}
+{% if content.size > 0 or abstract_md.size > 900 %}{% assign bio_bottom = true %}{% endif %}
 
 <div class="flexbox">
 
@@ -28,9 +28,9 @@ layout: default
 
   <div class="flexbox" style="width:100%;">
 
-  {{ assign with_preactions_width_style_attr = "" }}
+  {% assign with_preactions_width_style_attr = "" %}
   {% if person.preactions and person.preactions.size > 0 %}
-    {{ assign with_preactions_width_style_attr = "max-width:686px;" }}
+    {% assign with_preactions_width_style_attr = "max-width:686px;" %}
   <div style="flex:1;align-self:flex-start;">
     <h3>(p)reactions</h3>
     <div class="flexbox">
