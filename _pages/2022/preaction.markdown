@@ -145,7 +145,10 @@ Firstly, email [organizers@o11yfest.org](mailto:organizers@o11yfest.org) and exp
       var findId = qs.get('speaker').trim().toLowerCase()
       elements.each(function(i,o) { if($(o).attr("data-speaker-id").trim().toLowerCase() == findId) { found = o; } });
       if(found != null) {
-        $(found).css("font-weight","bold").remove();
+        $(found)
+          .css("font-weight","bold")
+          .css("text-shadow","1px 1px 10px #eee, 1px 1px 10px #aaa")
+          .remove();
       }
     }
 

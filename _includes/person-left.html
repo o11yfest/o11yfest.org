@@ -20,6 +20,11 @@
   <div class="flexbox" style="max-width:450px;">
     <p style="font-size:1.5em;">{{ person.name }}<br /><span style="text-transform: uppercase;">{{ person.role }}</span></p>
     <div class="flexbox" style="white-space: nowrap;">
+      {%- if include.include_preaction != "false" and include.year == "2022" and person.session_url -%}
+      {%- unless person.preactions and person.preactions.size > 0 -%}
+      <a class="flexbox-button" href="/2022/preaction/{{person.id}}" style="font-size:0.9em;">Add your (p)reaction!</a>
+      {%- endunless -%}
+      {%- endif -%}
       <a class="flexbox-button" href="{%- if include.year != "2022" and person.session_url -%}{{ person.session_url }}{%- else %}{{ site.registration_link }}{%- endif -%}" style="font-size:0.9em;">
         {%- if include.year == "2022" -%}
         Attend this Session
@@ -27,9 +32,6 @@
         Watch this Session
         {%- endif -%}
       </a>
-      {%- if include.year == "2022" and person.session_url -%}
-      <a class="flexbox-button" href="/2022/preaction?speaker={{person.id}}" style="font-size:0.9em;">Add your (p)reaction!</a>
-      {%- endif -%}
     </div>
     {% if content.size > 0 %}
       {{ content }}
