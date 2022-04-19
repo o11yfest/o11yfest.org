@@ -45,7 +45,7 @@ permalink: /2022/preaction
           {{ person.name }} - {{ person.title }}
         </div -->
         {% else %}
-          <li data-speaker-id="{{person.id}}">{{ person.name }} - {{ person.title }}<br /><a href="/speakers/{{ person.id }}">[session info]</a> | <a href="{{ cta }}">[watch &amp; take notes]</a><br /><br /></li>
+          <li data-speaker-id="{{person.id}}">{{ person.name }} - {{ person.title }}<br /><a href="/2022/preaction/{{ person.id }}">[session info]</a> | <a href="{{ cta }}">[watch &amp; take notes]</a><br /><br /></li>
         {% endif %}
       {% endif %}
     {% endfor %}
@@ -137,6 +137,7 @@ Firstly, email [organizers@o11yfest.org](mailto:organizers@o11yfest.org) and exp
     elements.randomize()
 
     var totalInListTarget = 5;
+    var iterTarget = totalInListTarget;
 
     let qs = new URLSearchParams(window.location.search)
 
@@ -149,10 +150,11 @@ Firstly, email [organizers@o11yfest.org](mailto:organizers@o11yfest.org) and exp
           .css("font-weight","bold")
           .css("text-shadow","1px 1px 10px #eee, 1px 1px 10px #aaa")
           .remove();
+        iterTarget--;
       }
     }
 
-    for(var i=(elements.length-1); i>=(totalInListTarget-1); i--) {
+    for(var i=(elements.length-1); i>=iterTarget; i--) {
       var child = $('#preaction_list li')[i]
       $(child).remove()
     }
