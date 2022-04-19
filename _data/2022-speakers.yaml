@@ -220,6 +220,7 @@ items:
   handles:
     twitter: skey
     linkedin: dselans
+  session_url: https://vi.to/hubs/o11yfest/videos/5043
 
 - id: stephen-townshend
   name: Stephen Townshend
@@ -315,6 +316,7 @@ items:
   handles:
     twitter: realmeson10
     linkedin: meson10
+  session_url: https://vi.to/hubs/o11yfest/videos/5042
 
 - id: alex-boten
   name: Alex Boten

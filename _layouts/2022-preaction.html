@@ -14,6 +14,26 @@ layout: default
   .flex-1 {flex-grow: 1;}
   .flex-part { flex:1;align-self:flex-start; max-width:300px; }
   .flex.column { flex-direction: row; flex-wrap: wrap; }
+
+  .video-bg {
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    cursor:pointer;
+    max-width:600px;
+    max-height:338px;
+    width:90vw;
+    height:53vw;
+    text-align:center;
+    font-size:4em;
+    background-image:url({{ site.produrl }}/assets/images/speakers/2022/socials/{{ person.id }}.png);
+  }
+  .video-fg {
+    vertical-align:middle;
+    height:100%;
+    padding-top:20%;
+  }
 </style>
 
 <div class="flex"">
@@ -39,13 +59,13 @@ layout: default
 </div>
     </div>
 
-    <div class="flex-1 flex-part" style="margin:1em;">
+    <div class="flex-1 flex-part" style="margin:2em;">
       <iframe width="250" height="140" src="https://www.youtube.com/embed/odN_JLFCmU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div class="flex-1 flex-part" style="min-width:600px;margin-top:1em;">
-      <div onclick="window.open('{{ person.session_url }}')" style="cursor:pointer;width:600px;height:338px;text-align:center;font-size:4em;background-image:url({{ site.produrl }}/assets/images/speakers/{{ yearpath }}socials/{{ person.id }}.png);background-size:600px;">
-        <div style="vertical-align:middle;padding-top:20%;">
+      <div onclick="window.open('{{ person.session_url }}')" class="video-bg">
+        <div class="video-fg">
           &#9658;
         </div>
       </div>
