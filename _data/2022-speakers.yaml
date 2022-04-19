@@ -3,9 +3,9 @@ items:
 - id: ricardo-ferreira
   name: Ricardo Ferreira
   bio: |
-    Ricardo is Observability Lead for Elastic’s community team, where he acts as the voice of Elastic at SRE, DevOps, and DataOps communities. In this role, he is responsible for developing and driving a global community and developer advocacy strategy focused on observability. With +20 years of experience, he might have learned a thing or two about distributed systems, observability, streaming systems, and databases. Before Elastic, he worked for other vendors such as Confluent, Oracle, Red Hat, and different consulting firms.
+    Ricardo is Senior Developer Advocate at AWS, working in the developer relations team for North America. With +20 years of experience, he may have learned a thing or two about distributed systems, fast data analytics, software architecture, databases, and observability. Before joining AWS, he worked for software vendors like Elastic, Confluent, and Oracle. Ricardo is known for his natural ability to explain complex topics. He craftily breaks them down into bite-sized pieces until anyone can understand.
 
-    While not working, he loves barbecuing in his backyard with his family and friends, where he gets the chance to talk about anything that is not IT-related. He lives in North Carolina, USA, with his wife and son.
+    While not working, he loves barbecuing in his backyard with his family and friends, where he finally gets the chance to talk about anything unrelated to computers. He currently lives in North Carolina, USA, with his wife and son. Follow Ricardo on Twitter: [@riferrei](https://twitter.com/riferrei).
   role: presenter
   title: Building Software Reliability with Distributed Tracing
   abstract: |
