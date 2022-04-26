@@ -1,7 +1,7 @@
 {% assign person = include.person %}
-{% assign content = include.extracontent %}
+{% assign extracontent = include.extracontent %}
 {% assign socialcard = person.id %}
-{% assign content = content | markdownify | strip %}
+{% assign extracontent = extracontent | markdownify | strip %}
 
 {% capture yearpath %}{{ include.year }}/{% endcapture %}
 
@@ -33,9 +33,11 @@
         {%- endif -%}
       </a>
     </div>
-    {% if content.size > 0 %}
-      {{ content }}
+    <div style="text-align:left;">
+    {% if extracontent.size > 0 %}
+      {{ extracontent }}
     {% endif %}
+    </div>
   </div>
 </div>
 <script type="text/javascript">

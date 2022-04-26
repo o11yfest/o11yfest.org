@@ -2,17 +2,26 @@
 layout: default
 ---
 
+{% assign year = 2022 %}
 {% assign person = site.data['2022-speakers'].items | where_exp:"item", "item.id == page.id" | first %}
 {% assign content = content | markdownify | strip %}
 {% capture abstract_md %}{{ person.abstract | markdownify }}{% endcapture %}
 {% capture bio %}{% include person-bio.html person=person %}{% endcapture %}
 {% assign bio_bottom = false %}
-{% if content.size > 0 or abstract_md.size > 900 %}{% assign bio_bottom = true %}{% endif %}
+{% assign max_body_length = 1000 %}
+{% assign body_length = abstract_md.size | plus: bio.size %}
+{% assign max_extracontent_length = 300 %}
+{% if abstract_md.size > max_body_length %}{% assign bio_bottom = true %}{% endif %}
+{% assign still_length = body_length | plus: content.size %}
 
 <div class="flexbox">
-
   <div class="flexbox">
-    {% include person-left.html person=person year="2022" extracontent=content %}
+    {% if content.size <= max_extracontent_length and body_length > max_body_length %}
+    {% assign still_length = 0 %}
+    {% include person-left.html person=person year=year extracontent=content %}
+    {% else %}
+    {% include person-left.html person=person year=year %}
+    {% endif %}
     <div style="min-width:300px;flex:1;align-self:flex-start;">
       <h2>{{ person.title }}</h2>
       <p>
@@ -23,8 +32,18 @@ layout: default
         {{ bio }}
         </p>
       {% endif %}
+      {% if still_length != 0 and still_length <= max_body_length %}
+        {{ content }}
+      {% endif %}
     </div>
   </div>
+  {% if still_length != 0 %}
+    {% if still_length <= max_body_length %}{% else %}
+    <div class="flexbox">
+      {{ content }}
+    </div>
+    {% endif %}
+  {% endif %}
 
   <div class="flexbox" style="width:100%;">
 
