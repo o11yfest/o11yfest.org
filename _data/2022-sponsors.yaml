@@ -54,6 +54,15 @@ items:
   link: /2022/sponsors/newrelic
   workshop:
     datetime: 2022-05-11T16:00:00.000Z
+    title: "K8s observability with Prometheus, Pixie, Fluent Bit and New Relic"
+    description: |
+      Learn the fundamentals of Kubernetes and how to use a variety of OSS frameworks to observe and debug your environments.
+
+      This hands-on workshop will cover the fundamentals of Kubernetes and using a variety of OSS frameworks to observe and debug your environments. First, we will go over the basics, including concepts (pods, nodes, services, ..), kubectl, Helm, and troubleshooting techniques for a Kubernetes deployment. Then, we will configure Prometheus in our Kubernetes cluster and collect metrics from the cluster by installing and configuring the Prometheus OpenMetrics Integration (POMI) and configure Fluent Bit to send logs to New Relic. Finally, we are going to install Pixie, a eBPF based framework to view traces and metrics from within your cluster without additional instrumentation.
+    presenters:
+    - name: Kirk Haines
+      title: Principal Developer Relations Engineer, NewRelic
+
 - id: promscale
   name: Promscale
   level: captioning
@@ -68,6 +77,22 @@ items:
   external_link: https://lightstep.com
   workshop:
     datetime: 2022-05-12T16:00:00.000Z
+    title: "Getting familiar with the OpenTelemetry Collector"
+    description: |
+      The workshop focuses on:
+
+      - Configuring the Collector to receive and export different formats of data
+      - Manipulating telemetry through Collector processors
+      - Extending the Collector through custom builds and components
+      - Deployment scenarios for the Collector
+    prerequisites:
+      This will be intended as an intro level workshop, no experience with OpenTelemetry required. The only prerequisite for running the example code is a tool capable of running Docker containers ideally with Docker Compose and Go 1.16+ should be installed to compile the collector.
+    presenters:
+    - name: Alex Boten
+      title: "Senior Staff Software Engineer, Lightstep"
+      bio: |
+        Alex Boten has spent the last ten years helping organizations adapt to a cloud-native landscape. More than anything, Alex loves making sense of the technology around us and sharing his learnings with others.
+
 - id: cribl
   name: Cribl
   level: contributor
@@ -76,6 +101,21 @@ items:
   link: /2022/sponsors/cribl
   workshop:
     datetime: 2022-05-09T16:00:00.000Z
+    title: Take Control of Observability Data With No Vendor Lock-In
+    description: |
+      Cribl puts you in full control of your observability data, providing data management that allows you to optimize the treatment of each of your data sources and send it to destinations of your choice--saving you time and money while eliminating vendor lock-in. During this hands-on sandbox training, you'll learn how to:
+
+      - Eliminate duplicate fields, null values, and any elements that provide little analytical value.
+      - Route a full-fidelity copy of raw data to low-cost storage — and then retrieve and “replay” it to your analytics tools as needed.
+      - Enrich your data in real-time to gain valuable data.
+    prerequisites: |
+      Participants will have a full version of Cribl Stream in a contained cloud environment with canned data ready to go. By the end of the event, you’ll have a full understanding of what Cribl Stream can do to improve the value of your data.
+    presenters:
+    - name: Bradley Chambers
+      title: Sr Social Media Mgr
+    - name: Steve Litras
+      title: Director of Technical Marketing
+
 - id: vmware-tanzu
   name: VMware Tanzu
   level: contributor

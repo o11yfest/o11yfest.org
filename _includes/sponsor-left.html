@@ -5,9 +5,12 @@
       class="sponsor-logo-{{ sponsor.level }}" src="/assets/images/sponsors/{{ yearpath }}socials/{{ sponsor.logo }}" title="{{ sponsor.name }}"
       style="width:100%;border-radius:2em;visibility:hidden;"></a>
   <div class="flexbox" style="white-space: nowrap;">
-    <a class="flexbox-button" href="{{ sponsor.external_link }}" style="font-size:0.9em;">Visit {{ sponsor.name }}</a>
+    <!-- a class="flexbox-button" href="{{ sponsor.external_link }}" style="font-size:0.9em;">Visit {{ sponsor.name }}</a-->
     <a class="flexbox-button" href="{{ site.registration_link }}" style="font-size:0.9em;">Attend {{ site.event_short_title }}</a>
-    <a class="flexbox-button" href="/sponsor" style="font-size:0.9em;">Sponsor by Donating!</a>
+    {% if sponsor.workshop %}
+    <a class="flexbox-button" href="{{ site.registration_link }}?interest=workshop-{{ sponsor.id }}" style="font-size:0.9em;">Attend this Workshop</a>
+    {% endif %}
+    <!-- a class="flexbox-button" href="/sponsor" style="font-size:0.9em;">Sponsor by Donating!</a -->
   </div>
 </div>
 <script type="text/javascript">

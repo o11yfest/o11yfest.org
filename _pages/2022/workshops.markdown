@@ -32,16 +32,16 @@ header, .row {
   <thead>
     <td class="col">Conference Day</td>
     <td class="col">In Your Locale Date/Time</td>
-    <td class="col" style="text-align:center;">Host</td>
     <td class="col">Topic</td>
+    <td class="col" style="text-align:center;">Host</td>
   </thead>
   {% assign items = site.data.2022-sponsors.items | where_exp: "item", "item.workshop" | sort: "workshop.datetime" %}
   {% for item in items %}
     <tr>
-      <td class="col"><span class="rownum"></span></td>
-      <td class="col"><span class="localizetime">{{ item.workshop.datetime }}</span></td>
-      <td class="col" style="text-align:center;"><a href="{{ item.link }}"><img style="transform: scale(0.5)" class="sponsor-logo-{{ item.level }}" src="/assets/images/sponsors/{{ item.logo }}" title="{{ item.name }}"></a></td>
-      <td>[TBD]</td>
+      <td class="col"><a href="{{ item.link }}"><span class="rownum"></span></a></td>
+      <td class="col"><a href="{{ item.link }}"><span class="localizetime">{{ item.workshop.datetime }}</span></a></td>
+      <td><a href="{{ item.link }}">{{ item.workshop.title }}</a></td>
+      <td class="col" style="text-align:center;"><a href="{{ item.link }}"><img width="200" class="sponsor-logo-{{ item.level }}" src="/assets/images/sponsors/{{ item.logo }}" title="{{ item.name }}"></a></td>
     </tr>
   {% endfor %}
 </table>
