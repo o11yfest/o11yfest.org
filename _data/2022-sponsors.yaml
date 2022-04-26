@@ -30,7 +30,22 @@ items:
   external_link: https://elastic.co
   link: /2022/sponsors/elastic
   workshop:
-    datetime: 2022-05-10T16:00:00.000Z
+    datetime: 2022-05-10T22:00:00.000Z
+    title: "Application observability on Kubernetes with Elastic"
+    description: |
+      Kubernetes seems to be the go-to container orchestration technology these days helping break up that monolith into smaller, more manageable microservices. The resulting components are much smaller and simpler, Kubernetes helps a lot with the management of the distributed application components, but the resulting application is way more complex to monitor. To make monitoring easier, the industry coined the term “observability”.
+
+      Observability relies on three “pillar” data pieces: logs, metrics and application performance monitoring, or APM for short. Now, how does one go about collecting these on Kubernetes? Well, Google search is a great starting point. There is no shortage of tools that can handle logs, metrics and application performance monitoring, but this can result in the “best of breed” monitoring Frankenstein that will be a clump of 3-6 different tools, vendors and technologies…
+
+      Elastic has a better approach. It can do all three in one tool. This talk presents the Elastic way of solving the observability challenge for applications running on Kubernetes.
+    prerequisites: |
+      Bring your own Kubernetes cluster, minikube, GKE, whatever. Something that supports services and load balancers and has enough capacity to run the application we will deploy, so 8-16GB RAM in total with 4-8 CPU cores should do it.
+    presenters:
+    - name: "Michael Hyatt"
+      title: "Solutions Architect, Elastic"
+      bio: |
+        I am based in Melbourne, Australia, and Observability is one of the things I do at Elastic. I’ve spent many years in technology in various areas and roles, with the last 4 years being at Elastic.
+
 - id: newrelic
   name: New Relic
   level: premiere
@@ -39,12 +54,12 @@ items:
   link: /2022/sponsors/newrelic
   workshop:
     datetime: 2022-05-11T16:00:00.000Z
-- id: timescale
-  name: Timescale
+- id: promscale
+  name: Promscale
   level: captioning
-  logo: timescale.png
+  logo: promscale.png
   external_link: https://timescale.com
-  link: /2022/sponsors/timescale
+  link: /2022/sponsors/promscale
 - id: lightstep
   name: Lightstep
   level: premiere
