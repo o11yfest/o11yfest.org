@@ -52,9 +52,25 @@ The organizers can't thank <a href="{{ sponsor.external_link }}">{{ sponsor.name
     When: <span class="localizetime">{{ workshop.datetime }}</span> (your local date/time)
 
     <p>
-    {% if workshop.description %}{{ workshop.description }}{% else %}<a href="{{ sponsor.external_link }}">{{ sponsor.name }}</a>
+    {% if workshop.description %}
+      {{ workshop.description | markdownify }}
+      {% if workshop.prerequisites %}
+        <h3>Prerequisites</h3>
+        {{ workshop.prerequisites | markdownify }}
+      {% endif %}
+      {% if workshop.presenters and workshop.presenters.size > 0 %}
+        <h3>Presenters</h3>
+        <ul>
+        {% for person in workshop.presenters %}
+        <li>{{ person.name }} - {{ person.title }}{% if person.bio %}<br /><br />{{ person.bio }}{% endif %}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% else %}
+      <a href="{{ sponsor.external_link }}">{{ sponsor.name }}</a>
      will be hosting a workshop on a topic related to observability that has yet to be
-     received by organizers, so stay tuned!{% endif %}
+     received by organizers, so stay tuned!
+    {% endif %}
     </p>
 
     {% endif %}

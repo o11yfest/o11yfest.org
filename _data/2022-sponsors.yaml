@@ -30,7 +30,22 @@ items:
   external_link: https://elastic.co
   link: /2022/sponsors/elastic
   workshop:
-    datetime: 2022-05-10T16:00:00.000Z
+    datetime: 2022-05-10T22:00:00.000Z
+    title: "Application observability on Kubernetes with Elastic"
+    description: |
+      Kubernetes seems to be the go-to container orchestration technology these days helping break up that monolith into smaller, more manageable microservices. The resulting components are much smaller and simpler, Kubernetes helps a lot with the management of the distributed application components, but the resulting application is way more complex to monitor. To make monitoring easier, the industry coined the term “observability”.
+
+      Observability relies on three “pillar” data pieces: logs, metrics and application performance monitoring, or APM for short. Now, how does one go about collecting these on Kubernetes? Well, Google search is a great starting point. There is no shortage of tools that can handle logs, metrics and application performance monitoring, but this can result in the “best of breed” monitoring Frankenstein that will be a clump of 3-6 different tools, vendors and technologies…
+
+      Elastic has a better approach. It can do all three in one tool. This talk presents the Elastic way of solving the observability challenge for applications running on Kubernetes.
+    prerequisites: |
+      Bring your own Kubernetes cluster, minikube, GKE, whatever. Something that supports services and load balancers and has enough capacity to run the application we will deploy, so 8-16GB RAM in total with 4-8 CPU cores should do it.
+    presenters:
+    - name: "Michael Hyatt"
+      title: "Solutions Architect, Elastic"
+      bio: |
+        I am based in Melbourne, Australia, and Observability is one of the things I do at Elastic. I’ve spent many years in technology in various areas and roles, with the last 4 years being at Elastic.
+
 - id: newrelic
   name: New Relic
   level: premiere
@@ -39,12 +54,21 @@ items:
   link: /2022/sponsors/newrelic
   workshop:
     datetime: 2022-05-11T16:00:00.000Z
-- id: timescale
-  name: Timescale
+    title: "K8s observability with Prometheus, Pixie, Fluent Bit and New Relic"
+    description: |
+      Learn the fundamentals of Kubernetes and how to use a variety of OSS frameworks to observe and debug your environments.
+
+      This hands-on workshop will cover the fundamentals of Kubernetes and using a variety of OSS frameworks to observe and debug your environments. First, we will go over the basics, including concepts (pods, nodes, services, ..), kubectl, Helm, and troubleshooting techniques for a Kubernetes deployment. Then, we will configure Prometheus in our Kubernetes cluster and collect metrics from the cluster by installing and configuring the Prometheus OpenMetrics Integration (POMI) and configure Fluent Bit to send logs to New Relic. Finally, we are going to install Pixie, a eBPF based framework to view traces and metrics from within your cluster without additional instrumentation.
+    presenters:
+    - name: Kirk Haines
+      title: Principal Developer Relations Engineer, NewRelic
+
+- id: promscale
+  name: Promscale
   level: captioning
-  logo: timescale.png
+  logo: promscale.png
   external_link: https://timescale.com
-  link: /2022/sponsors/timescale
+  link: /2022/sponsors/promscale
 - id: lightstep
   name: Lightstep
   level: premiere
@@ -53,6 +77,22 @@ items:
   external_link: https://lightstep.com
   workshop:
     datetime: 2022-05-12T16:00:00.000Z
+    title: "Getting familiar with the OpenTelemetry Collector"
+    description: |
+      The workshop focuses on:
+
+      - Configuring the Collector to receive and export different formats of data
+      - Manipulating telemetry through Collector processors
+      - Extending the Collector through custom builds and components
+      - Deployment scenarios for the Collector
+    prerequisites:
+      This will be intended as an intro level workshop, no experience with OpenTelemetry required. The only prerequisite for running the example code is a tool capable of running Docker containers ideally with Docker Compose and Go 1.16+ should be installed to compile the collector.
+    presenters:
+    - name: Alex Boten
+      title: "Senior Staff Software Engineer, Lightstep"
+      bio: |
+        Alex Boten has spent the last ten years helping organizations adapt to a cloud-native landscape. More than anything, Alex loves making sense of the technology around us and sharing his learnings with others.
+
 - id: cribl
   name: Cribl
   level: contributor
@@ -61,6 +101,21 @@ items:
   link: /2022/sponsors/cribl
   workshop:
     datetime: 2022-05-09T16:00:00.000Z
+    title: Take Control of Observability Data With No Vendor Lock-In
+    description: |
+      Cribl puts you in full control of your observability data, providing data management that allows you to optimize the treatment of each of your data sources and send it to destinations of your choice--saving you time and money while eliminating vendor lock-in. During this hands-on sandbox training, you'll learn how to:
+
+      - Eliminate duplicate fields, null values, and any elements that provide little analytical value.
+      - Route a full-fidelity copy of raw data to low-cost storage — and then retrieve and “replay” it to your analytics tools as needed.
+      - Enrich your data in real-time to gain valuable data.
+    prerequisites: |
+      Participants will have a full version of Cribl Stream in a contained cloud environment with canned data ready to go. By the end of the event, you’ll have a full understanding of what Cribl Stream can do to improve the value of your data.
+    presenters:
+    - name: Bradley Chambers
+      title: Sr Social Media Mgr
+    - name: Steve Litras
+      title: Director of Technical Marketing
+
 - id: vmware-tanzu
   name: VMware Tanzu
   level: contributor
