@@ -306,7 +306,7 @@ items:
   abstract: |
     Openmetrics-exporter (OME) is an Observability-as-Code software that metrics what Terraform is to Cloud Operations. OME uses HCL configs written in HCL syntax to connect to cloud-native sources and collate metrics using simple pipes, absorbing all challenges of distributed systems underneath.
 
-    Openmetrics-exporter, or OME, is an Observability-as-Code framework that reduces the toil of finding-and-combining useful metrics from layers and hundreds of components involved in modern cloud-native systems. Every source, component, or metric is just a simple configuration file because the only ‚Äúcode‚Äù you should focus on is for your customers.
+    Openmetrics-exporter, or OME, is an Observability-as-Code framework that reduces the toil of finding-and-combining useful metrics from layers and hundreds of components involved in modern cloud-native systems. Every source, component, or metric is just a simple configuration file because the only "code" you should focus on is for your customers.
 
     It leverages plugin architecture to support data sources. It relies heavily on data frame processing to combine metrics from various metrics sources before they are all converted into Openmetrics format, ready to be piped out by a Prometheus. Traditionally, such correlation and post-processing have been a responsibility of additional Data Pipelines but with OME it's as simple as writing a configuration file. At the core of it, OME uses Hashicorp Configuration Language (HCL) to build a DSL that can allow declarative input to build metric Pipelines.
 
@@ -365,3 +365,49 @@ items:
     In this lightning session, I'll be talking specifically about trace data. I'll cover how to enable logging in your SDK, some error codes and what they might indicate, and general limits your backend vendor may be imposing that could be impacting your spans.
   handles:
     linkedin: reese-lee
+
+- id: vineeth-pothulapati
+  name: Vineeth Pothulapati
+  bio: |
+    Vineeth is a cloud, distributed systems enthusiast and maintainer to OpenTelemetry Operator, a contributor to Kubernetes, Cortex, and Open Policy Agent. He worked as a shadow for previous Kubernetes releases and was also a docs lead for Kubernetes 1.18 release. He is currently working on Promscale & Tobs as a Product Manager with Timescale. Previously, he was a CNCF mentee with Cortex and Open Policy Agent and a Google Summer of Code intern with The Postgres Operator. Vineeth co-founded and organizes CNCF Hyderabad meet-ups and also gave several talks on CNCF technologies.
+  role: presenter
+  title: "Easing OpenTelemetry adoption using the OpenTelemetry operator"
+  abstract: |
+    OpenTelemetry has emerged as the new standard for instrumentation and collection of observability signals. OpenTelemetry adoption isn‚Äôt straightforward and there is no easy way to get started because adoption is a complex process involving many moving pieces.
+
+    This process involves understanding the business applications and their instrumentation layer, deploying the OpenTelemetry agent and collector followed by configuring the receivers, processors, exporters, and extensions in the OpenTelemetry collector. This talk will help you understand all the pieces involved in deploying the complete OpenTelemetry stack and how they fit together.
+
+    This talk covers:
+
+    1. Explaining the Opentelemetry collector deployment modes.
+    2. Explaining the instrumentation layer.
+    3. Auto-instrumentation offered by the operator.
+    4. Explaining the OpenTelemetry collector configuration options and how to define data flow pipelines.
+    5. Auto-upgrades using the Otel-operator.
+
+    The OpenTelemetry operator offers a seamless experience to the users of the OpenTelemetry collector in managing and upgrading the collectors across multiple versions with breaking changes. In this talk, Vineeth will cover how to get started with OpenTelemetry using the Opentelemetry Operator by explaining all the features offered to make your deployments and day two operations much more reliable.
+
+    The OpenTelemetry Operator is gaining adoption with recent advancements in the operator. This talk helps users get started with the OpenTelemetry stack. We‚Äôll cover how to deploy the OpenTelemetry collector, leveraging auto-instrumentation offered in Java, Nodejs, and Python applications. Today the OpenTelemetry slack channels have multiple questions where users are having issues in getting started. They have trouble finding the recommended way to deploy and operate collectors. This talk will help users as a getting started guide for OpenTelemetry deployment as well as serve as an introduction today to operations such as scaling and handling breaking changes in the OpenTelemetry configuration during the upgrades. Ultimately, this is an educational contribution that will help the community in getting started and managing the OpenTelemetry stack."
+  handles:
+    twitter: vineeetth
+    linkedin: vineeth-pothulapati
+
+- id: ramon-guiu
+  name: Ramon Guiu
+  bio: |
+    Ramon is VP of Observability products at Timescale where he is building Promscale, a unified observability backend for metrics, traces and logs on top of TimescaleDB and PostgreSQL.
+
+    Before Timescale, Ramon was VP of Product Management at New Relic where he initially led their infrastructure monitoring product and later their transition to open instrumentation standards including Prometheus, OpenMetrics and OpenTelemetry.
+  role: presenter
+  title: "Going deep into the (mis)behaviors of your distributed systems with OpenTelemetry and SQL"
+  abstract: |
+    Traces hold a treasure of information about how all the different components in your systems behave and interact. Yet, open source tools for analyzing trace data typically focus on investigating individual traces and SaaS tools allow you to query traces for basic data aggregation or pre-defined analysis and correlations. But the hardest problems require the ability to slice and dice, aggregate, join and analyze the data in very specific ways that are usually not available in these tools.
+
+    In this talk, we will show how you can query OpenTelemetry traces with good old SQL to identify unexpected behaviours in your microservices and narrow down on where bottlenecks are occurring to answer questions like:
+
+    "For service X with elevated load, show me which upstream service is causing the load," or "Show me the cost of requests A, B, and C in terms of backend work in this service"
+
+    To perform this analysis, we will use free tools. We will send OpenTelemetry traces to a TimescaleDB/PostgreSQL database via Promscale and we will use Grafana to visualize the results of SQL queries against that database.
+  handles:
+    twitter: ramonguiu
+    linkedin: ramonguiu
