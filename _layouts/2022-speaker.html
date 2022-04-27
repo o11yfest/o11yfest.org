@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign year = 2022 %}
+{% assign year = "2022" %}
 {% assign person = site.data['2022-speakers'].items | where_exp:"item", "item.id == page.id" | first %}
 {% assign content = content | markdownify | strip %}
 {% capture abstract_md %}{{ person.abstract | markdownify }}{% endcapture %}
