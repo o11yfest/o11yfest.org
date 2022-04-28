@@ -59,6 +59,7 @@ items:
   handles:
     twitter: jessitron
     linkedin: jessicakerr
+  session_url: https://vi.to/hubs/o11yfest/videos/5086
 
 - id: colin-douch
   name: Colin Douch
@@ -296,6 +297,7 @@ items:
   handles:
     twitter: martin_c_mao
     linkedin: martinmao
+  session_url: https://vi.to/hubs/o11yfest/videos/5087
 
 - id: piyush-verma
   name: Piyush Verma
@@ -365,6 +367,7 @@ items:
     In this lightning session, I'll be talking specifically about trace data. I'll cover how to enable logging in your SDK, some error codes and what they might indicate, and general limits your backend vendor may be imposing that could be impacting your spans.
   handles:
     linkedin: reese-lee
+  session_url: https://vi.to/hubs/o11yfest/videos/5088
 
 - id: vineeth-pothulapati
   name: Vineeth Pothulapati
@@ -411,3 +414,4 @@ items:
   handles:
     twitter: ramonguiu
     linkedin: ramonguiu
+  session_url: https://vi.to/hubs/o11yfest/videos/5085
