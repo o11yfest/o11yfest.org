@@ -1,4 +1,5 @@
 .DS_Store
+*.archive
 _plugins/
 
 _site
