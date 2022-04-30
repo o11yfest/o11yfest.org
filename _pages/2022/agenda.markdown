@@ -6,114 +6,144 @@ permalink: /agenda
 
 {% include 2022-cta-buttons.html %}
 
-<div class="flexbox">
-
-<div style="font-size:0.8em;align-self:flex-start;" markdown=1>
-
-<style type="text/css">
-.session-bumper { color: gray; }
-.session-mc { color: lightblue; }
-.session-sponsor { color: #CBC3E3; }
-.session-speaker { color: lightgreen; }
-.session-you { color: green; }
-</style>
 <script type="text/javascript">
 window.onloadqueue=(window.onloadqueue||[]).concat([function () {
-  $('td:empty').parent().addClass('session-bumper');
-  $('td:contains("(1st ")').parent().addClass('session-bumper');
-  $('td:contains("(2nd ")').parent().addClass('session-bumper');
-  $('td:contains("(bonus ")').parent().addClass('session-bumper');
-  $('td:contains("Bio / ")').parent().addClass('session-bumper');
-
-  $('td:contains("Welcome / Ground Rules")').parent().addClass('session-mc');
-  $('td:contains("Organizer")').parent().addClass('session-mc');
-  $('td:contains("Updates")').parent().addClass('session-mc');
-
-  $('td:contains("Presentation")').parent().addClass('session-speaker');
-  $('td:contains("Lightning")').parent().addClass('session-speaker');
-
-  $('td:contains("Live Q&A")').parent().addClass('session-you');
-  $('td:contains("Community")').parent().addClass('session-you');
-
-  $('td:contains("Sponsor")').parent().addClass('session-sponsor');
-  $('td:contains("workshop")').parent().addClass('session-sponsor');
+  $( "#tabs" ).tabs();
+  $('.day-title').each((i,o) => {
+    var tab = $(o).closest('.daytab')
+    var day = parseInt(tab.attr('id').replace('day-',''))
+    var daytext = 'Day '+day
+    $(o).text($(o).text().replace(daytext+":","").trim())
+  })
+  $('div.special_table + table').each((i,table) => {
+    $(table.rows).each((j,row) => {
+      var tab = $(row).closest('.daytab')
+      var day = parseInt(tab.attr('id').replace('day-',''))
+      var adddays = day - 1;
+      var cell0 = $(row.cells[0]);
+      if(j>0) {
+        var datestr = '5/9/2022 ' + cell0.text() + ' EDT'
+        var dt = new Date(datestr)
+        dt.setDate(dt.getDate() + adddays)
+        //console.log(datestr + " --- " + dt + " --- " + $(row.cells[1]).text())
+        cell0.text(dt.toLocaleTimeString())
+      } else {
+        var tz = Intl.DateTimeFormat().resolvedOptions().timeZone
+        var zone = new Date().toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2]
+        cell0.css('white-space','nowrap').html('Time (in '+zone+')')
+      }
+    })
+  })
 }]);
 </script>
 
+<div id="tabs">
+  <ul>
+    <li><a href="#day-1">Monday, Day 1</a></li>
+    <li><a href="#day-2">Tuesday, Day 2</a></li>
+    <li><a href="#day-3">Wednesday, Day 3</a></li>
+    <li><a href="#day-4">Thursday, Day 4</a></li>
+  </ul>
+  <div id="day-1" class="daytab" markdown=1>
+  <h2 class="day-title">Day 1: o11y from the outset (core concepts, getting started)</h2>
 
-# Daily Format
+<div class="special_table"></div>
 
-|  Time (in EST) |  Live stream  | |  Parallel  |
-|  -------------:|  -----------  |
-|  (1st 90mins)  | |
-|    11:00-11:10 |  Welcome / Ground Rules  |
-|    11:10-11:40 |  **Keystone Presentation**  |
-|    11:40-11:45 |  *Live Q&A*  | -> |  breakout  |
-|    11:45-11:50 |  Sponsor Thanks  |
-|    11:50-12:00 |  *Community (p)reactions [?](/2022/preaction)*  |
-|     12:00-3:00 |  *Fork: talks or hands-on* |  -> |  [workshop](/workshops)  |
-|    12:00-12:25 |  **Presentation**  |
-|    12:25-12:30 |  *Live Q&A*  | -> |  breakout  |
-|    12:30-12:50 |  Bio / async break  |
-|  (2nd 90mins)  | |
-|    12:50-12:55 |  Organizer Shout-outs  |
-|     12:55-1:00 |  Community (p)reactions [?](/2022/preaction)  |
-|      1:00-1:25 |  **Presentation**  |
-|      1:25-1:30 |  *Live Q&A*  | -> |  breakout  |
-|      1:30-1:35 |  Updates, Async/Parallel  |
-|      1:35-1:40 |  Sponsor Thanks  |
-|      1:40-1:45 |  *Community (p)reactions [?](/2022/preaction)*  |
-|      1:45-2:10 |  **Presentation**  |
-|      2:10-2:15 |  *Live Q&A*  | -> |  breakout  |
-|      2:15-2:30 |  Bio / async break  |
-| (bonus tracks) | |
-|      2:30-2:45 |  **Lightning Talk**  |
-|      2:45-2:55 |  *Community (p)reactions [?](/2022/preaction)*  |
-|      2:55-3:00 |  Organizer daily wrap  |
-|      3:00      |  Sponsored workshop ends  |
+| Time (in EST) | Session |
+|-----------------------|----------------|
+| 11:00 AM	|	Welcome & Intros |
+| 11:15 AM	|	[Alex Boten: How the OpenTelemetry Collector puts you in the driver seat](/speakers/alex-boten) |
+| 11:38 AM	|	Live Q&A	Alex Boten |
+| 11:50 AM	|	[Reese Lee: Where the heck are my spans?!](/speakers/reese-lee) |
+| 12:04 PM	|	Live Q&A	Reese Lee |
+| 12:10 PM	|	[Cribl Workshop: Take Control of Observability Data With No Vendor Lock-In](/2022/sponsors/cribl) |
+| 12:10 PM	|	[Henrik Rexed: The Sound of Code - Instrument with OpenTelemetry](/speakers/henrik-rexed) |
+| 12:34 PM	|	Live Q&A	Henrik Rexed |
+| 12:40 PM	|	Async and bio break |
+| 1:00 PM	|	[Vineeth Pothulapati: Easing OpenTelemetry adoption using the OpenTelemetry operator](/speakers/vineeth-pothulapati) |
+| 1:25 PM	|	Live Q&A	Vineeth Pothulapati |
+| 1:35 PM	|	[Jessica Kerr:	Observability During Development](/speakers/jessica-kerr) |
+| 1:45 PM	|	Live Q&A	Jessica Kerr |
+| 2:00 PM	|	o11yfest: what, why, how?	Paul Bruce, Video, pre-CCd |
+| 2:10 PM	|	[Martin Mao: Is MTTR still relevant in a modern, cloud native world?](/speakers/martin-mao) |
+| 2:22 PM	|	Live Q&A	Martin Mao |
+| 2:30 PM	|	[Ted Young (2021): The Value and Design of OpenTelemetry](/speakers/ted-young) |
+| 2:48 PM	|	Daily Wrap-up, on to Day 2 |
+
+  </div>
+
+  <div id="day-2" class="daytab" markdown=1>
+  <h2 class="day-title">Day 2: o11y hits the trail (hands-on, deep-dives)</h2>
+
+<div class="special_table"></div>
+
+| Time (in EST) | Session |
+|-----------------------|----------------|
+| 11:00 AM	|	Welcome back & reminders |
+| 11:15 AM	|	[Ricardo Ferreira: Building Software Reliability with Distributed Tracing](/speakers/ricardo-ferreira) |
+| 11:46 AM	|	Live Q&A	Ricardo Ferreira |
+| 12:00 PM	|	Book Club, Speed Networking, Booth Exploration |
+| 1:00 PM	|	[Shai Almog: Debugging at Scale in Production - Deep into your Containers with kubectl debug, KoolKits...](/speakers/shai-almog) |
+| 1:22 PM	|	Live Q&A	Shai Almog |
+| 1:30 PM	|	[Andreas Grabner: Keptn - Putting Observability in the driving seat for DevOps & SRE automation](/speakers/andreas-grabner) |
+| 1:50 PM	|	Live Q&A	Andreas Grabner |
+| 2:00 PM	|	[Ramon Guiu: Going deep into the (mis)behaviors of your distributed systems with OpenTelemetry and SQL](/speakers/ramon-guiu) |
+| 2:26 PM	|	Live Q&A	Ramon Guiu |
+| 2:40 PM	|	[Colin Douch: High Cardinality Alerting With Open Telemetry](/speakers/colin-douch) |
+| 2:54 PM	|	Daily Wrap-up, on to Day 3 |
+| 6:00 PM | [Elastic Workshop: Application observability on Kubernetes with Elastic](/2022/sponsors/elastic) |
+
+  </div>
+
+  <div id="day-3" class="daytab" markdown=1>
+  <h2 class="day-title">Day 3: o11y climbs the mountain (scaling to many teams)</h2>
+
+<div class="special_table"></div>
+
+| Time (in EST) | Session |
+|-----------------------|----------------|
+| 11:00 AM | Welcome back & reminders |
+| 11:15 AM | [Stephen Townshend: Bad Observability](/speakers/stephen-townshend) |
+| 11:39 AM | Pre-recorded Q&A	Stephen Townshend |
+| 11:50 AM | o11yfest: what, why, how?	Paul Bruce, Video, pre-CCd |
+| 12:00 PM | [New Relic Workshop: K8s observability with Prometheus, Pixie, Fluent Bit and New Relic](/2022/sponsors/newrelic) |
+| 12:00 PM | [Daniel Selans: Observability in Event Driven](/speakers/daniel-selans) |
+| 12:23 PM | Live Q&A	David Selans |
+| 12:30 PM | [Daniel Gomez Blanco (2021): How to transparently migrate 300+ services to OpenTelemetry](/speakers/daniel-gomez-blanco) |
+| 1:00 PM | [Adrian Gonzalez: Enterprise Observability through User Telemetry](/speakers/adrian-gonzalez) |
+| 1:22 PM | Live Q&A	Adrian Gonzalez |
+| 1:40 PM | [Michael Hausenblas: Return on Investment driven observability](/speakers/michael-hausenblas) |
+| 1:50 PM | Live Q&A	Michael Hausenblas |
+| 2:15 PM | About Our Captioning |
+| 2:20 PM | About Our Graphic Recordings |
+| 2:25 PM | Panel: OTel - So far/good?	Ted Young, Daniel Gomez Blanco, Mike Angstadt |
+| 2:55 PM | Daily Wrap-up, on to Day 3 |
+
+  </div>
+
+<div id="day-4" class="daytab" markdown=1>
+<h2 class="day-title">Day 4: o11y explores the wild (interesting use cases)</h2>
+
+<div class="special_table"></div>
+
+| Time (in EST) | Session |
+|-----------------------|----------------|
+| 11:00 AM | Welcome back & reminders |
+| 11:15 AM | [Narmatha Bala: Confidence in Chaos - How properly applied observability practices can take the chaos out of testing](/speakers/narmatha-bala) |
+| 11:35 AM | Live Q&A	Narmatha Bala |
+| 12:00 PM | [Lightstep Workshop: Getting familiar with the OpenTelemetry Collector](/2022/sponsors/lightstep] |
+| 12:00 PM | [Michael Haberman: Trace-Based Testing with OpenTelemetry](/speakers/michael-haberman) |
+| 12:24 PM | Live Q&A	Michael Haberman, Stacy Cashmore |
+| 12:35 PM | [Piyush Verma: Building Openmetrics Exporter](/speakers/piyush-verma) |
+| 12:56 PM | Pre-recorded Q&A	Piyush Verma |
+| 1:00 PM | [Prathima Janakiram: Self Service FSO deployments with Workflows](/speakers/prathima-janakiram) |
+| 1:20 PM | [Juraci Paixão Kröhling (2021): Sampling in Distributed Tracing](/speakers/juraci-paixao-krohling) |
+| 1:45 PM | [Zoe Steinkamp: Cleaning and Interpreting time series metrics with InfluxDB](/speakers/zoe-steinkamp) |
+| 2:05 PM | Live Q&A	Zoe Steinkamp |
+| 2:10 PM | o11yfest Awards |
+| 2:25 PM | o11yfest Future Plans |
+| 2:40 PM | Organizer Thanks and Wrap	All Organizers |
+
+  </div>
 
 </div>
-
-<div style="flex:1;align-self:flex-start;min-width:350px;padding-left:2em;" markdown=1>
-
-# Keystone Presentations
-
-Like traditional tech events, we know it's important to bring leading perspectives in the
- industry for everyone to benefit from.
-
-'Keystone' refers to one or more central stones at the summit of an arch, locking the whole together. We believe that there are individuals who've continuously make material contributions to the observability and OpenTelemetry communities who deserve voice at our table for many reasons. These individuals foster and shape the nature of observability despite the term's popularity in the past few years. They continue to help us all improve and contribute to a better sense of how our systems should emit intel and help us answer questions, on-call and otherwise.
-
-# Community Group/Team Presentations
-
-Unlike traditional events, we believe that ***you*** are the shining star of our conference. Instead of simply attending another online conference, your work over the past few years represents the very best of our industry. As such, you and your team should be highlighted as part of our community.
-
-If you have meaningfully improved the observability at your organization and/or if you've contributed to the OpenTelemetry project or other tangential open source communities, ***[DO NOT HESITATE TO SUBMIT YOUR STORY to our rolling CFP process](/cfp)***.
-
-</div>
-
-</div>
-
-# Community (p)reactions
-
-A "PRE-action" video is a short 5min summary of what you think is ***meaningful***
- for others to pay attention to about another video or presentation by someone else.
-
-Not only is this a great way to spread positivity about someone else, it also
- encodes how you process and what you value about the time and effort another
- practitioner has shared with the community.
-
-[Click here to learn more about how to submit your own (p)reaction videos!](/2022/preaction)
-
-# Sponsored Presentations
-
-As a commercial organization in 2022, you face an uphill battle in the 'observability' community, not just in terms of market share, but in terms of vendor bullshit. There's alway a lot of that, no matter what train you want to catch. If you are a vendor, to submit a CFP to o11yfest 2022, consider the following:
-
-1. Our community cares deeply about material and actionable improvements they can learn from your engineering teams
-2. While you might feel you have something honest to share with our community, it should be in the form of an observability journey/story shared by a customer, ***NOT*** a product pitch or even that laced with evangelism/advocacy overtures
-3. There is an extreme amount of antibodies in our content selection process related to sales pitches
-
-If you think you can weather through these guidelines, feel free to refer [this CFP](/cfp) to your most qualified and community-reputable individual.
-
-# Non-presentation Sponsorship Alternatives
-
-We have spent many years thinking and considering how sponsorship is meaningful to our community. There are many alternatives to 'speaking time'. Please take time considering the impact of [our multiple sponsorship options](/sponsor), and if you have questions always feel free to [reach out to our organizers](/contact).

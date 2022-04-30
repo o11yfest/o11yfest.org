@@ -161,16 +161,17 @@ items:
     linkedin: shai-almog-81a42
   session_url: https://vi.to/hubs/o11yfest/videos/5009
 
-# - id: adrian-gonzalez
-#   name: Adrian Gonzalez
-#   bio: |
-#     [TBD]
-#   role: presenter
-#   title: "Seeing Your Product Succeed through User Telemetry"
-#   abstract: |
-#     The business value of observability for many enterprise customers comes in the form of user telemetry. Every business wants to know, 'Who are my users, when are they using, why, how, and what buttons are they touching?". This understanding can determine or define the success of your product.
-#   handles:
-#     linkedin: adrian-g-gonzalez
+- id: adrian-gonzalez
+  name: Adrian Gonzalez
+  bio: |
+    I am a passionate and driven Principal Software Engineering Lead in the Commercial Software Engineering (CSE) organization at Microsoft. CSE is a global engineering team that works directly with the largest companies and not-for-profits in the world to tackle their most significant technical challenges. In my current role, my main responsibility is the management and development of 5- person engineering team. I identify projects and challenges for my team that mirror their interests and skillsets. Though we have diverse expertise, as a team we are all passionate about empowering customers to solve their problems and engaging in new problem areas to learn and grow.
+  role: presenter
+  title: "Seeing Your Product Succeed through User Telemetry"
+  abstract: |
+    The business value of observability for many enterprise customers comes in the form of user telemetry. Every business wants to know, 'Who are my users, when are they using, why, how, and what buttons are they touching?". This understanding can determine or define the success of your product.
+  handles:
+    linkedin: adrian-g-gonzalez
+  session_url: https://vi.to/hubs/o11yfest/videos/5107
 
 - id: zoe-steinkamp
   name: Zoe Steinkamp
