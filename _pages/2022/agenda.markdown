@@ -131,7 +131,7 @@ window.onloadqueue=(window.onloadqueue||[]).concat([function () {
 | 11:00 AM | Welcome back & reminders |
 | 11:15 AM | [Narmatha Bala: Confidence in Chaos - How properly applied observability practices can take the chaos out of testing](/speakers/narmatha-bala) |
 | 11:35 AM | Live Q&A	Narmatha Bala |
-| 12:00 PM | [Lightstep Workshop: Getting familiar with the OpenTelemetry Collector](/2022/sponsors/lightstep] |
+| 12:00 PM | [Lightstep Workshop: Getting familiar with the OpenTelemetry Collector](/2022/sponsors/lightstep) |
 | 12:00 PM | [Michael Haberman: Trace-Based Testing with OpenTelemetry](/speakers/michael-haberman) |
 | 12:24 PM | Live Q&A	Michael Haberman, Stacy Cashmore |
 | 12:35 PM | [Piyush Verma: Building Openmetrics Exporter](/speakers/piyush-verma) |
