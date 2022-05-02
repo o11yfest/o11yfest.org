@@ -22,8 +22,8 @@
 
     {% capture social_title %}o11yfest {{ site.current_event_dates }}{% endcapture %}
     {% capture social_desc %}{{ site.description | markdownify | strip_html }}{% endcapture %}
-    {% capture social_image %}{{ site.produrl }}/assets/images/2022/vito-banner-0228.png{% endcapture %}
     {% assign yearpath = "2022/" %}
+    {% capture social_image %}{{ site.produrl }}/assets/images/speakers/{{ yearpath }}socials/everyone.png{% endcapture %}
     {% if is_a_speakers_or_panelists_page == true %}
       {% assign is_bannerable_page=false %}
       {% assign speaker = site.data['2022-speakers'].items | where_exp:"item", "item.id == page.id" | first %}
