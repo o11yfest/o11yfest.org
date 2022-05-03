@@ -57,7 +57,7 @@ layout: default
       <div style="width:300px;flex:1;align-self:flex-start;">
         <div class="video_wrapper">
         {% if preaction.youtube_id %}
-          <iframe width="280" height="157" src="https://www.youtube.com/embed/{{ preaction.youtube_id }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="280" height="157" src="https://www.youtube.com/embed/{{ preaction.youtube_id }}{% if preaction.start_time %}?start={{ preaction.start_time }}{% endif %}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         {% else %}
         <div class="video_thumbnail"><a href="{{ preaction.video_url }}">{{ preaction.contributor }}</a></div>
         {% endif %}
