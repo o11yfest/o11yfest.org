@@ -283,6 +283,11 @@ items:
     twitter: narmathabala
     linkedin: narmathabala
   session_url: https://vi.to/hubs/o11yfest/videos/5038
+  preactions:
+  - contributor: Stephen Townshend
+    youtube_id: sVmJWnRgWHQ
+    start_time: 310
+    video_url: https://youtu.be/sVmJWnRgWHQ?t=310
 
 - id: martin-mao
   name: Martin Mao
@@ -299,6 +304,11 @@ items:
     twitter: martin_c_mao
     linkedin: martinmao
   session_url: https://vi.to/hubs/o11yfest/videos/5087
+  preactions:
+  - contributor: Stephen Townshend
+    youtube_id: sVmJWnRgWHQ
+    start_time: 669
+    video_url: https://youtu.be/sVmJWnRgWHQ?t=669
 
 - id: piyush-verma
   name: Piyush Verma
@@ -369,6 +379,12 @@ items:
   handles:
     linkedin: reese-lee
   session_url: https://vi.to/hubs/o11yfest/videos/5088
+  preactions:
+  - contributor: Stephen Townshend
+    youtube_id: sVmJWnRgWHQ
+    start_time: 106
+    video_url: https://youtu.be/sVmJWnRgWHQ?t=106
+
 
 - id: vineeth-pothulapati
   name: Vineeth Pothulapati
