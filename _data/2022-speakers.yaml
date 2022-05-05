@@ -461,7 +461,7 @@ items:
   session_url: https://vi.to/hubs/o11yfest/videos/5131
 
 - id: francis-hwang
-  name: francis-hwang
+  name: Francis Hwang
   bio: |
     Francis is a co-presenter to Andy Dufour's presentation ["Incubating o11y in an Enterprise"](/speakers/andy-dufour).
   role: presenter
