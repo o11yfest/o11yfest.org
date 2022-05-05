@@ -90,6 +90,10 @@ items:
     twitter: mhausenblas
     linkedin: mhausenblas
   session_url: https://vi.to/hubs/o11yfest/videos/5027
+  preactions:
+  - contributor: Santiago Lator
+    youtube_id: jYS-Xi2WR2M
+    video_url: https://www.youtube.com/watch?v=jYS-Xi2WR2M
 
 - id: henrik-rexed
   name: Henrik Rexed
@@ -185,6 +189,7 @@ items:
     Raw time series metrics data can benefit from clean-up and normalization before exposing it for broader use and storage. When dealing with large amounts of time series metrics, it can be helpful to be able to standardize the ways in which others can search through that data for specific time frames using easy to understand tags. This talk focuses on using Flux, InfluxDB’s data processing language, for addressing these challenges. Examples of how to leverage Flux to accomplish data cleansing and analytics through the browser and via Visual Studio will be demonstrated.
   handles:
     linkedin: zoe-steinkamp
+  session_url: https://vi.to/hubs/o11yfest/videos/5107
 
 - id: daniel-selans
   name: Daniel Selans
@@ -393,7 +398,7 @@ items:
   role: presenter
   title: "Easing OpenTelemetry adoption using the OpenTelemetry operator"
   abstract: |
-    OpenTelemetry has emerged as the new standard for instrumentation and collection of observability signals. OpenTelemetry adoption isn‚Äôt straightforward and there is no easy way to get started because adoption is a complex process involving many moving pieces.
+    OpenTelemetry has emerged as the new standard for instrumentation and collection of observability signals. OpenTelemetry adoption isn't straightforward and there is no easy way to get started because adoption is a complex process involving many moving pieces.
 
     This process involves understanding the business applications and their instrumentation layer, deploying the OpenTelemetry agent and collector followed by configuring the receivers, processors, exporters, and extensions in the OpenTelemetry collector. This talk will help you understand all the pieces involved in deploying the complete OpenTelemetry stack and how they fit together.
 
@@ -407,10 +412,11 @@ items:
 
     The OpenTelemetry operator offers a seamless experience to the users of the OpenTelemetry collector in managing and upgrading the collectors across multiple versions with breaking changes. In this talk, Vineeth will cover how to get started with OpenTelemetry using the Opentelemetry Operator by explaining all the features offered to make your deployments and day two operations much more reliable.
 
-    The OpenTelemetry Operator is gaining adoption with recent advancements in the operator. This talk helps users get started with the OpenTelemetry stack. We‚Äôll cover how to deploy the OpenTelemetry collector, leveraging auto-instrumentation offered in Java, Nodejs, and Python applications. Today the OpenTelemetry slack channels have multiple questions where users are having issues in getting started. They have trouble finding the recommended way to deploy and operate collectors. This talk will help users as a getting started guide for OpenTelemetry deployment as well as serve as an introduction today to operations such as scaling and handling breaking changes in the OpenTelemetry configuration during the upgrades. Ultimately, this is an educational contribution that will help the community in getting started and managing the OpenTelemetry stack."
+    The OpenTelemetry Operator is gaining adoption with recent advancements in the operator. This talk helps users get started with the OpenTelemetry stack. We'll cover how to deploy the OpenTelemetry collector, leveraging auto-instrumentation offered in Java, Nodejs, and Python applications. Today the OpenTelemetry slack channels have multiple questions where users are having issues in getting started. They have trouble finding the recommended way to deploy and operate collectors. This talk will help users as a getting started guide for OpenTelemetry deployment as well as serve as an introduction today to operations such as scaling and handling breaking changes in the OpenTelemetry configuration during the upgrades. Ultimately, this is an educational contribution that will help the community in getting started and managing the OpenTelemetry stack."
   handles:
     twitter: vineeetth
     linkedin: vineeth-pothulapati
+  session_url: https://vi.to/hubs/o11yfest/videos/5132
 
 - id: ramon-guiu
   name: Ramon Guiu
@@ -432,3 +438,54 @@ items:
     twitter: ramonguiu
     linkedin: ramonguiu
   session_url: https://vi.to/hubs/o11yfest/videos/5085
+
+- id: andy-dufour
+  name: Andy Dufour
+  bio: |
+    Andrew (aka Andy) is a former technical lead at Blackberry, where he helped build, run, and manage services at scale for several years.
+
+    After doing the DevOps things there, he joined Chef, helping dozens of customers adopt a code-driven approach to their products and services.
+
+    He's helped with talks at DOES and DevOps Days Toronto, as well as spoken at DevOps Days Edinburgh, and multiple ChefConfs.
+
+    With the demise of Chef, Andy looked for what was the next thing that could help change practitioners lives in the tech space and found observability, OpenTelemetry and Honeycomb. He's now in the customer success group at HoneyComb, helping customers adopt and live their best o11y lives.
+  role: presenter
+  title: "Incubating o11y in an Enterprise"
+  abstract: |
+    Why is o11y adoption hard? How do you get your executives to see o11y as different than monitoring? What standards, flows, and practices do you need to put in place to be successful?
+
+    Andy and [Francis](/speakers/francis-hwang) helped drive adoption of observability practices at a major financial institution. Follow along as we tell the story of how we started transforming service/engineering teams that didn't know what SCM was to encouraging and creating the standards, processes, practices and feedback loops needed for a successful o11y implementation.
+  handles:
+    twitter: andrewdufour
+    linkedin: andrewdufour
+  session_url: https://vi.to/hubs/o11yfest/videos/5131
+
+- id: francis-hwang
+  name: Francis Hwang
+  bio: |
+    Francis is a co-presenter to Andy Dufour's presentation ["Incubating o11y in an Enterprise"](/speakers/andy-dufour).
+  role: presenter
+  title: "Incubating o11y in an Enterprise"
+  abstract: |
+    Why is o11y adoption hard? How do you get your executives to see o11y as different than monitoring? What standards, flows, and practices do you need to put in place to be successful?
+
+    [Andy](/speakers/andy-dufour) and Francis helped drive adoption of observability practices at a major financial institution. Follow along as we tell the story of how we started transforming service/engineering teams that didn't know what SCM was to encouraging and creating the standards, processes, practices and feedback loops needed for a successful o11y implementation.
+  handles:
+    twitter: fhwang
+    linkedin: francis-hwang-6713931
+  session_url: https://vi.to/hubs/o11yfest/videos/5131
+
+- id: christopher-evans
+  name: Christopher Evans
+  bio: |
+    I am the Co-Founder and CPO of incident.io - a Slack-native incident management tool. Before starting incident.io, I was the Technical Director of Platform at Monzo, which I helped scale from 500k to 5m customers. I have helped put out a fair share of fires along the way and am now helping our customers do the same.
+
+    My favorite One Direction member is hands down Harry!
+  role: presenter
+  title: "Observability is not just for your systems (it's for your team and incidents as well)"
+  abstract: |
+    In this talk I'll go deeper into observability, using incidents as a lens to understand the technical and human ops of systems. I'll present practical ways to understand how teams work and how we can work more efficiently when things are going right by understanding how it works when things go wrong.
+  handles:
+    twitter: evnsio
+    linkedin: evnsio
+  session_url: https://vi.to/hubs/o11yfest/videos/5133
