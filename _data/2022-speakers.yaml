@@ -398,7 +398,7 @@ items:
   role: presenter
   title: "Easing OpenTelemetry adoption using the OpenTelemetry operator"
   abstract: |
-    OpenTelemetry has emerged as the new standard for instrumentation and collection of observability signals. OpenTelemetry adoption isn‚Äôt straightforward and there is no easy way to get started because adoption is a complex process involving many moving pieces.
+    OpenTelemetry has emerged as the new standard for instrumentation and collection of observability signals. OpenTelemetry adoption isn't straightforward and there is no easy way to get started because adoption is a complex process involving many moving pieces.
 
     This process involves understanding the business applications and their instrumentation layer, deploying the OpenTelemetry agent and collector followed by configuring the receivers, processors, exporters, and extensions in the OpenTelemetry collector. This talk will help you understand all the pieces involved in deploying the complete OpenTelemetry stack and how they fit together.
 
@@ -412,7 +412,7 @@ items:
 
     The OpenTelemetry operator offers a seamless experience to the users of the OpenTelemetry collector in managing and upgrading the collectors across multiple versions with breaking changes. In this talk, Vineeth will cover how to get started with OpenTelemetry using the Opentelemetry Operator by explaining all the features offered to make your deployments and day two operations much more reliable.
 
-    The OpenTelemetry Operator is gaining adoption with recent advancements in the operator. This talk helps users get started with the OpenTelemetry stack. We‚Äôll cover how to deploy the OpenTelemetry collector, leveraging auto-instrumentation offered in Java, Nodejs, and Python applications. Today the OpenTelemetry slack channels have multiple questions where users are having issues in getting started. They have trouble finding the recommended way to deploy and operate collectors. This talk will help users as a getting started guide for OpenTelemetry deployment as well as serve as an introduction today to operations such as scaling and handling breaking changes in the OpenTelemetry configuration during the upgrades. Ultimately, this is an educational contribution that will help the community in getting started and managing the OpenTelemetry stack."
+    The OpenTelemetry Operator is gaining adoption with recent advancements in the operator. This talk helps users get started with the OpenTelemetry stack. We'll cover how to deploy the OpenTelemetry collector, leveraging auto-instrumentation offered in Java, Nodejs, and Python applications. Today the OpenTelemetry slack channels have multiple questions where users are having issues in getting started. They have trouble finding the recommended way to deploy and operate collectors. This talk will help users as a getting started guide for OpenTelemetry deployment as well as serve as an introduction today to operations such as scaling and handling breaking changes in the OpenTelemetry configuration during the upgrades. Ultimately, this is an educational contribution that will help the community in getting started and managing the OpenTelemetry stack."
   handles:
     twitter: vineeetth
     linkedin: vineeth-pothulapati
@@ -474,3 +474,18 @@ items:
     twitter: fhwang
     linkedin: francis-hwang-6713931
   session_url: https://vi.to/hubs/o11yfest/videos/5131
+
+- id: christopher-evans
+  name: Christopher Evans
+  bio: |
+    I am the Co-Founder and CPO of incident.io - a Slack-native incident management tool. Before starting incident.io, I was the Technical Director of Platform at Monzo, which I helped scale from 500k to 5m customers. I have helped put out a fair share of fires along the way and am now helping our customers do the same.
+
+    My favorite One Direction member is hands down Harry!
+  role: presenter
+  title: "Observability is not just for your systems (it's for your team and incidents as well)"
+  abstract: |
+    In this talk I'll go deeper into observability, using incidents as a lens to understand the technical and human ops of systems. I'll present practical ways to understand how teams work and how we can work more efficiently when things are going right by understanding how it works when things go wrong.
+  handles:
+    twitter: evnsio
+    linkedin: evnsio
+  session_url: https://vi.to/hubs/o11yfest/videos/5133
