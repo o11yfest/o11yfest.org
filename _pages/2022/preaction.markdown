@@ -131,8 +131,6 @@ Firstly, email [organizers@o11yfest.org](mailto:organizers@o11yfest.org) and exp
   window.onloadqueue=(window.onloadqueue||[]).concat([function () {
     $('.disabled *').prop('disabled', true).attr("title","Video not available yet");
 
-    $.fn.randomize=function(a){(a?this.find(a):this).parent().each(function(){$(this).children(a).sort(function(){return Math.random()-0.5}).detach().appendTo(this)});return this};
-
     var elements = $('#preaction_list li');
     elements.randomize()
 
