@@ -8,7 +8,12 @@ permalink: /agenda
 
 <script type="text/javascript">
 window.onloadqueue=(window.onloadqueue||[]).concat([function () {
-  $( "#tabs" ).tabs();
+  $( "#tabs" ).tabs({
+    activate: function(event ,ui){
+        var id = $(ui.newPanel[0]).attr("id");
+        window.history.replaceState("", document.title, window.location.href.replace(location.hash, "") + "#" + id);
+    }
+  });
   $('.day-title').each((i,o) => {
     var tab = $(o).closest('.daytab')
     var day = parseInt(tab.attr('id').replace('day-',''))
@@ -62,13 +67,14 @@ window.onloadqueue=(window.onloadqueue||[]).concat([function () {
 | 12:40 PM	|	Async and bio break |
 | 1:00 PM	|	[Vineeth Pothulapati: Easing OpenTelemetry adoption using the OpenTelemetry operator](/speakers/vineeth-pothulapati) |
 | 1:25 PM	|	Live Q&A	Vineeth Pothulapati |
-| 1:35 PM	|	[Jessica Kerr:	Observability During Development](/speakers/jessica-kerr) |
-| 1:45 PM	|	Live Q&A	Jessica Kerr |
-| 2:00 PM	|	o11yfest: what, why, how?	Paul Bruce, Video, pre-CCd |
-| 2:10 PM	|	[Martin Mao: Is MTTR still relevant in a modern, cloud native world?](/speakers/martin-mao) |
-| 2:22 PM	|	Live Q&A	Martin Mao |
-| 2:30 PM	|	[Ted Young (2021): The Value and Design of OpenTelemetry](/speakers/ted-young) |
-| 2:48 PM	|	Daily Wrap-up, on to Day 2 |
+| 1:45 PM	|	[Jessica Kerr:	Observability During Development](/speakers/jessica-kerr) |
+| 1:55 PM	|	Live Q&A	Jessica Kerr |
+| 2:10 PM	|	o11yfest: what, why, how?	Paul Bruce, Video, pre-CCd |
+| 2:20 PM	|	[Martin Mao: Is MTTR still relevant in a modern, cloud native world?](/speakers/martin-mao) |
+| 2:32 PM	|	Live Q&A	Martin Mao |
+| 2:40 PM	|	[Christopher Evans: Observability is not just for your systems (it's for your team and incidents as well)](/speakers/christopher-evans) |
+| 3:05 PM	|	Daily Wrap-up, on to Day 2 |
+| 3:10 PM	|	Booth and Hallway Exploration |
 
   </div>
 
@@ -91,6 +97,7 @@ window.onloadqueue=(window.onloadqueue||[]).concat([function () {
 | 2:26 PM	|	Live Q&A	Ramon Guiu |
 | 2:40 PM	|	[Colin Douch: High Cardinality Alerting With Open Telemetry](/speakers/colin-douch) |
 | 2:54 PM	|	Daily Wrap-up, on to Day 3 |
+| 3:00 PM	|	Booth and Hallway Exploration |
 | 6:00 PM | [Elastic Workshop: Application observability on Kubernetes with Elastic](/2022/sponsors/elastic) |
 
   </div>
@@ -103,21 +110,22 @@ window.onloadqueue=(window.onloadqueue||[]).concat([function () {
 | Time (in EST) | Session |
 |-----------------------|----------------|
 | 11:00 AM | Welcome back & reminders |
-| 11:15 AM | [Stephen Townshend: Bad Observability](/speakers/stephen-townshend) |
-| 11:39 AM | Pre-recorded Q&A	Stephen Townshend |
-| 11:50 AM | o11yfest: what, why, how?	Paul Bruce, Video, pre-CCd |
-| 12:00 PM | [New Relic Workshop: K8s observability with Prometheus, Pixie, Fluent Bit and New Relic](/2022/sponsors/newrelic) |
-| 12:00 PM | [Daniel Selans: Observability in Event Driven](/speakers/daniel-selans) |
-| 12:23 PM | Live Q&A	David Selans |
-| 12:30 PM | [Daniel Gomez Blanco (2021): How to transparently migrate 300+ services to OpenTelemetry](/speakers/daniel-gomez-blanco) |
-| 1:00 PM | [Adrian Gonzalez: Enterprise Observability through User Telemetry](/speakers/adrian-gonzalez) |
-| 1:22 PM | Live Q&A	Adrian Gonzalez |
-| 1:40 PM | [Michael Hausenblas: Return on Investment driven observability](/speakers/michael-hausenblas) |
-| 1:50 PM | Live Q&A	Michael Hausenblas |
-| 2:15 PM | About Our Captioning |
-| 2:20 PM | About Our Graphic Recordings |
-| 2:25 PM | Panel: OTel - So far/good?	Ted Young, Daniel Gomez Blanco, Mike Angstadt |
-| 2:55 PM | Daily Wrap-up, on to Day 3 |
+| 11:10 AM | [Stephen Townshend: Bad Observability](/speakers/stephen-townshend) |
+| 11:34 AM | Pre-recorded Q&A	Stephen Townshend |
+| 11:45 AM | [Andy Dufour](/speakers/andy-dufour) and [Francis Hwang](/speakers/francis-hwang): Incubating o11y in an Enterprise |
+| 12:05 PM | [New Relic Workshop: K8s observability with Prometheus, Pixie, Fluent Bit and New Relic](/2022/sponsors/newrelic) |
+| 12:05 PM | [Daniel Selans: Observability in Event Driven](/speakers/daniel-selans) |
+| 12:28 PM | Live Q&A	David Selans |
+| 12:35 PM | [Daniel Gomez Blanco (2021): How to transparently migrate 300+ services to OpenTelemetry](/speakers/daniel-gomez-blanco) |
+| 1:05 PM | [Adrian Gonzalez: Enterprise Observability through User Telemetry](/speakers/adrian-gonzalez) |
+| 1:27 PM | Live Q&A	Adrian Gonzalez |
+| 1:45 PM | [Michael Hausenblas: Return on Investment driven observability](/speakers/michael-hausenblas) |
+| 1:55 PM | Live Q&A	Michael Hausenblas |
+| 2:20 PM | About Our Captioning |
+| 2:25 PM | About Our Graphic Recordings |
+| 2:30 PM | Panel: OTel - So far/good?	Ted Young, Daniel Gomez Blanco, Mike Angstadt |
+| 3:00 PM | Daily Wrap-up, on to Day 3 |
+| 3:05 PM	|	Booth and Hallway Exploration |
 
   </div>
 
