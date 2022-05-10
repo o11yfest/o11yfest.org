@@ -88,7 +88,8 @@ window.onloadqueue=(window.onloadqueue||[]).concat([function () {
 | 11:00 AM	|	Welcome back & reminders |
 | 11:15 AM	|	[Ricardo Ferreira: Building Software Reliability with Distributed Tracing](/speakers/ricardo-ferreira) |
 | 11:46 AM	|	Live Q&A	Ricardo Ferreira |
-| 12:00 PM	|	Book Club, Speed Networking, Booth Exploration |
+| 12:00 PM	|	Speed Networking, Booth Exploration |
+| 12:30 PM	|	Book Club, Speed Networking, Booth Exploration continued |
 | 1:00 PM	|	[Shai Almog: Debugging at Scale in Production - Deep into your Containers with kubectl debug, KoolKits...](/speakers/shai-almog) |
 | 1:22 PM	|	Live Q&A	Shai Almog |
 | 1:30 PM	|	[Andreas Grabner: Keptn - Putting Observability in the driving seat for DevOps & SRE automation](/speakers/andreas-grabner) |
