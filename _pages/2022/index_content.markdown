@@ -1,6 +1,10 @@
 
 <div class="preaction-carousel-container"></div>
 
+# Live Captionings
+
+<iframe id="iframe_cc" src="http://www.streamtext.net/player?event=Ollyfest&controls=0&header=0&scroll=1" width="100%" height="150" frameborder="0"></iframe>
+
 {% include 2022-cta-buttons.html %}
 
 # About the Conference
@@ -105,6 +109,11 @@ Virtual events are not zero cost, however, o11yfest is not about turning a profi
 }
 </style>
 <script type="text/javascript">
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("iframe_cc").src = "//www.streamtext.net/player?event=Ollyfest&controls=0&header=0&scroll=1"
+});
+
 var carouselIv = null
 window.onloadqueue=(window.onloadqueue||[]).concat([function () {
 
