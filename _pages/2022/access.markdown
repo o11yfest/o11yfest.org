@@ -1,7 +1,7 @@
 ---
 layout: default
-title:  "Attend o11yfest"
-permalink: /attend
+title:  "Access all the talks!"
+permalink: /access
 ---
 
 <div style="text-align:center;" markdown="1">
