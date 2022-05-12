@@ -6,7 +6,7 @@ permalink: /2021/about
 
 # What is o11yfest?
 
-o11yfest is a two-day virtual technology conference focused on empowering DevOps practitioners with solutions that improve observability over systems and processes. It will be held online using a virtual platform on May 17th & 18th 2021, hosted by community leaders and Growgistics LLC in collaboration with leading experts and companies in the continuous delivery and systems reliability ecosystem.
+o11yfest is a two-day virtual technology conference focused on empowering DevOps practitioners with solutions that improve observability over systems and processes. It was held online using a virtual platform on May 17th & 18th 2021, hosted by community leaders and Growgistics LLC in collaboration with leading experts and companies in the continuous delivery and systems reliability ecosystem.
 
 # Why is o11yfest around?
 

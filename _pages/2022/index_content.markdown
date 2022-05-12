@@ -1,15 +1,19 @@
 
-<div class="preaction-carousel-container"></div>
+# It's a Wrap!
 
-# Live Captionings
+Thank you to our hundreds of attendees, many sponsors, and our volunteer organizers this year!
 
-<iframe id="iframe_cc" src="http://www.streamtext.net/player?event=Ollyfest&controls=0&header=0&scroll=1" width="100%" height="150" frameborder="0"></iframe>
+Though we've closed our Airmeet conference event hub, we will be processing all the recordings
+ and they will be available on YouTube starting next week! Look for an email from organizers [at] o11yfest [dot] org
+ and share with colleagues!
+
+ <div class="preaction-carousel-container"></div>
 
 {% include 2022-cta-buttons.html %}
 
 # About the Conference
 
-**o11yfest** is a multi-day virtual technology conference focused on empowering DevOps practitioners with solutions that improve observability over systems and processes. It will be held online using a online platform on {{ site.current_event_dates }} from 11am-3pm EST each day.
+**o11yfest** is a multi-day virtual technology conference focused on empowering DevOps practitioners with solutions that improve observability over systems and processes. It was online using a online platform on {{ site.current_event_dates }} from 11am-3pm EST each day.
 
 o11yfest is in its third year of operation as a grass-roots event whose aim is to encourage sharing of knowledge and development of the discipline of observability engineering.
 

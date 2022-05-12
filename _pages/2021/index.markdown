@@ -5,7 +5,7 @@ permalink: /2021/
 
 # About the Conference
 
-**o11yfest** is a two-day virtual technology conference focused on empowering DevOps practitioners with solutions that improve observability over systems and processes. It will be held online using a online platform on May 17th & 18th 2021.
+**o11yfest** is a two-day virtual technology conference focused on empowering DevOps practitioners with solutions that improve observability over systems and processes. It was held online using a online platform on May 17th & 18th 2021.
 
 o11yfest, previously held as Observe 20/20, is in its second year of operation as a grass-roots event whose aim is to encourage sharing of knowledge and development of the discipline of observability engineering.
 

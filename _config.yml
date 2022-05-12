@@ -27,16 +27,16 @@ include:
 header_pages:
   - title: "-about"
     url: /about
-  - title: "-attend"
-    url: /attend
-  - title: "-cfp"
-    url: /cfp
+  - title: "-watch"
+    url: /access
+  # - title: "-cfp"
+  #   url: /cfp
   - title: "-agenda"
     url: /agenda
   - title: "-code-of-conduct"
     url: /code-of-conduct
-  - title: "-sponsor"
-    url: "/sponsor"
+  # - title: "-sponsor"
+  #   url: "/sponsor"
   - title: "-past"
     url: /events
   - title: "-contact"
