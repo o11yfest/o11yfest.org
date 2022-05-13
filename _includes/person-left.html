@@ -22,13 +22,19 @@
     <div class="flexbox" style="white-space: nowrap;">
       {%- if include.include_preaction != "false" and include.year == "2022" and person.session_url -%}
       {%- unless person.preactions and person.preactions.size > 0 -%}
-      <a class="flexbox-button" href="/2022/preaction/{{person.id}}" style="font-size:0.9em;">Add your (p)reaction!</a>
+      <!-- a class="flexbox-button" href="/2022/preaction/{{person.id}}" style="font-size:0.9em;">Add your (p)reaction!</a -->
       {%- endunless -%}
       {%- endif -%}
       {%- if include.year == "2022" -%}
-      <a class="flexbox-button" href="{{ site.registration_link }}" style="font-size:0.9em;">
-        Attend this Session
-      </a>
+        {%- if person.session_url -%}
+          <a class="flexbox-button" href="{{ person.session_url }}" style="font-size:0.9em;">
+            Watch this Session
+          </a>
+        {% else %}
+          <a class="flexbox-button" href="{{ site.registration_link }}" style="font-size:0.9em;">
+            Watch this Session
+          </a>
+        {%- endif -%}
       {% else %}
       <a class="flexbox-button" href="{{ site.registration_link }}" style="font-size:0.9em;">
         Attend all Sessions

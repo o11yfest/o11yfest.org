@@ -154,6 +154,7 @@ items:
     Within an enterprise, some teams may be advanced in their path to cloud native app development and deployment while some may be challenged with legacy app transformations. Orchestration workflows provide the abstractions as app teams individually innovate and incorporate FSO tools of their choice.
 
     So, what has workflows got to do with this? It's about removing I&O teams from critical paths. It's about empowering app developers to be in control of their app deployments, app security and app performance. Considering that not all application teams within an enterprise innovate at the same pace, each team is bound to have varying requirements on the infrastructure. I & O teams are best positioned to cater to these varying requirements by the adoption of tools that provide abstractions so app teams can self provision the infrastructure per their requirements. Workflows, in general, inherently provide an abstraction functionality that can hide the inner workings of a deployment. This talk is to highlight the importance of allowing app developers to self service their own deployments with I&O teams providing them with a catalog of well tested building blocks including blocks for FSO. It's like those Lego blocks - you put those small blocks together to create your own masterpiece!
+  session_url: https://vi.to/hubs/o11yfest/videos/5168
 
 - id: shai-almog
   name: Shai Almog
