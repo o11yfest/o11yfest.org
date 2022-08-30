@@ -205,7 +205,7 @@ items:
     Raw time series metrics data can benefit from clean-up and normalization before exposing it for broader use and storage. When dealing with large amounts of time series metrics, it can be helpful to be able to standardize the ways in which others can search through that data for specific time frames using easy to understand tags. This talk focuses on using Flux, InfluxDB’s data processing language, for addressing these challenges. Examples of how to leverage Flux to accomplish data cleansing and analytics through the browser and via Visual Studio will be demonstrated.
   handles:
     linkedin: zoe-steinkamp
-  session_url: https://vi.to/hubs/o11yfest/videos/5107
+  session_url: https://vi.to/hubs/o11yfest/videos/5111
 
 - id: daniel-selans
   name: Daniel Selans
