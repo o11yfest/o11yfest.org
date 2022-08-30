@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    <meta name="twitter:site" content="@o11yfest">
+    <meta name="twitter:creator" content="@o11yfest">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="o11yfest May 9-12 2022">
+    <meta name="twitter:description" content="A community-driven virtual event on May 9-12 2022 to celebrate observability in our systems and software
+">
+    <meta name="twitter:image" content="https://o11yfest.org/assets/images/speakers/2022/socials/everyone.png">
+
+    <meta name="author" content="o11yfest">
+    <meta name="title" property="og:title" content="o11yfest May 9-12 2022">
+    <meta name="image" property="og:image" content="https://o11yfest.org/assets/images/speakers/2022/socials/everyone.png">
+    <meta name="description" property="og:description" content="A community-driven virtual event on May 9-12 2022 to celebrate observability in our systems and software
+">
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+
+  </head>
+
+  <body>
+
+    <header class="site-header">
+
+      <div class="container">
+
+        <div style="float:left;">
+          <a id="a-title" href="/">
+            <h1>o11yfest</h1>
+          </a>
+        </div>
+
+        <nav class="site-nav">
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger">
+              <span class="menu-icon">
+                <svg viewBox="0 0 18 15" width="18px" height="15px">
+                  <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+                </svg>
+              </span>
+            </label>
+
+            <div class="trigger"><a class="page-link" href="/about">-about</a><a class="page-link" href="/access">-watch</a><a class="page-link" href="/agenda">-agenda</a><a class="page-link" href="/code-of-conduct">-code-of-conduct</a><a class="page-link" href="/events">-past</a><a class="page-link" href="/contact">-contact</a></div>
+          </nav></div>
+      
+      <div style="visibility:hidden;display:none;">
+        <img id="everyone-thumb" src="/assets/images/speakers/2022/socials/everyone.png"
+              style="width:1200px;border-radius:2em;" />
+      </div>
+      
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <div class="flexbox">
+  <!--a class="flexbox-button" href="/attend">Attend o11yfest 2022</a -->
+  <!-- a class="flexbox-button" href="/cfp">Our CFP</a -->
+  
+  <!--a class="flexbox-button" href="/2022/preaction">(p)reactions!</a -->
+  
+  <!--a class="flexbox-button" href="/sponsor">Sponsor this Event</a -->
+</div>
+
+<script type="text/javascript">
+window.onloadqueue=(window.onloadqueue||[]).concat([function () {
+  $( "#tabs" ).tabs({
+    activate: function(event ,ui){
+        var id = $(ui.newPanel[0]).attr("id");
+        window.history.replaceState("", document.title, window.location.href.replace(location.hash, "") + "#" + id);
+    }
+  });
+  $('.day-title').each((i,o) => {
+    var tab = $(o).closest('.daytab')
+    var day = parseInt(tab.attr('id').replace('day-',''))
+    var daytext = 'Day '+day
+    $(o).text($(o).text().replace(daytext+":","").trim())
+  })
+  $('div.special_table + table').each((i,table) => {
+    $(table.rows).each((j,row) => {
+      var tab = $(row).closest('.daytab')
+      var day = parseInt(tab.attr('id').replace('day-',''))
+      var adddays = day - 1;
+      var cell0 = $(row.cells[0]);
+      if(j>0) {
+        var datestr = '5/9/2022 ' + cell0.text() + ' EDT'
+        var dt = new Date(datestr)
+        dt.setDate(dt.getDate() + adddays)
+        //console.log(datestr + " --- " + dt + " --- " + $(row.cells[1]).text())
+        cell0.text(dt.toLocaleTimeString())
+      } else {
+        var tz = Intl.DateTimeFormat().resolvedOptions().timeZone
+        var zone = new Date().toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2]
+        cell0.css('white-space','nowrap').html('Time (in '+zone+')')
+      }
+    })
+  })
+}]);
+</script>
+
+<div id="tabs">
+  <ul>
+    <li><a href="#day-1">Monday, Day 1</a></li>
+    <li><a href="#day-2">Tuesday, Day 2</a></li>
+    <li><a href="#day-3">Wednesday, Day 3</a></li>
+    <li><a href="#day-4">Thursday, Day 4</a></li>
+  </ul>
+  <div id="day-1" class="daytab">
+    <h2 class="day-title">Day 1: o11y from the outset (core concepts, getting started)</h2>
+
+    <div class="special_table"></div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Time (in EST)</th>
+          <th>Session</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>11:00 AM</td>
+          <td>Welcome &amp; Intros</td>
+        </tr>
+        <tr>
+          <td>11:15 AM</td>
+          <td><a href="/speakers/alex-boten">Alex Boten: How the OpenTelemetry Collector puts you in the driver seat</a></td>
+        </tr>
+        <tr>
+          <td>11:38 AM</td>
+          <td>Live Q&amp;A	Alex Boten</td>
+        </tr>
+        <tr>
+          <td>11:50 AM</td>
+          <td><a href="/speakers/reese-lee">Reese Lee: Where the heck are my spans?!</a></td>
+        </tr>
+        <tr>
+          <td>12:04 PM</td>
+          <td>Live Q&amp;A	Reese Lee</td>
+        </tr>
+        <tr>
+          <td>12:10 PM</td>
+          <td><a href="/2022/sponsors/cribl">Cribl Workshop: Take Control of Observability Data With No Vendor Lock-In</a></td>
+        </tr>
+        <tr>
+          <td>12:10 PM</td>
+          <td><a href="/speakers/henrik-rexed">Henrik Rexed: The Sound of Code - Instrument with OpenTelemetry</a></td>
+        </tr>
+        <tr>
+          <td>12:34 PM</td>
+          <td>Live Q&amp;A	Henrik Rexed</td>
+        </tr>
+        <tr>
+          <td>12:40 PM</td>
+          <td>Async and bio break</td>
+        </tr>
+        <tr>
+          <td>1:00 PM</td>
+          <td><a href="/speakers/vineeth-pothulapati">Vineeth Pothulapati: Easing OpenTelemetry adoption using the OpenTelemetry operator</a></td>
+        </tr>
+        <tr>
+          <td>1:25 PM</td>
+          <td>Live Q&amp;A	Vineeth Pothulapati</td>
+        </tr>
+        <tr>
+          <td>1:45 PM</td>
+          <td><a href="/speakers/jessica-kerr">Jessica Kerr:	Observability During Development</a></td>
+        </tr>
+        <tr>
+          <td>1:55 PM</td>
+          <td>Live Q&amp;A	Jessica Kerr</td>
+        </tr>
+        <tr>
+          <td>2:10 PM</td>
+          <td>o11yfest: what, why, how?	Paul Bruce, Video, pre-CCd</td>
+        </tr>
+        <tr>
+          <td>2:20 PM</td>
+          <td><a href="/speakers/martin-mao">Martin Mao: Is MTTR still relevant in a modern, cloud native world?</a></td>
+        </tr>
+        <tr>
+          <td>2:32 PM</td>
+          <td>Live Q&amp;A	Martin Mao</td>
+        </tr>
+        <tr>
+          <td>2:40 PM</td>
+          <td><a href="/speakers/christopher-evans">Christopher Evans: Observability is not just for your systems (it’s for your team and incidents as well)</a></td>
+        </tr>
+        <tr>
+          <td>3:05 PM</td>
+          <td>Daily Wrap-up, on to Day 2</td>
+        </tr>
+        <tr>
+          <td>3:10 PM</td>
+          <td>Booth and Hallway Exploration</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <div id="day-2" class="daytab">
+    <h2 class="day-title">Day 2: o11y hits the trail (hands-on, deep-dives)</h2>
+
+    <div class="special_table"></div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Time (in EST)</th>
+          <th>Session</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>11:00 AM</td>
+          <td>Welcome back &amp; reminders</td>
+        </tr>
+        <tr>
+          <td>11:15 AM</td>
+          <td><a href="/speakers/ricardo-ferreira">Ricardo Ferreira: Building Software Reliability with Distributed Tracing</a></td>
+        </tr>
+        <tr>
+          <td>11:46 AM</td>
+          <td>Live Q&amp;A	Ricardo Ferreira</td>
+        </tr>
+        <tr>
+          <td>12:00 PM</td>
+          <td>Speed Networking, Booth Exploration</td>
+        </tr>
+        <tr>
+          <td>12:30 PM</td>
+          <td>Book Club, Speed Networking, Booth Exploration continued</td>
+        </tr>
+        <tr>
+          <td>1:00 PM</td>
+          <td><a href="/speakers/shai-almog">Shai Almog: Debugging at Scale in Production - Deep into your Containers with kubectl debug, KoolKits…</a></td>
+        </tr>
+        <tr>
+          <td>1:22 PM</td>
+          <td>Live Q&amp;A	Shai Almog</td>
+        </tr>
+        <tr>
+          <td>1:30 PM</td>
+          <td><a href="/speakers/andreas-grabner">Andreas Grabner: Keptn - Putting Observability in the driving seat for DevOps &amp; SRE automation</a></td>
+        </tr>
+        <tr>
+          <td>1:50 PM</td>
+          <td>Live Q&amp;A	Andreas Grabner</td>
+        </tr>
+        <tr>
+          <td>2:00 PM</td>
+          <td><a href="/speakers/ramon-guiu">Ramon Guiu: Going deep into the (mis)behaviors of your distributed systems with OpenTelemetry and SQL</a></td>
+        </tr>
+        <tr>
+          <td>2:26 PM</td>
+          <td>Live Q&amp;A	Ramon Guiu</td>
+        </tr>
+        <tr>
+          <td>2:40 PM</td>
+          <td><a href="/speakers/colin-douch">Colin Douch: High Cardinality Alerting With Open Telemetry</a></td>
+        </tr>
+        <tr>
+          <td>2:54 PM</td>
+          <td>Daily Wrap-up, on to Day 3</td>
+        </tr>
+        <tr>
+          <td>3:00 PM</td>
+          <td>Booth and Hallway Exploration</td>
+        </tr>
+        <tr>
+          <td>6:00 PM</td>
+          <td><a href="/2022/sponsors/elastic">Elastic Workshop: Application observability on Kubernetes with Elastic</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <div id="day-3" class="daytab">
+    <h2 class="day-title">Day 3: o11y climbs the mountain (scaling to many teams)</h2>
+
+    <div class="special_table"></div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Time (in EST)</th>
+          <th>Session</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>11:00 AM</td>
+          <td>Welcome back &amp; reminders</td>
+        </tr>
+        <tr>
+          <td>11:10 AM</td>
+          <td><a href="/speakers/stephen-townshend">Stephen Townshend: Bad Observability</a></td>
+        </tr>
+        <tr>
+          <td>11:34 AM</td>
+          <td>Pre-recorded Q&amp;A	Stephen Townshend</td>
+        </tr>
+        <tr>
+          <td>11:45 AM</td>
+          <td><a href="/speakers/andy-dufour">Andy Dufour</a> and <a href="/speakers/francis-hwang">Francis Hwang</a>: Incubating o11y in an Enterprise</td>
+        </tr>
+        <tr>
+          <td>12:05 PM</td>
+          <td><a href="/2022/sponsors/newrelic">New Relic Workshop: K8s observability with Prometheus, Pixie, Fluent Bit and New Relic</a></td>
+        </tr>
+        <tr>
+          <td>12:05 PM</td>
+          <td><a href="/speakers/daniel-selans">Daniel Selans: Observability in Event Driven</a></td>
+        </tr>
+        <tr>
+          <td>12:28 PM</td>
+          <td>Live Q&amp;A	David Selans</td>
+        </tr>
+        <tr>
+          <td>12:35 PM</td>
+          <td><a href="/speakers/daniel-gomez-blanco">Daniel Gomez Blanco (2021): How to transparently migrate 300+ services to OpenTelemetry</a></td>
+        </tr>
+        <tr>
+          <td>1:05 PM</td>
+          <td><a href="/speakers/adrian-gonzalez">Adrian Gonzalez: Enterprise Observability through User Telemetry</a></td>
+        </tr>
+        <tr>
+          <td>1:27 PM</td>
+          <td>Live Q&amp;A	Adrian Gonzalez</td>
+        </tr>
+        <tr>
+          <td>1:45 PM</td>
+          <td><a href="/speakers/michael-hausenblas">Michael Hausenblas: Return on Investment driven observability</a></td>
+        </tr>
+        <tr>
+          <td>1:55 PM</td>
+          <td>Live Q&amp;A	Michael Hausenblas</td>
+        </tr>
+        <tr>
+          <td>2:20 PM</td>
+          <td>About Our Captioning</td>
+        </tr>
+        <tr>
+          <td>2:25 PM</td>
+          <td>About Our Graphic Recordings</td>
+        </tr>
+        <tr>
+          <td>2:30 PM</td>
+          <td>Panel: OTel - So far/good?	Ted Young, Daniel Gomez Blanco, Mike Angstadt</td>
+        </tr>
+        <tr>
+          <td>3:00 PM</td>
+          <td>Daily Wrap-up, on to Day 3</td>
+        </tr>
+        <tr>
+          <td>3:05 PM</td>
+          <td>Booth and Hallway Exploration</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+<div id="day-4" class="daytab">
+    <h2 class="day-title">Day 4: o11y explores the wild (interesting use cases)</h2>
+
+    <div class="special_table"></div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Time (in EST)</th>
+          <th>Session</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>11:00 AM</td>
+          <td>Welcome back &amp; reminders</td>
+        </tr>
+        <tr>
+          <td>11:15 AM</td>
+          <td><a href="/speakers/narmatha-bala">Narmatha Bala: Confidence in Chaos - How properly applied observability practices can take the chaos out of testing</a></td>
+        </tr>
+        <tr>
+          <td>11:35 AM</td>
+          <td>Live Q&amp;A	Narmatha Bala</td>
+        </tr>
+        <tr>
+          <td>12:00 PM</td>
+          <td><a href="/2022/sponsors/lightstep">Lightstep Workshop: Getting familiar with the OpenTelemetry Collector</a></td>
+        </tr>
+        <tr>
+          <td>12:00 PM</td>
+          <td><a href="/speakers/michael-haberman">Michael Haberman: Trace-Based Testing with OpenTelemetry</a></td>
+        </tr>
+        <tr>
+          <td>12:24 PM</td>
+          <td>Live Q&amp;A	Michael Haberman, Stacy Cashmore</td>
+        </tr>
+        <tr>
+          <td>12:35 PM</td>
+          <td><a href="/speakers/piyush-verma">Piyush Verma: Building Openmetrics Exporter</a></td>
+        </tr>
+        <tr>
+          <td>12:56 PM</td>
+          <td>Pre-recorded Q&amp;A	Piyush Verma</td>
+        </tr>
+        <tr>
+          <td>1:00 PM</td>
+          <td><a href="/speakers/prathima-janakiram">Prathima Janakiram: Self Service FSO deployments with Workflows</a></td>
+        </tr>
+        <tr>
+          <td>1:20 PM</td>
+          <td><a href="/speakers/juraci-paixao-krohling">Juraci Paixão Kröhling (2021): Sampling in Distributed Tracing</a></td>
+        </tr>
+        <tr>
+          <td>1:45 PM</td>
+          <td><a href="/speakers/zoe-steinkamp">Zoe Steinkamp: Cleaning and Interpreting time series metrics with InfluxDB</a></td>
+        </tr>
+        <tr>
+          <td>2:05 PM</td>
+          <td>Live Q&amp;A	Zoe Steinkamp</td>
+        </tr>
+        <tr>
+          <td>2:10 PM</td>
+          <td>o11yfest Awards</td>
+        </tr>
+        <tr>
+          <td>2:25 PM</td>
+          <td>o11yfest Future Plans</td>
+        </tr>
+        <tr>
+          <td>2:40 PM</td>
+          <td>Organizer Thanks and Wrap	All Organizers</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
+
+      </section>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/dark-hive/jquery-ui.css">
+    <script type="text/javascript" src="/assets/js/jquery.cookie.js"></script>
+    <script type="text/javascript">
+      var __initialized = false
+      $(function () {   //  <- jquery is not yet initialized
+        if(!__initialized) {
+          __initialized = true;
+
+          $.fn.randomize=function(a){(a?this.find(a):this).parent().each(function(){$(this).children(a).sort(function(){return Math.random()-0.5}).detach().appendTo(this)});return this};
+
+          updateOffsiteLinksToOpenInBlank()
+
+          $('.localizetime').each(function(i,o) {
+            var el = $(o)
+            if(el.attr('data-date-localized') == "true") return;
+            var dt = new Date(el.text());
+            var weekday = dt.toLocaleString(navigator.language, { weekday: 'long' })
+            el.html(weekday+', '+dt.toLocaleString());
+            el.attr('data-date-localized', true)
+          });
+
+
+          if(window.onloadqueue && window.onloadqueue != undefined && window.onloadqueue.length > 0) {
+            $.each(window.onloadqueue,function(i,v) { v() });
+          }
+        }
+      });
+      function updateOffsiteLinksToOpenInBlank() {
+        var host = document.location.hostname
+        var els = $("a:not(:target)").each(function(i,o) {
+          if(((o.href+"").trim().length > 0 && (o.href.indexOf('://'+host)<1 || $(o).attr('use-same-tab') == "false"))) {
+            if($(o).attr('is-external-link') != "true") {
+              $(o).attr('is-external-link','true')
+              $(o).attr('target','_blank')
+              var span = $('<span class="external-link-icon"></span>')
+              span.click(function() { $(o).click() })
+              span.insertAfter(o)
+            }
+          }
+        });
+        //alert(els.length);
+      }
+    </script>
+
+    
+      
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQ4YJP5LND"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SQ4YJP5LND');
+      </script>
+      
+    
+  </body>
+</html>
